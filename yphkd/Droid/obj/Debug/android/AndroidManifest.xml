@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.interfuseminds.yphkd" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="15" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <application android:theme="@style/MasterDetailTheme" android:allowBackup="true" android:label="@string/app_name" android:name="crc64f9f4a990206954a4.MainApplication" android:debuggable="true">
+    <activity android:label="AddItemActivity" android:name="crc64f9f4a990206954a4.AddItemActivity" />
+    <activity android:label="Details" android:parentActivityName="crc64f9f4a990206954a4.MainActivity" android:name="crc64f9f4a990206954a4.BrowseItemDetailActivity">
+      <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity" />
+    </activity>
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="@string/app_name" android:launchMode="singleInstance" android:screenOrientation="portrait" android:name="crc64f9f4a990206954a4.MainActivity" />
+    <activity android:label="@string/app_name" android:theme="@style/SplashTheme" android:name="crc64f9f4a990206954a4.SplashActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <receiver android:enabled="true" android:label="Connectivity Plugin Broadcast Receiver" android:name="crc64cea48322b3427ae9.ConnectivityChangeBroadcastReceiver" />
+    <service android:name="crc64a98abb514ffad9f1.KeepAliveService" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.interfuseminds.yphkd.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.interfuseminds.yphkd" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
