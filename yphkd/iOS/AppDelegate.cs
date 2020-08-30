@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using yphkd.iOS.Common;
 
 namespace yphkd.iOS
 {
@@ -18,9 +19,8 @@ namespace yphkd.iOS
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-            App.Initialize();
-
-
+            CommonMethods.SetupInitialScreen(Window);
+            application.StatusBarHidden = true;
 
             return true;
         }

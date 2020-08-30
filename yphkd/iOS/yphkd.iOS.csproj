@@ -94,55 +94,257 @@
     <Reference Include="Plugin.Connectivity">
       <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.2\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Essentials">
+      <HintPath>..\packages\Xamarin.Essentials.1.5.3.2\lib\xamarinios10\Xamarin.Essentials.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK-1.0" />
+    <Reference Include="System.Drawing.Common.dll" />
+    <Reference Include="Microsoft.AppCenter">
+      <HintPath>..\packages\Microsoft.AppCenter.3.4.1\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.3.4.1\lib\Xamarin.iOS10\Microsoft.AppCenter.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes">
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.3.4.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.3.4.1\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.iOS.Bindings.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\First.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\First.imageset\tab_feed.png" />
-    <ImageAsset Include="Assets.xcassets\First.imageset\tab_feed%402x.png" />
-    <ImageAsset Include="Assets.xcassets\First.imageset\tab_feed%403x.png" />
-    <ImageAsset Include="Assets.xcassets\Second.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Second.imageset\tab_about.png" />
-    <ImageAsset Include="Assets.xcassets\Second.imageset\tab_about%402x.png" />
-    <ImageAsset Include="Assets.xcassets\Second.imageset\tab_about%403x.png" />
-    <ImageAsset Include="Assets.xcassets\XamarinLogo.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\XamarinLogo.imageset\xamarin_logo.png" />
-    <ImageAsset Include="Assets.xcassets\XamarinLogo.imageset\xamarin_logo%402x.png" />
-    <ImageAsset Include="Assets.xcassets\XamarinLogo.imageset\xamarin_logo%403x.png" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_exit.imageset\arrow%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_exit.imageset\arrow.png" />
+    <ImageAsset Include="Assets.xcassets\ic_exit.imageset\arrow%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_exit.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\medal_3.imageset\Medal3%402x.png" />
+    <ImageAsset Include="Assets.xcassets\medal_3.imageset\Medal3%403x.png" />
+    <ImageAsset Include="Assets.xcassets\medal_3.imageset\Medal3.png" />
+    <ImageAsset Include="Assets.xcassets\medal_3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\medal_2.imageset\Medal2.png" />
+    <ImageAsset Include="Assets.xcassets\medal_2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\medal_2.imageset\Medal2%402x.png" />
+    <ImageAsset Include="Assets.xcassets\medal_2.imageset\Medal2%403x.png" />
+    <ImageAsset Include="Assets.xcassets\medal_1.imageset\Medal1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\medal_1.imageset\medal1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\medal_1.imageset\Medal1.png" />
+    <ImageAsset Include="Assets.xcassets\medal_1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pink_tab_bg.imageset\pink%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\pink_tab_bg.imageset\pink%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\pink_tab_bg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pink_tab_bg.imageset\pink%401x.png" />
+    <ImageAsset Include="Assets.xcassets\orange_tab_bg.imageset\orange%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\orange_tab_bg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\orange_tab_bg.imageset\orange%401x.png" />
+    <ImageAsset Include="Assets.xcassets\orange_tab_bg.imageset\orange%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\green_tab_bg.imageset\Green%401x.png" />
+    <ImageAsset Include="Assets.xcassets\green_tab_bg.imageset\Green%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\green_tab_bg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\green_tab_bg.imageset\Green%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\dark_blue_tab_bg.imageset\dark-Blue%403x.png" />
+    <ImageAsset Include="Assets.xcassets\dark_blue_tab_bg.imageset\dark-Blue%402x.png" />
+    <ImageAsset Include="Assets.xcassets\dark_blue_tab_bg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\dark_blue_tab_bg.imageset\dark-Blue%401x.png" />
+    <ImageAsset Include="Assets.xcassets\light_blue_tab_bg.imageset\Light-Blue%401x.png" />
+    <ImageAsset Include="Assets.xcassets\light_blue_tab_bg.imageset\Light-Blue%403x.png" />
+    <ImageAsset Include="Assets.xcassets\light_blue_tab_bg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\light_blue_tab_bg.imageset\Light-Blue%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_five_finger.imageset\Five-finger%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_five_finger.imageset\Five-finger%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_five_finger.imageset\Five-finger%401x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_five_finger.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_four_finger.imageset\four-finger%401x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_four_finger.imageset\four-finger%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_four_finger.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_four_finger.imageset\four-finger%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_three_finger.imageset\three-finger%401x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_three_finger.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_three_finger.imageset\three-finger%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_three_finger.imageset\three-finger%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_two_finger.imageset\two-finger%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_two_finger.imageset\two-finger%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_two_finger.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_two_finger.imageset\two-finger%401x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_one_finger.imageset\one-finger%401x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_one_finger.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_one_finger.imageset\one-finger%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_one_finger.imageset\one-finger%403x.png" />
+    <ImageAsset Include="Assets.xcassets\game_table.imageset\Table%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\game_table.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\game_table.imageset\Table%401x.png" />
+    <ImageAsset Include="Assets.xcassets\game_table.imageset\Table%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\popup_header_bg.imageset\Untitled-1%401x.png" />
+    <ImageAsset Include="Assets.xcassets\popup_header_bg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\popup_header_bg.imageset\Untitled-1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\popup_header_bg.imageset\Untitled-1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\reward_coinds.imageset\Coins%402x.png" />
+    <ImageAsset Include="Assets.xcassets\reward_coinds.imageset\Coins%403x.png" />
+    <ImageAsset Include="Assets.xcassets\reward_coinds.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\reward_coinds.imageset\Coins.png" />
+    <ImageAsset Include="Assets.xcassets\usr_coins.imageset\Coins%402x.png" />
+    <ImageAsset Include="Assets.xcassets\usr_coins.imageset\Coins%403x.png" />
+    <ImageAsset Include="Assets.xcassets\usr_coins.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\usr_coins.imageset\Coins.png" />
+    <ImageAsset Include="Assets.xcassets\coins_sack.imageset\Coinbox%403x.png" />
+    <ImageAsset Include="Assets.xcassets\coins_sack.imageset\Coinbox%402x.png" />
+    <ImageAsset Include="Assets.xcassets\coins_sack.imageset\Coinbox.png" />
+    <ImageAsset Include="Assets.xcassets\coins_sack.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_fav_hand.imageset\Hand%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_fav_hand.imageset\Hand%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_fav_hand.imageset\Hand.png" />
+    <ImageAsset Include="Assets.xcassets\ic_fav_hand.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_share.imageset\Share%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_share.imageset\Share%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_share.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_share.imageset\Share.png" />
+    <ImageAsset Include="Assets.xcassets\ic_facebook.imageset\FB-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_facebook.imageset\FB%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_facebook.imageset\FB%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_facebook.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_shop.imageset\Shop-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_shop.imageset\Shop%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_shop.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_shop.imageset\Shop%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_notifications.imageset\Notification-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_notifications.imageset\Notification%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_notifications.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_notifications.imageset\Notification%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_leaderboard.imageset\Lederboard-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_leaderboard.imageset\Lederboard%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_leaderboard.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_leaderboard.imageset\Lederboard%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_home.imageset\Home%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_home.imageset\Home%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_home.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_home.imageset\Home-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_friends.imageset\Friend%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_friends.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_friends.imageset\Friend-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_friends.imageset\Friend%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\placeholder_bg.imageset\Box%403x.png" />
+    <ImageAsset Include="Assets.xcassets\placeholder_bg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\placeholder_bg.imageset\Box%402x.png" />
+    <ImageAsset Include="Assets.xcassets\placeholder_bg.imageset\Box.png" />
+    <ImageAsset Include="Assets.xcassets\choose_hand_bg.imageset\BG-2.png" />
+    <ImageAsset Include="Assets.xcassets\choose_hand_bg.imageset\BG-1.png" />
+    <ImageAsset Include="Assets.xcassets\choose_hand_bg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\choose_hand_bg.imageset\BG.png" />
+    <ImageAsset Include="Assets.xcassets\yassu_panju.imageset\ic_22Rounds.png" />
+    <ImageAsset Include="Assets.xcassets\yassu_panju.imageset\ic_22Rounds%402x.png" />
+    <ImageAsset Include="Assets.xcassets\yassu_panju.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\yassu_panju.imageset\ic_22Rounds%403x.png" />
+    <ImageAsset Include="Assets.xcassets\splash.imageset\ic_Splash.png" />
+    <ImageAsset Include="Assets.xcassets\splash.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\splash.imageset\ic_Splash%402x.png" />
+    <ImageAsset Include="Assets.xcassets\splash.imageset\ic_Splash%403x.png" />
+    <ImageAsset Include="Assets.xcassets\home_bg.imageset\ic_Splash_1.png" />
+    <ImageAsset Include="Assets.xcassets\home_bg.imageset\ic_Splash%403.png" />
+    <ImageAsset Include="Assets.xcassets\home_bg.imageset\ic_Splash%402.png" />
+    <ImageAsset Include="Assets.xcassets\home_bg.imageset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ViewControllers\DetailViewControllers\BrowseItemDetailViewController.cs" />
-    <Compile Include="ViewControllers\DetailViewControllers\BrowseItemDetailViewController.designer.cs">
-      <DependentUpon>BrowseItemDetailViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewControllers\AboutViewController.cs" />
-    <Compile Include="ViewControllers\AboutViewController.designer.cs">
-      <DependentUpon>AboutViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewControllers\BrowseViewController.cs" />
-    <Compile Include="ViewControllers\BrowseViewController.designer.cs">
-      <DependentUpon>BrowseViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewControllers\ItemNewViewController.cs" />
-    <Compile Include="ViewControllers\ItemNewViewController.designer.cs">
-      <DependentUpon>ItemNewViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewControllers\TabBarController.cs" />
-    <Compile Include="ViewControllers\TabBarController.designer.cs">
-      <DependentUpon>TabBarController.cs</DependentUpon>
-    </Compile>
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="View Controllers\Tutorial\TutorialViewController.cs" />
+    <Compile Include="View Controllers\Tutorial\TutorialViewController.designer.cs" />
+    <Compile Include="View Controllers\Tutorial\Cell\TutorialCollectionViewCell.designer.cs" />
+    <Compile Include="View Controllers\Tutorial\Cell\TutorialCollectionViewCell.cs" />
+    <Compile Include="View Controllers\Tutorial\Data\TutorialCollectionViewDataSource.cs" />
+    <Compile Include="View Controllers\Tutorial\Data\TutorialCollectionViewDelegate.cs" />
+    <Compile Include="View Controllers\Splash View Controller\SplashViewController_.cs" />
+    <Compile Include="View Controllers\Splash View Controller\SplashViewController_.designer.cs" />
+    <Compile Include="View Controllers\Home Screen\HomeViewController.designer.cs" />
+    <Compile Include="View Controllers\Home Screen\HomeViewController.cs" />
+    <Compile Include="Common\CommonMethods.cs" />
+    <Compile Include="Views\Bottom Tab Bar\BottomTabBarView.designer.cs" />
+    <Compile Include="Views\Bottom Tab Bar\BottomTabBarView.cs" />
+    <Compile Include="Views\Base Dialogue\BaseDialogueView.designer.cs" />
+    <Compile Include="Views\Base Dialogue\BaseDialogueView.cs" />
+    <Compile Include="Views\Header View\HeaderView.designer.cs" />
+    <Compile Include="Views\Header View\HeaderView.cs" />
+    <Compile Include="Views\Tabs\Shop Tab\ShopTabView.designer.cs" />
+    <Compile Include="Views\Tabs\Shop Tab\ShopTabView.cs" />
+    <Compile Include="Views\Tabs\Shop Tab\Cell\ShopTableViewCell.cs" />
+    <Compile Include="Views\Tabs\Shop Tab\Cell\ShopTableViewCell.designer.cs" />
+    <Compile Include="Views\Tabs\Shop Tab\Data\ShopTableViewDelegate.cs" />
+    <Compile Include="Views\Tabs\Shop Tab\Data\ShopTableViewDataSource.cs" />
+    <Compile Include="Views\Tabs\Home Tab\HomeTabView.cs" />
+    <Compile Include="Views\Tabs\Home Tab\HomeTabView.designer.cs" />
+    <Compile Include="Views\Tabs\Leaderboard Tab\LeaderboardTabView.designer.cs" />
+    <Compile Include="Views\Tabs\Leaderboard Tab\LeaderboardTabView.cs" />
+    <Compile Include="Views\Tabs\Leaderboard Tab\Data\LeaderboardTableViewDataSource.cs" />
+    <Compile Include="Views\Tabs\Leaderboard Tab\Data\LeaderboardTableViewDelegate.cs" />
+    <Compile Include="Views\Tabs\Notification Tab\NotificationTabView.designer.cs" />
+    <Compile Include="Views\Tabs\Notification Tab\NotificationTabView.cs" />
+    <Compile Include="Views\Tabs\Notification Tab\Cell\NotificationsTableViewCell.designer.cs" />
+    <Compile Include="Views\Tabs\Notification Tab\Cell\NotificationsTableViewCell.cs" />
+    <Compile Include="Views\Tabs\Notification Tab\Data\NotificationTableViewDelegate.cs" />
+    <Compile Include="Views\Tabs\Notification Tab\Data\NotificationTableViewDataSource.cs" />
+    <Compile Include="Views\Tabs\Friends Tab\FriendsTabView.cs" />
+    <Compile Include="Views\Tabs\Friends Tab\FriendsTabView.designer.cs" />
+    <Compile Include="Views\Tabs\Friends Tab\Cell\FriendsTableViewCell.cs" />
+    <Compile Include="Views\Tabs\Friends Tab\Cell\FriendsTableViewCell.designer.cs" />
+    <Compile Include="Views\Tabs\Friends Tab\Data\FriendsTableViewDataSource.cs" />
+    <Compile Include="Views\Tabs\Friends Tab\Data\FriendsTableViewDelegate.cs" />
+    <Compile Include="Views\Tutorial\Welcome Screen\WelcomeView.designer.cs" />
+    <Compile Include="Views\Tutorial\Welcome Screen\WelcomeView.cs" />
+    <Compile Include="Views\Tutorial\Select Fav Hand\SelectFavHandView.cs" />
+    <Compile Include="Views\Tutorial\Select Fav Hand\SelectFavHandView.designer.cs" />
+    <Compile Include="Views\Game\Game Table\GameTableView.cs" />
+    <Compile Include="Views\Game\Game Table\GameTableView.designer.cs" />
+    <Compile Include="Views\Game\Mode Selection\Select Table Collection View\SelectTableCollectionView.designer.cs" />
+    <Compile Include="Views\Game\Mode Selection\Select Table Collection View\SelectTableCollectionView.cs" />
+    <Compile Include="Views\Game\Mode Selection\Select Table Collection View\Cell\SelectTableCollectionViewCell.cs" />
+    <Compile Include="Views\Game\Mode Selection\Select Table Collection View\Cell\SelectTableCollectionViewCell.designer.cs" />
+    <Compile Include="Views\Game\Mode Selection\Select Table Collection View\Data\SelectTableCVDelegate.cs" />
+    <Compile Include="Views\Game\Mode Selection\Select Table Collection View\Data\SelectTableCVDataSource.cs" />
+    <Compile Include="Views\Game\Player\Player Score View\PlayerScoreView.designer.cs" />
+    <Compile Include="Views\Game\Player\Player Score View\PlayerScoreView.cs" />
+    <Compile Include="Views\Game\Player\Player View\PlayerView.cs" />
+    <Compile Include="Views\Game\Player\Player View\PlayerView.designer.cs" />
+    <Compile Include="Views\Popups\Result Popup\ResultPopupView.cs" />
+    <Compile Include="Views\Popups\Result Popup\ResultPopupView.designer.cs" />
+    <Compile Include="Views\Popups\Base Popup\BasePopupView.cs" />
+    <Compile Include="Views\Popups\Base Popup\BasePopupView.designer.cs" />
+    <Compile Include="Managers\AnimationManager.cs" />
+    <Compile Include="Constants\ImageConstants.cs" />
+    <Compile Include="Constants\ColorConstants.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <None Include="packages.config" />
+    <None Include="View Controllers\.DS_Store" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="View Controllers\Tutorial\TutorialViewController.xib" />
+    <InterfaceDefinition Include="View Controllers\Tutorial\Cell\TutorialCollectionViewCell.xib" />
+    <InterfaceDefinition Include="View Controllers\Splash View Controller\SplashViewController.xib" />
+    <InterfaceDefinition Include="View Controllers\Home Screen\HomeViewController.xib" />
+    <InterfaceDefinition Include="Views\Bottom Tab Bar\BottomTabBarView.xib" />
+    <InterfaceDefinition Include="Views\Base Dialogue\BaseDialogueView.xib" />
+    <InterfaceDefinition Include="Views\Header View\HeaderView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Shop Tab\ShopTabView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Shop Tab\Cell\ShopTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Home Tab\HomeTabView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Leaderboard Tab\LeaderboardTabView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Notification Tab\NotificationTabView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Notification Tab\Cell\NotificationsTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Friends Tab\FriendsTabView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Friends Tab\Cell\FriendsTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\Tutorial\Welcome Screen\WelcomeView.xib" />
+    <InterfaceDefinition Include="Views\Tutorial\Select Fav Hand\SelectFavHandView.xib" />
+    <InterfaceDefinition Include="Views\Game\Game Table\GameTableView.xib" />
+    <InterfaceDefinition Include="Views\Game\Mode Selection\Select Table Collection View\SelectTableCollectionView.xib" />
+    <InterfaceDefinition Include="Views\Game\Mode Selection\Select Table Collection View\Cell\SelectTableCollectionViewCell.xib" />
+    <InterfaceDefinition Include="Views\Game\Player\Player Score View\PlayerScoreView.xib" />
+    <InterfaceDefinition Include="Views\Game\Player\Player View\PlayerView.xib" />
+    <InterfaceDefinition Include="Views\Popups\Result Popup\ResultPopupView.xib" />
+    <InterfaceDefinition Include="Views\Popups\Base Popup\BasePopupView.xib" />
   </ItemGroup>
   <Import Project="..\yphkd.projitems" Label="Shared" Condition="Exists('..\yphkd.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

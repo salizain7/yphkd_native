@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="ResultPopupView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="309"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_bg" translatesAutoresizingMaskIntoConstraints="NO" id="qOO-Ky-nbH">
+                    <rect key="frame" x="65" y="25" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qOO-Ky-nbH" secondAttribute="height" multiplier="1:1" id="4Ex-oH-Cc6"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tB1-9u-awj">
+                    <rect key="frame" x="129" y="210" width="42" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBC-wR-cOl">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-3w-3dq">
+                            <rect key="frame" x="0.0" y="28.5" width="42" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qOO-Ky-nbH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1" secondAttribute="top" constant="25" id="367-xN-ssR"/>
+                <constraint firstItem="tB1-9u-awj" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="FaD-Vm-b6C"/>
+                <constraint firstItem="qOO-Ky-nbH" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" multiplier="0.35" priority="750" id="MgN-sH-ooP"/>
+                <constraint firstItem="tB1-9u-awj" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" multiplier="1.5" priority="250" id="f70-bu-BbE"/>
+                <constraint firstItem="qOO-Ky-nbH" firstAttribute="height" secondItem="1" secondAttribute="height" multiplier="0.55" id="tUk-Jl-4LA"/>
+                <constraint firstItem="tB1-9u-awj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qOO-Ky-nbH" secondAttribute="bottom" constant="15" id="zCI-Nb-9NS"/>
+                <constraint firstItem="qOO-Ky-nbH" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="zj2-M3-dIV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="centerImg" destination="qOO-Ky-nbH" id="b8g-nH-mn4"/>
+                <outlet property="coinsLbl" destination="6w1-3w-3dq" id="Wst-H3-10Z"/>
+                <outlet property="resultTextLbl" destination="pBC-wR-cOl" id="gj8-Oc-itu"/>
+            </connections>
+            <point key="canvasLocation" x="33.333333333333336" y="53.90625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder_bg" width="106" height="118"/>
+    </resources>
+</document>

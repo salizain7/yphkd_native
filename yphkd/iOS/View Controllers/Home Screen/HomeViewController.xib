@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="BottomTabBarBgView" destination="rur-gg-EnJ" id="WfJ-40-Cfg"/>
+                <outlet property="HeaderBgView" destination="wQN-gG-hRf" id="5gC-mA-pAs"/>
+                <outlet property="MainView" destination="6o1-kk-AqD" id="Lc8-Th-6H8"/>
+                <outlet property="backgroundImg" destination="Cri-7U-lgp" id="zd0-zR-NX4"/>
+                <outlet property="popupView" destination="L8y-zB-Pzk" id="OV9-Dg-m4A"/>
+                <outlet property="view" destination="1" id="fJa-yV-tqr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HomeViewController" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Cri-7U-lgp">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQN-gG-hRf" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="44.000000000000007" width="414" height="71.666666666666686"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rur-gg-EnJ" userLabel="Bottom View">
+                    <rect key="frame" x="0.0" y="799.33333333333337" width="414" height="62.666666666666629"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6o1-kk-AqD" userLabel="Middle view">
+                    <rect key="frame" x="0.0" y="115.66666666666669" width="414" height="683.66666666666652"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8y-zB-Pzk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rur-gg-EnJ" secondAttribute="trailing" id="0tW-ly-Qlc"/>
+                <constraint firstItem="Cri-7U-lgp" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="1dJ-eu-YMk"/>
+                <constraint firstItem="wQN-gG-hRf" firstAttribute="height" secondItem="1" secondAttribute="height" multiplier="0.08" id="7bD-2Z-fmR"/>
+                <constraint firstItem="6o1-kk-AqD" firstAttribute="trailing" secondItem="Cri-7U-lgp" secondAttribute="trailing" id="7fs-1e-6Is"/>
+                <constraint firstItem="L8y-zB-Pzk" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="9BM-gu-bAD"/>
+                <constraint firstAttribute="trailing" secondItem="wQN-gG-hRf" secondAttribute="trailing" id="G7E-yd-k31"/>
+                <constraint firstItem="rur-gg-EnJ" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="G9M-62-hHg"/>
+                <constraint firstItem="L8y-zB-Pzk" firstAttribute="top" secondItem="1" secondAttribute="top" id="NkI-6g-7Qi"/>
+                <constraint firstAttribute="trailing" secondItem="L8y-zB-Pzk" secondAttribute="trailing" id="S25-ye-1NH"/>
+                <constraint firstAttribute="bottomMargin" secondItem="Cri-7U-lgp" secondAttribute="bottom" id="dBe-m9-tkU"/>
+                <constraint firstItem="6o1-kk-AqD" firstAttribute="leading" secondItem="Cri-7U-lgp" secondAttribute="leading" id="fZF-rB-wgE"/>
+                <constraint firstItem="Cri-7U-lgp" firstAttribute="top" secondItem="1" secondAttribute="topMargin" id="fgL-k2-jYZ"/>
+                <constraint firstAttribute="trailing" secondItem="Cri-7U-lgp" secondAttribute="trailing" id="fyj-Ce-7H7"/>
+                <constraint firstItem="rur-gg-EnJ" firstAttribute="height" secondItem="1" secondAttribute="height" multiplier="0.07" id="iJt-xb-3a1"/>
+                <constraint firstAttribute="bottom" secondItem="L8y-zB-Pzk" secondAttribute="bottom" id="nYi-2h-E4h"/>
+                <constraint firstItem="6o1-kk-AqD" firstAttribute="top" secondItem="wQN-gG-hRf" secondAttribute="bottom" id="nkn-4I-y8u"/>
+                <constraint firstItem="rur-gg-EnJ" firstAttribute="bottom" secondItem="1" secondAttribute="bottomMargin" id="qtg-7j-hHN"/>
+                <constraint firstItem="wQN-gG-hRf" firstAttribute="top" secondItem="1" secondAttribute="topMargin" id="tbX-Do-coI"/>
+                <constraint firstItem="wQN-gG-hRf" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="v98-Jb-pw5"/>
+                <constraint firstItem="rur-gg-EnJ" firstAttribute="top" secondItem="6o1-kk-AqD" secondAttribute="bottom" id="yhg-WW-ecw"/>
+            </constraints>
+            <point key="canvasLocation" x="33.333333333333336" y="53.571428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_bg" width="123.33333587646484" height="219"/>
+    </resources>
+</document>

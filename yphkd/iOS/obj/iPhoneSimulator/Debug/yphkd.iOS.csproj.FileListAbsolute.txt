@@ -1,0 +1,35 @@
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/yphkd.iOS.exe
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/yphkd.iOS.pdb
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Microsoft.AppCenter.Crashes.dll
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Microsoft.AppCenter.Crashes.iOS.Bindings.dll
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Microsoft.AppCenter.dll
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Microsoft.AppCenter.iOS.Bindings.dll
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.Abstractions.dll
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.dll
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Share.Abstractions.dll
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Share.dll
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.xml
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Share.Abstractions.pdb
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Share.Abstractions.xml
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Share.xml
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.Abstractions.pdb
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.Abstractions.xml
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.pdb
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Plugin.Connectivity.xml
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Xamarin.Essentials.xml
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Microsoft.AppCenter.xml
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/bin/iPhoneSimulator/Debug/Microsoft.AppCenter.Crashes.xml
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/ibtool/_BundleResourceWithLogicalName.items
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/actool/_PartialAppManifest.items
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/actool/_BundleResourceWithLogicalName.items
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/coremlc/_PartialAppManifest.items
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/coremlc/_BundleResourceWithLogicalName.items
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/optimized/
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/yphkd.iOS.csprojAssemblyReference.cache
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/yphkd.iOS.csproj.CoreCompileInputs.cache
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/yphkd.iOS.csproj.CopyComplete
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/yphkd.iOS.exe
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/yphkd.iOS.pdb
