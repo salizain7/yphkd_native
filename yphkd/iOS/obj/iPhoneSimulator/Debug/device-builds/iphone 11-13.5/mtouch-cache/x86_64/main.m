@@ -11,14 +11,6 @@ void xamarin_register_assemblies_impl ()
 	guint32 exception_gchandle = 0;
 	xamarin_open_and_register ("Xamarin.Essentials.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
-	xamarin_open_and_register ("Microsoft.AppCenter.Crashes.dll", &exception_gchandle);
-	xamarin_process_managed_exception_gchandle (exception_gchandle);
-	xamarin_open_and_register ("Microsoft.AppCenter.Crashes.iOS.Bindings.dll", &exception_gchandle);
-	xamarin_process_managed_exception_gchandle (exception_gchandle);
-	xamarin_open_and_register ("Microsoft.AppCenter.iOS.Bindings.dll", &exception_gchandle);
-	xamarin_process_managed_exception_gchandle (exception_gchandle);
-	xamarin_open_and_register ("Microsoft.AppCenter.dll", &exception_gchandle);
-	xamarin_process_managed_exception_gchandle (exception_gchandle);
 
 }
 

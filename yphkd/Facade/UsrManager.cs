@@ -68,7 +68,7 @@ namespace yphkd.Facade
             }
             return false;
         }
-        public bool DoShowFbConnectEarnPts()
+        public bool DoShowFbLogin()
         {
             if (CurrentUser.FBId == null)
             {

@@ -166,6 +166,131 @@ namespace yphkd.Db
 
     }
     [JsonObject(MemberSerialization.OptIn)]
+    public class AiUsrDefinitionTable
+    {
+        [JsonProperty(PropertyName = "usr_id")]
+        public string UsrId { get; set; }
+
+        [JsonProperty(PropertyName = "create_dt")]
+        public DateTime? CreateDt { get; set; }
+        public DateTime? CreateDtUtc { get; set; }
+
+        [JsonProperty(PropertyName = "status")]
+        public int Status { get; set; }
+
+        [JsonProperty(PropertyName = "is_available")]
+        public int IsAvailable { get; set; }
+
+        
+        [JsonProperty(PropertyName = "last_game_played_dt")]
+        public DateTime? LastGamePlayedDt { get; set; }
+        public DateTime? LastGamePlayedDtUtc { get; set; }
+
+
+
+
+
+
+        public static AiUsrDefinition FromDictionary(DictionaryObject d)
+        {
+            AiUsrDefinition o = new AiUsrDefinition();
+            if (d.Contains("usr_id"))
+            {
+                o.UsrId = d.GetString("usr_id");
+            }
+            if (d.Contains("create_dt"))
+            {
+                DateTime v;
+                if (DateTime.TryParse(d.GetString("create_dt"), out v))
+                {
+                    o.CreateDtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                    o.CreateDt = o.CreateDtUtc?.ToLocalTime();
+                }
+            }
+            if (d.Contains("status"))
+            {
+                o.Status = d.GetInt("status");
+            }
+            if (d.Contains("is_available"))
+            {
+                o.IsAvailable = d.GetInt("is_available");
+            }
+            if (d.Contains("last_game_played_dt"))
+            {
+                DateTime v;
+                if (DateTime.TryParse(d.GetString("last_game_played_dt"), out v))
+                {
+                    o.LastGamePlayedDtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                    o.LastGamePlayedDt = o.LastGamePlayedDtUtc?.ToLocalTime();
+                }
+            }
+
+
+            return o;
+        }
+
+        public MutableDocument ToMutableDocument()
+        {
+            MutableDocument md = new MutableDocument("ai_usr_" + this.UsrId.ToString());
+            if (this.UsrId != null)
+            {
+                md.SetString("usr_id", this.UsrId);
+            }
+            if (this.CreateDt != null)
+            {
+                md.SetDate("create_dt", this.CreateDt.GetValueOrDefault());
+            }
+            if (this.Status != null)
+            {
+                md.SetInt("status", this.Status);
+            }
+
+            if (this.IsAvailable != null)
+            {
+                md.SetInt("is_available", this.IsAvailable);
+            }
+            if (this.LastGamePlayedDt != null)
+            {
+                md.SetDate("last_game_played_dt", this.LastGamePlayedDt.GetValueOrDefault());
+            }
+            md.SetString("type", "ai_usr");
+            return md;
+        }
+        public static AiUsrDefinition GetById(string Id)
+        {
+            AiUsrDefinition o = null;
+
+            using (var query = QueryBuilder.Select(SelectResult.All())
+              .From(DataSource.Database(DbHelper.GetDatabase()))
+              .Where(Expression.Property("usr_id").EqualTo(Expression.String(Id))
+              .And(Expression.Property("type").EqualTo(Expression.String("ai_usr")))))
+            {
+                IResultSet rs = query.Execute();
+                if (rs == null)
+                {
+                    return null;
+                }
+
+                List<Result> ls = rs.AllResults();
+                if (ls.Count == 0)
+                {
+                    return null;
+                }
+
+                if (ls.First() == null)
+                {
+                    return null;
+                }
+
+                DictionaryObject row = ls.First().GetDictionary(0);
+                o = AiUsrDefinition.FromDictionary(row);
+            }
+
+            return o;
+        }
+
+    }
+    [JsonObject(MemberSerialization.OptIn)]
     public class TableDefinitionTable
     {
         [JsonProperty(PropertyName = "id")]
@@ -333,12 +458,15 @@ namespace yphkd.Db
 
         [JsonProperty(PropertyName = "update_dt")]
         public DateTime? UpdateDt { get; set; }
+        public DateTime? UpdateDtUtc { get; set; }
 
         [JsonProperty(PropertyName = "dt")]
         public DateTime? Dt { get; set; }
+        public DateTime? DtUtc { get; set; }
 
         [JsonProperty(PropertyName = "expire_dt")]
         public DateTime? ExpireDt { get; set; }
+        public DateTime? ExpireDtUtc { get; set; }
 
         [JsonProperty(PropertyName = "winner_round_1")]
         public string WinnerRound1 { get; set; }
@@ -372,28 +500,242 @@ namespace yphkd.Db
             {
                 o.Id = d.GetInt("id");
             }
+            if (d.Contains("table_def_id"))
+            {
+                o.TableDefId = d.GetInt("table_def_id");
+            }
             if (d.Contains("table_type"))
             {
                 o.TableType = d.GetInt("table_type");
             }
+            if (d.Contains("status"))
+            {
+                o.Status = d.GetInt("status");
+            }
 
+            if (d.Contains("player1_id"))
+            {
+                o.Player1Id = d.GetString("player1_id");
+            }
+            if (d.Contains("player2_id"))
+            {
+                o.Player2Id = d.GetString("player2_id");
+            }
+            if (d.Contains("player3_id"))
+            {
+                o.Player3Id = d.GetString("player3_id");
+            }
+            if (d.Contains("player4_id"))
+            {
+                o.Player4Id = d.GetString("player4_id");
+            }
+            if (d.Contains("player5_id"))
+            {
+                o.Player5Id = d.GetString("player5_id");
+            }
+
+            if (d.Contains("player1_symbol"))
+            {
+                o.Player1Symbol = d.GetInt("player1_symbol");
+            }
+            if (d.Contains("player2_symbol"))
+            {
+                o.Player2Symbol = d.GetInt("player2_symbol");
+            }
+            if (d.Contains("player3_symbol"))
+            {
+                o.Player3Symbol = d.GetInt("player3_symbol");
+            }
+            if (d.Contains("player4_symbol"))
+            {
+                o.Player4Symbol = d.GetInt("player4_symbol");
+            }
+            if (d.Contains("player5_symbol"))
+            {
+                o.Player5Symbol = d.GetInt("player5_symbol");
+            }
+
+            if (d.Contains("update_dt"))
+            {
+                DateTime v;
+                if (DateTime.TryParse(d.GetString("update_dt"), out v))
+                {
+                    o.UpdateDtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                    o.UpdateDt = o.UpdateDtUtc?.ToLocalTime();
+                }
+            }
+            if (d.Contains("dt"))
+            {
+                DateTime v;
+                if (DateTime.TryParse(d.GetString("dt"), out v))
+                {
+                    o.DtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                    o.Dt = o.DtUtc?.ToLocalTime();
+                }
+            }
+            if (d.Contains("expiry_dt"))
+            {
+                DateTime v;
+                if (DateTime.TryParse(d.GetString("expiry_dt"), out v))
+                {
+                    o.ExpireDtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                    o.ExpireDt = o.ExpireDtUtc?.ToLocalTime();
+                }
+            }
+
+
+            if (d.Contains("winner_round_1"))
+            {
+                o.WinnerRound1 = d.GetString("winner_round_1");
+            }
+            if (d.Contains("winner_round_2"))
+            {
+                o.WinnerRound2 = d.GetString("winner_round_2");
+            }
+            if (d.Contains("winner_round_3"))
+            {
+                o.WinnerRound3 = d.GetString("winner_round_3");
+            }
+            if (d.Contains("winner_round_4"))
+            {
+                o.WinnerRound4 = d.GetString("winner_round_4");
+            }
+
+            if (d.Contains("winner1_coins_earned"))
+            {
+                o.TableType = d.GetInt("winner1_coins_earned");
+            }
+            if (d.Contains("winner2_coins_earned"))
+            {
+                o.TableType = d.GetInt("winner2_coins_earned");
+            }
+            if (d.Contains("winner3_coins_earned"))
+            {
+                o.TableType = d.GetInt("winner3_coins_earned");
+            }
+            if (d.Contains("winner4_coins_earned"))
+            {
+                o.TableType = d.GetInt("winner4_coins_earned");
+            }
 
             return o;
         }
 
         public MutableDocument ToMutableDocument()
         {
-            MutableDocument md = new MutableDocument("table_def_" + this.Id.ToString());
+            MutableDocument md = new MutableDocument("game_table_" + this.Id.ToString());
             if (this.Id != null)
             {
                 md.SetInt("id", this.Id);
             }
            
+            if (this.TableDefId != null)
+            {
+                md.SetInt("table_def_id", this.TableDefId);
+            }
             if (this.TableType != null)
             {
                 md.SetInt("table_type", this.TableType);
             }
-            md.SetString("type", "");
+            if (this.Status != null)
+            {
+                md.SetInt("status", this.Status);
+            }
+
+            if (this.Player1Id != null)
+            {
+                md.SetString("player1_id", this.Player1Id);
+            }
+            if (this.Player2Id != null)
+            {
+                md.SetString("player2_id", this.Player2Id);
+            }
+            if (this.Player3Id != null)
+            {
+                md.SetString("player3_id", this.Player3Id);
+            }
+            if (this.Player4Id != null)
+            {
+                md.SetString("player4_id", this.Player4Id);
+            }
+            if (this.Player5Id != null)
+            {
+                md.SetString("player5_id", this.Player5Id);
+            }
+
+            if (this.Player1Symbol != null)
+            {
+                md.SetInt("player1_symbol", this.Player1Symbol);
+            }
+            if (this.Player2Symbol != null)
+            {
+                md.SetInt("player2_symbol", this.Player2Symbol);
+            }
+            if (this.Player3Symbol != null)
+            {
+                md.SetInt("player3_symbol", this.Player3Symbol);
+            }
+            if (this.Player4Symbol != null)
+            {
+                md.SetInt("player4_symbol", this.Player4Symbol);
+            }
+            if (this.Player5Symbol != null)
+            {
+                md.SetInt("player5_symbol", this.Player5Symbol);
+            }
+
+
+
+            if (this.UpdateDt != null)
+            {
+                md.SetDate("update_dt", this.UpdateDt.GetValueOrDefault());
+            }
+            if (this.Dt != null)
+            {
+                md.SetDate("dt", this.Dt.GetValueOrDefault());
+            }
+            if (this.ExpireDt != null)
+            {
+                md.SetDate("expiry_dt", this.ExpireDt.GetValueOrDefault());
+            }
+
+
+            if (this.WinnerRound1 != null)
+            {
+                md.SetString("winner_round_1", this.WinnerRound1);
+            }
+            if (this.WinnerRound2 != null)
+            {
+                md.SetString("winner_round_2", this.WinnerRound2);
+            }
+            if (this.WinnerRound3 != null)
+            {
+                md.SetString("winner_round_3", this.WinnerRound3);
+            }
+            if (this.WinnerRound4 != null)
+            {
+                md.SetString("winner_round_4", this.WinnerRound4);
+            }
+
+
+            if (this.Winner1CoinsEarned != null)
+            {
+                md.SetInt("winner1_coins_earned", this.Winner1CoinsEarned);
+            }
+            if (this.Winner2CoinsEarned != null)
+            {
+                md.SetInt("winner2_coins_earned", this.Winner2CoinsEarned);
+            }
+            if (this.Winner3CoinsEarned != null)
+            {
+                md.SetInt("winner3_coins_earned", this.Winner3CoinsEarned);
+            }
+            if (this.Winner4CoinsEarned != null)
+            {
+                md.SetInt("winner4_coins_earned", this.Winner4CoinsEarned);
+            }
+
+            md.SetString("type", "game_table");
             return md;
         }
         public static GameTableDefinition GetById(int Id)
@@ -403,7 +745,7 @@ namespace yphkd.Db
             using (var query = QueryBuilder.Select(SelectResult.All())
               .From(DataSource.Database(DbHelper.GetDatabase()))
               .Where(Expression.Property("id").EqualTo(Expression.Int(Id))
-              .And(Expression.Property("type").EqualTo(Expression.String("")))))
+              .And(Expression.Property("type").EqualTo(Expression.String("game_table")))))
             {
                 IResultSet rs = query.Execute();
                 if (rs == null)

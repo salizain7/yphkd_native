@@ -26,7 +26,7 @@ namespace yphkd
                 {"Current User Favorite HandId", UsrManager.CurrentUser?.GetFavoriteHand()?.Id.ToString()},
                 {"Current User App Lang", UsrManager.CurrentUser?.UserLang}
              };
-            Crashes.TrackError(ex, prop);
+            //Crashes.TrackError(ex, prop);
         }
         public class Country : CountryTable
         {

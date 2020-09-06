@@ -287,7 +287,7 @@ namespace yphkd.Db
                                 }
                                 else
                                 {
-                                    Crashes.TrackError(args.Status.Error, properties);
+                                    //Crashes.TrackError(args.Status.Error, properties);
                                 }                                
                             }
                         }
