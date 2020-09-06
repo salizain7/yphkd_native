@@ -23,9 +23,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Facade\GameManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App Utils\AppConstants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Definitions\TableTypeDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Db\DbHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\DatabaseUpdatedMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\Publisher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Definitions\GameTableDefinition.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)App Utils\" />
     <Folder Include="$(MSBuildThisFileDirectory)Model\Definitions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Events\" />
   </ItemGroup>
 </Project>

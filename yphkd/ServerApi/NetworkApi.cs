@@ -9,6 +9,8 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 using System.Reflection;
+using yphkd.AppUtils;
+using System.Diagnostics;
 
 namespace yphkd.ServerApi
 {
@@ -44,7 +46,7 @@ namespace yphkd.ServerApi
                 }
                 catch (Exception ex)
                 {
-                    Models.Utils.TrackErrors(MethodBase.GetCurrentMethod(), ex);
+                    Utils.TrackErrors(MethodBase.GetCurrentMethod(), ex);
                     Debug.WriteLine(ex.StackTrace);
                 }
 

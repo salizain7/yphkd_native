@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Model/Definitions/TableTypeDefinition.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Model/Definitions/GameTableDefinition.cs">
     <Files>
       <File FileName="iOS/AppDelegate.cs" Line="25" Column="25" />
       <File FileName="Facade/UsrManager.cs" Line="75" Column="49" />
       <File FileName="Users/User.cs" Line="24" Column="46" />
       <File FileName="Users/UsrContent.cs" Line="29" Column="8" />
       <File FileName="Facade/GameManager.cs" Line="1" Column="1" />
-      <File FileName="ServerApi/NetworkApi.cs" Line="30" Column="14" />
-      <File FileName="App Utils/AppConstants.cs" Line="22" Column="10" />
-      <File FileName="Db/Tables.cs" Line="182" Column="23" />
-      <File FileName="Model/Definitions/TableTypeDefinition.cs" Line="4" Column="59" />
+      <File FileName="Db/Tables.cs" Line="405" Column="25" />
+      <File FileName="Model/Definitions/TableTypeDefinition.cs" Line="13" Column="1" />
+      <File FileName="Db/DbHelper.cs" Line="1" Column="1" />
+      <File FileName="Model/Definitions/GameTableDefinition.cs" Line="6" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,19 +18,17 @@
             <Node name="yphkd" expanded="True">
               <Node name="App Utils" expanded="True" />
               <Node name="Db" expanded="True" />
+              <Node name="Events" expanded="True" />
               <Node name="Facade" expanded="True" />
               <Node name="Model" expanded="True">
                 <Node name="Definitions" expanded="True">
-                  <Node name="TableTypeDefinition.cs" selected="True" />
+                  <Node name="GameTableDefinition.cs" selected="True" />
                 </Node>
-                <Node name="PlayerHand" expanded="True" />
+                <Node name="GameDefinition" expanded="True" />
               </Node>
               <Node name="ServerApi" expanded="True" />
-              <Node name="Users" expanded="True" />
             </Node>
-            <Node name="yphkd.iOS" expanded="True">
-              <Node name="Managers" expanded="True" />
-            </Node>
+            <Node name="yphkd.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
