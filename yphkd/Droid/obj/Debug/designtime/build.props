@@ -11,11 +11,11 @@ embedassembliesintoapk=false
 androidlinkmode=none
 androidlinkskip=
 androidsdkbuildtoolsversion=29.0.2
-androidsdkpath=/users/hassan/library/developer/xamarin/android-sdk-macosx/
+androidsdkpath=/users/syedalizain/library/developer/xamarin/android-sdk-macosx/
 androidndkpath=
-javasdkpath=/users/hassan/library/developer/xamarin/jdk/microsoft_dist_openjdk_1.8.0.25/
+javasdkpath=/users/syedalizain/library/developer/xamarin/jdk/microsoft_dist_openjdk_1.8.0.25/
 androidsequencepointsmode=none
-xamarinandroidversion=10.3.1-4
+xamarinandroidversion=11.0.2-0
 monosymbolarchive=false
 androiduselatestplatformsdk=false
 targetframeworkversion=v8.1
@@ -24,5 +24,9 @@ androidgeneratejnimarshalmethods=false
 os=unix
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=637344000261705904
+_nugetassetstimestamp=637350078318662698
 typemapkind=strings-asm
+androidsupportedabis=arm64-v8a
+armeabi-v7a
+x86
+x86_64

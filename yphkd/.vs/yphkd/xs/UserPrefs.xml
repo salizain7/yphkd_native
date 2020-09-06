@@ -1,46 +1,30 @@
-﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Model/Definitions/GameTableDefinition.cs">
+﻿<Properties StartupConfiguration="{B32972AE-51D8-4346-AE7E-0F964EC634CF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Activities/MainActivity.cs">
     <Files>
-      <File FileName="iOS/AppDelegate.cs" Line="25" Column="25" />
-      <File FileName="Facade/UsrManager.cs" Line="75" Column="49" />
-      <File FileName="Users/User.cs" Line="24" Column="46" />
-      <File FileName="Users/UsrContent.cs" Line="29" Column="8" />
-      <File FileName="Facade/GameManager.cs" Line="1" Column="1" />
-      <File FileName="Db/Tables.cs" Line="405" Column="25" />
-      <File FileName="Model/Definitions/TableTypeDefinition.cs" Line="13" Column="1" />
-      <File FileName="Db/DbHelper.cs" Line="1" Column="1" />
-      <File FileName="Model/Definitions/GameTableDefinition.cs" Line="6" Column="9" />
+      <File FileName="Droid/Resources/layout/activity_main.axml" Line="2" Column="75" />
+      <File FileName="Droid/Activities/MainActivity.cs" Line="17" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="yphkd" expanded="True">
-            <Node name="yphkd" expanded="True">
-              <Node name="App Utils" expanded="True" />
-              <Node name="Db" expanded="True" />
-              <Node name="Events" expanded="True" />
-              <Node name="Facade" expanded="True" />
-              <Node name="Model" expanded="True">
-                <Node name="Definitions" expanded="True">
-                  <Node name="GameTableDefinition.cs" selected="True" />
-                </Node>
-                <Node name="GameDefinition" expanded="True" />
+            <Node name="yphkd.Droid" expanded="True">
+              <Node name="Activities" expanded="True">
+                <Node name="MainActivity.cs" selected="True" />
               </Node>
-              <Node name="ServerApi" expanded="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
-            <Node name="yphkd.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.yphkd.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EC760D15-0325-413C-AA12-C5293EA7C95B" />
   <MonoDevelop.Ide.ItemProperties.yphkd FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
-    <String>Droid/yphkd.Droid.csproj</String>
+    <String>iOS/yphkd.iOS.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -51,4 +35,5 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.yphkd.Droid AndroidDesignerPreferredTheme="MasterDetailTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
 </Properties>
