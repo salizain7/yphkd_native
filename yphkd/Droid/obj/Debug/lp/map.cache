@@ -1,3 +1,9 @@
+Couchbase.Lite
+Couchbase.Lite.Support.Android
+Microsoft.AppCenter.Android.Bindings
+Microsoft.AppCenter.Crashes.Android.Bindings
+Microsoft.AppCenter.Crashes
+Microsoft.AppCenter
 Plugin.Connectivity
 Plugin.CurrentActivity
 Plugin.Share
@@ -19,3 +25,4 @@ Xamarin.Android.Support.v7.AppCompat
 Xamarin.Android.Support.v7.CardView
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
+Xamarin.Essentials
