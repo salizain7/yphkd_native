@@ -8,4 +8,24 @@
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>yphkd</Import_RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Facade\UsrManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Users\UsrContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Users\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Users\UsrProfile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerApi\NetworkApi.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerApi\Interface\ServerManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerApi\Response Model\ServerManagerResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Db\Tables.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PlayerHand\Hand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\GameDefinition\GameEnums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Facade\GameManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App Utils\AppConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Definitions\TableTypeDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)App Utils\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\Definitions\" />
+  </ItemGroup>
 </Project>
