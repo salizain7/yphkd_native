@@ -291,7 +291,8 @@ namespace yphkd.Db
     public class GameTableDefinitionTable
     {
         [JsonProperty(PropertyName = "id")]
-        public int Id { get; set; }
+        public string Id { get; set; }
+
         [JsonProperty(PropertyName = "table_def_id")]
         public int TableDefId { get; set; }
 
@@ -370,7 +371,15 @@ namespace yphkd.Db
             GameTableDefinition o = new GameTableDefinition();
             if (d.Contains("id"))
             {
-                o.Id = d.GetInt("id");
+                o.Id = d.GetString("id");
+            }
+            if (d.Contains("table_type"))
+            {
+                o.TableType = d.GetInt("table_type");
+            }
+            if (d.Contains("table_type"))
+            {
+                o.TableType = d.GetInt("table_type");
             }
             if (d.Contains("table_type"))
             {
@@ -378,32 +387,83 @@ namespace yphkd.Db
             }
 
 
+
+            if (d.Contains("id"))
+            {
+                o.Id = d.GetString("id");
+            }
+            if (d.Contains("id"))
+            {
+                o.Id = d.GetString("id");
+            }
+            if (d.Contains("id"))
+            {
+                o.Id = d.GetString("id");
+            }
+            if (d.Contains("id"))
+            {
+                o.Id = d.GetString("id");
+            }
+            if (d.Contains("id"))
+            {
+                o.Id = d.GetString("id");
+            }
+
+
+            if (d.Contains("table_type"))
+            {
+                o.TableType = d.GetInt("table_type");
+            }
+            if (d.Contains("table_type"))
+            {
+                o.TableType = d.GetInt("table_type");
+            }
+            if (d.Contains("table_type"))
+            {
+                o.TableType = d.GetInt("table_type");
+            }
+            if (d.Contains("table_type"))
+            {
+                o.TableType = d.GetInt("table_type");
+            }
+            if (d.Contains("table_type"))
+            {
+                o.TableType = d.GetInt("table_type");
+            }
+
             return o;
         }
 
         public MutableDocument ToMutableDocument()
         {
-            MutableDocument md = new MutableDocument("table_def_" + this.Id.ToString());
+            MutableDocument md = new MutableDocument("game_table_" + this.Id.ToString());
             if (this.Id != null)
             {
-                md.SetInt("id", this.Id);
+                md.SetString("id", this.Id);
             }
            
             if (this.TableType != null)
             {
                 md.SetInt("table_type", this.TableType);
             }
-            md.SetString("type", "");
+            if (this.TableType != null)
+            {
+                md.SetInt("table_type", this.TableType);
+            }
+
+
+
+            md.SetString("type", "game_table");
             return md;
         }
-        public static GameTableDefinition GetById(int Id)
+        public static GameTableDefinition GetById(String Id)
         {
             GameTableDefinition o = null;
 
             using (var query = QueryBuilder.Select(SelectResult.All())
               .From(DataSource.Database(DbHelper.GetDatabase()))
-              .Where(Expression.Property("id").EqualTo(Expression.Int(Id))
-              .And(Expression.Property("type").EqualTo(Expression.String("")))))
+              .Where(Expression.Property("id").EqualTo(Expression.String(Id))
+              .And(Expression.Property("type").EqualTo(Expression.String("game_table")))))
             {
                 IResultSet rs = query.Execute();
                 if (rs == null)

@@ -102,6 +102,28 @@ Function=NetSecurityNative_Unwrap
 Function=xamarin_start_wwan
 	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.dll
 	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=BrotliDecoderCreateInstance
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDecompressStream
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDecompress
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDestroyInstance
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderIsFinished
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCreateInstance
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderSetParameter
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCompressStream
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderHasMoreOutput
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderDestroyInstance
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCompress
+	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/System.IO.Compression.dll
 Function=xamarin_find_protocol_wrapper_type
 	/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.5/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_release_block_on_main_thread
