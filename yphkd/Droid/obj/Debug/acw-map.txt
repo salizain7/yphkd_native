@@ -1,6 +1,12 @@
-yphkd.Droid.MainActivity, yphkd.Droid;crc64f9f4a990206954a4.MainActivity
-yphkd.Droid.MainActivity;crc64f9f4a990206954a4.MainActivity
-yphkd.droid.MainActivity;crc64f9f4a990206954a4.MainActivity
+yphkd.Droid.BaseActivity, yphkd.Droid;crc64f9f4a990206954a4.BaseActivity
+yphkd.Droid.BaseActivity;crc64f9f4a990206954a4.BaseActivity
+yphkd.droid.BaseActivity;crc64f9f4a990206954a4.BaseActivity
+yphkd.Droid.Classes.Login.Activites.SplashActivity, yphkd.Droid;crc640bdc02ec71da2b78.SplashActivity
+yphkd.Droid.Classes.Login.Activites.SplashActivity;crc640bdc02ec71da2b78.SplashActivity
+yphkd.droid.classes.login.activites.SplashActivity;crc640bdc02ec71da2b78.SplashActivity
+yphkd.Droid.Classes.Login.Activites.SelectFavHand, yphkd.Droid;crc640bdc02ec71da2b78.SelectFavHand
+yphkd.Droid.Classes.Login.Activites.SelectFavHand;crc640bdc02ec71da2b78.SelectFavHand
+yphkd.droid.classes.login.activites.SelectFavHand;crc640bdc02ec71da2b78.SelectFavHand
 Com.Microsoft.Appcenter.Utils.NetworkStateHelper+IListenerImplementor, Microsoft.AppCenter.Android.Bindings;mono.com.microsoft.appcenter.utils.NetworkStateHelper_ListenerImplementor
 Com.Microsoft.Appcenter.Utils.NetworkStateHelper.IListenerImplementor;mono.com.microsoft.appcenter.utils.NetworkStateHelper_ListenerImplementor
 mono.com.microsoft.appcenter.utils.NetworkStateHelper_ListenerImplementor;mono.com.microsoft.appcenter.utils.NetworkStateHelper_ListenerImplementor

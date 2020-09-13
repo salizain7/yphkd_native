@@ -1,0 +1,1 @@
+<rotate android:drawable="@drawable/ic_logo" android:fromDegrees="0" android:pivotX="360%" android:pivotY="50%" android:repeatCount="infinite" android:duration="900" android:toDegrees="360" xmlns:android="http://schemas.android.com/apk/res/android" />
