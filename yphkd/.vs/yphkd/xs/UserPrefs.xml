@@ -1,8 +1,8 @@
-﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
+﻿<Properties StartupConfiguration="{B32972AE-51D8-4346-AE7E-0F964EC634CF}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Db/Tables.cs">
     <Files>
       <File FileName="iOS/Common/CommonMethods.cs" Line="74" Column="31" />
-      <File FileName="Db/Tables.cs" Line="432" Column="14" />
+      <File FileName="Db/Tables.cs" Line="446" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,27 +13,22 @@
                 <Node name="Tables.cs" selected="True" />
               </Node>
             </Node>
-            <Node name="yphkd.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.yphkd.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EC760D15-0325-413C-AA12-C5293EA7C95B" />
   <MonoDevelop.Ide.ItemProperties.yphkd FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
-    <String>Droid/yphkd.Droid.csproj</String>
+    <String>iOS/yphkd.iOS.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
-    <MultiItemSolutionRunConfiguration Id="multiprojId" Name="Multiple Projects">
-      <Items>
-        <StartupItem ItemId="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}" ItemName="yphkd.iOS" />
-      </Items>
-    </MultiItemSolutionRunConfiguration>
+    <MultiItemSolutionRunConfiguration Id="multiprojId" Name="Multiple Projects" />
   </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.yphkd.Droid PreferredExecutionTarget="Android.pixel_3a_xl_q_10_0_-_api_29" />
 </Properties>

@@ -373,62 +373,97 @@ namespace yphkd.Db
             {
                 o.Id = d.GetString("id");
             }
-            if (d.Contains("table_type"))
+            if (d.Contains("table_def_id"))
             {
-                o.TableType = d.GetInt("table_type");
+                o.TableType = d.GetInt("table_def_id");
             }
             if (d.Contains("table_type"))
             {
                 o.TableType = d.GetInt("table_type");
             }
-            if (d.Contains("table_type"))
+            if (d.Contains("status"))
             {
-                o.TableType = d.GetInt("table_type");
+                o.TableType = d.GetInt("status");
             }
 
 
 
-            if (d.Contains("id"))
+            if (d.Contains("player1_id"))
             {
-                o.Id = d.GetString("id");
+                o.Id = d.GetString("player1_id");
             }
-            if (d.Contains("id"))
+            if (d.Contains("player2_id"))
             {
-                o.Id = d.GetString("id");
+                o.Id = d.GetString("player2_id");
             }
-            if (d.Contains("id"))
+            if (d.Contains("player3_id"))
             {
-                o.Id = d.GetString("id");
+                o.Id = d.GetString("player3_id");
             }
-            if (d.Contains("id"))
+            if (d.Contains("player4_id"))
             {
-                o.Id = d.GetString("id");
+                o.Id = d.GetString("player4_id");
             }
-            if (d.Contains("id"))
+            if (d.Contains("player5_id"))
             {
-                o.Id = d.GetString("id");
+                o.Id = d.GetString("player5_id");
             }
 
 
-            if (d.Contains("table_type"))
+            if (d.Contains("player1_symbol"))
             {
-                o.TableType = d.GetInt("table_type");
+                o.TableType = d.GetInt("player1_symbol");
             }
-            if (d.Contains("table_type"))
+            if (d.Contains("player2_symbol"))
             {
-                o.TableType = d.GetInt("table_type");
+                o.TableType = d.GetInt("player2_symbol");
             }
-            if (d.Contains("table_type"))
+            if (d.Contains("player3_symbol"))
             {
-                o.TableType = d.GetInt("table_type");
+                o.TableType = d.GetInt("player3_symbol");
             }
-            if (d.Contains("table_type"))
+            if (d.Contains("player4_symbol"))
             {
-                o.TableType = d.GetInt("table_type");
+                o.TableType = d.GetInt("player4_symbol");
             }
-            if (d.Contains("table_type"))
+            if (d.Contains("player5_symbol"))
             {
-                o.TableType = d.GetInt("table_type");
+                o.TableType = d.GetInt("player5_symbol");
+            }
+
+            if (d.Contains("winner_round_1"))
+            {
+                o.Id = d.GetString("winner_round_1");
+            }
+            if (d.Contains("winner_round_2"))
+            {
+                o.Id = d.GetString("winner_round_2");
+            }
+            if (d.Contains("winner_round_3"))
+            {
+                o.Id = d.GetString("winner_round_3");
+            }
+            if (d.Contains("winner_round_4"))
+            {
+                o.Id = d.GetString("winner_round_4");
+            }
+
+
+            if (d.Contains("winner1_coins_earned"))
+            {
+                o.TableType = d.GetInt("winner1_coins_earned");
+            }
+            if (d.Contains("winner2_coins_earned"))
+            {
+                o.TableType = d.GetInt("winner2_coins_earned");
+            }
+            if (d.Contains("winner3_coins_earned"))
+            {
+                o.TableType = d.GetInt("winner3_coins_earned");
+            }
+            if (d.Contains("winner4_coins_earned"))
+            {
+                o.TableType = d.GetInt("winner4_coins_earned");
             }
 
             return o;
@@ -442,16 +477,156 @@ namespace yphkd.Db
                 md.SetString("id", this.Id);
             }
            
-            if (this.TableType != null)
+            if (this.TableDefId != null)
             {
-                md.SetInt("table_type", this.TableType);
+                md.SetInt("table_def_id", this.TableType);
             }
             if (this.TableType != null)
             {
                 md.SetInt("table_type", this.TableType);
             }
+            if (this.Id != null)
+            {
+                md.SetString("status", this.Id);
+            }
 
 
+
+            if (this.TableType != null)
+            {
+                md.SetInt("player1_id", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("player2_id", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("player3_id", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("player4_id", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("player5_id", this.TableType);
+            }
+
+
+
+            if (this.Id != null)
+            {
+                md.SetString("player1_symbol", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("player2_symbol", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("player3_symbol", this.Id);
+            }
+            if (this.TableType != null)
+            {
+                md.SetInt("player4_symbol", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("player5_symbol", this.Id);
+            }
+
+
+
+
+            if (this.TableType != null)
+            {
+                md.SetInt("winner_round_1", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("winner_round_2", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("winner_round_3", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("id", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("table_type", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("id", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("table_type", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("id", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("table_type", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("id", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("table_type", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("id", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("table_type", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("id", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("table_type", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("id", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("table_type", this.TableType);
+            }
+            if (this.Id != null)
+            {
+                md.SetString("id", this.Id);
+            }
+
+            if (this.TableType != null)
+            {
+                md.SetInt("table_type", this.TableType);
+            }
 
             md.SetString("type", "game_table");
             return md;
