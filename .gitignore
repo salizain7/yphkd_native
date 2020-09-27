@@ -1,0 +1,5 @@
+**/logs
+**/logs/debug.log
+*.log
+**/bin
+**/obj
