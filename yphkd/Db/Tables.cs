@@ -4,7 +4,7 @@ using System.Linq;
 using Couchbase.Lite;
 using Couchbase.Lite.Query;
 using Newtonsoft.Json;
-using yphkd.Model.Definitions;
+using yphkd.Model.Game;
 using static yphkd.Utils;
 
 namespace yphkd.Db
@@ -166,7 +166,7 @@ namespace yphkd.Db
 
     }
     [JsonObject(MemberSerialization.OptIn)]
-    public class TableDefinitionTable
+    public class GameTableDefinitionTable
     {
         [JsonProperty(PropertyName = "id")]
         public int Id { get; set; }
@@ -190,9 +190,9 @@ namespace yphkd.Db
         
 
 
-        public static TableDefinition FromDictionary(DictionaryObject d)
+        public static GameTableDefinition FromDictionary(DictionaryObject d)
         {
-            TableDefinition o = new TableDefinition();
+            GameTableDefinition o = new GameTableDefinition();
             if (d.Contains("id"))
             {
                 o.Id = d.GetInt("id");
@@ -253,9 +253,9 @@ namespace yphkd.Db
             md.SetString("type", "table_def");
             return md;
         }
-        public static TableDefinition GetById(int Id)
+        public static GameTableDefinition GetById(int Id)
         {
-            TableDefinition o = null;
+            GameTableDefinition o = null;
 
             using (var query = QueryBuilder.Select(SelectResult.All())
               .From(DataSource.Database(DbHelper.GetDatabase()))
@@ -280,7 +280,7 @@ namespace yphkd.Db
                 }
 
                 DictionaryObject row = ls.First().GetDictionary(0);
-                o = TableDefinition.FromDictionary(row);
+                o = GameTableDefinition.FromDictionary(row);
             }
 
             return o;
@@ -288,7 +288,7 @@ namespace yphkd.Db
         
     }
     [JsonObject(MemberSerialization.OptIn)]
-    public class GameTableDefinitionTable
+    public class GameTableTable
     {
         [JsonProperty(PropertyName = "id")]
         public string Id { get; set; }
@@ -369,9 +369,9 @@ namespace yphkd.Db
         public int Winner4CoinsEarned { get; set; }
 
 
-        public static GameTableDefinition FromDictionary(DictionaryObject d)
+        public static GameTable FromDictionary(DictionaryObject d)
         {
-            GameTableDefinition o = new GameTableDefinition();
+            GameTable o = new GameTable();
             if (d.Contains("id"))
             {
                 o.Id = d.GetString("id");
@@ -633,9 +633,9 @@ namespace yphkd.Db
             md.SetString("type", "game_table");
             return md;
         }
-        public static GameTableDefinition GetById(String Id)
+        public static GameTable GetById(String Id)
         {
-            GameTableDefinition o = null;
+            GameTable o = null;
 
             using (var query = QueryBuilder.Select(SelectResult.All())
               .From(DataSource.Database(DbHelper.GetDatabase()))
@@ -660,7 +660,7 @@ namespace yphkd.Db
                 }
 
                 DictionaryObject row = ls.First().GetDictionary(0);
-                o = GameTableDefinition.FromDictionary(row);
+                o = GameTable.FromDictionary(row);
             }
 
             return o;

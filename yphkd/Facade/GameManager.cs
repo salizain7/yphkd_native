@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using yphkd.Model.ServerResults;
 using yphkd.ServerApi;
 
 namespace yphkd.Facade
@@ -24,6 +27,14 @@ namespace yphkd.Facade
         //    }
         //    return UsrGameStatusResultObj;
         //}
+        public async  Task<UserPlayRequestResult> UserPlayRequestAsync(int tableType)
+        {
+            UserPlayRequestResult uprResult = null;
+            var response = await sm.UserPlayRequest(tableType);
+            uprResult = JsonConvert.DeserializeObject<UserPlayRequestResult>(response);
+            return uprResult;
+
+        }
 
     }
 }

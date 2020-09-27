@@ -10,11 +10,11 @@ namespace yphkd.AppUtils
         }
 
         public static string BASE_URL_LOGIN_API = "http://35.229.202.243:51301/"; //sql8 
-        public static string BASE_URL = "http://temp.koboniq.com/gamejson/"; //CDNS Config Domain
+        public static string BASE_URL = "http://wphub.earthfactor.net/paymentgateway/public/api/";
         public static string AppVersion = "55";
 
         public static string Game_URL = "http://35.229.202.243:51301/"; //sql8 
-
+        public static string Token = "";
     }
     public static class Validation<T>
     {

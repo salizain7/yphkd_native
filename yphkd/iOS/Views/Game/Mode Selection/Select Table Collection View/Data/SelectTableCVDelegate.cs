@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Threading.Tasks;
 using CoreGraphics;
 using Foundation;
 using UIKit;
+using yphkd.Facade;
 using yphkd.iOS.Common;
 using yphkd.iOS.Managers;
 using yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Cell;
@@ -12,6 +14,8 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
     {
         GameTableView gameTableView;
         UIViewController controller;
+        GameManager gameManager = new GameManager();
+
         public SelectTableCVDelegate(UIViewController rootController)
         {
             controller = rootController;
@@ -42,9 +46,9 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
             var cell = collectionView.CellForItem(indexPath) as SelectTableCollectionViewCell;
             if (cell != null)
             {
-                AnimationManager.Bounce(cell.ContentView, onFinished: ()=> {
-
+                AnimationManager.Bounce(cell.ContentView, onFinished: async ()=> {
                     
+                    await gameManager.UserPlayRequestAsync(5);
                     var homeViewcontroller = controller as HomeViewController;
                     if(homeViewcontroller != null)
                     {

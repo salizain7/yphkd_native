@@ -1,42 +1,91 @@
-﻿<Properties StartupConfiguration="{B32972AE-51D8-4346-AE7E-0F964EC634CF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Model/Server Results/GameRoundWinnerResult.cs">
+﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Model/Server Results/UserPlayRequestResult.cs">
     <Files>
-      <File FileName="iOS/Common/CommonMethods.cs" Line="74" Column="31" />
-      <File FileName="Db/Tables.cs" Line="660" Column="18" />
-      <File FileName="Facade/GameManager.cs" Line="10" Column="1" />
-      <File FileName="Model/Server Results/GameRoundWinnerResult.cs" Line="9" Column="6" />
+      <File FileName="Db/Tables.cs" Line="294" Column="39" />
+      <File FileName="ServerApi/NetworkApi.cs" Line="155" Column="22" />
+      <File FileName="Model/Game/GameTable.cs" Line="6" Column="34" />
+      <File FileName="Model/Game/GameTableDefinition.cs" Line="10" Column="35" />
+      <File FileName="Facade/GameManager.cs" Line="32" Column="28" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" Line="53" Column="47" />
+      <File FileName="Model/Server Results/UserPlayRequestResult.cs" Line="1" Column="14" />
+      <File FileName="iOS/View Controllers/Home Screen/HomeViewController.cs" Line="46" Column="33" />
+      <File FileName="iOS/Views/Tabs/Home Tab/HomeTabView.cs" Line="156" Column="49" />
+      <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.cs" Line="56" Column="42" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/SelectTableCollectionView.designer.cs" Line="14" Column="19" />
+      <File FileName="Facade/UsrManager.cs" Line="38" Column="1" />
+      <File FileName="Users/User.cs" Line="189" Column="48" />
+      <File FileName="Users/UsrContent.cs" Line="30" Column="33" />
+      <File FileName="iOS/View Controllers/Splash View Controller/SplashViewController_.cs" Line="40" Column="39" />
+      <File FileName="ServerApi/Response Model/ServerManagerResult.cs" Line="14" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="yphkd" expanded="True">
             <Node name="yphkd" expanded="True">
+              <Node name="App Utils" expanded="True" />
               <Node name="Db" expanded="True" />
               <Node name="Facade" expanded="True" />
               <Node name="Model" expanded="True">
+                <Node name="Game" expanded="True" />
+                <Node name="GameDefinition" expanded="True" />
                 <Node name="Server Results" expanded="True">
-                  <Node name="GameRoundWinnerResult.cs" selected="True" />
+                  <Node name="UserPlayRequestResult.cs" selected="True" />
                 </Node>
               </Node>
-              <Node name="ServerApi" expanded="True" />
+              <Node name="ServerApi" expanded="True">
+                <Node name="Response Model" expanded="True" />
+              </Node>
               <Node name="Users" expanded="True" />
+            </Node>
+            <Node name="yphkd.iOS" expanded="True">
+              <Node name="Common" expanded="True" />
+              <Node name="View Controllers" expanded="True">
+                <Node name="Home Screen" expanded="True" />
+                <Node name="Splash View Controller" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Game" expanded="True">
+                  <Node name="Mode Selection" expanded="True">
+                    <Node name="Select Table Collection View" expanded="True">
+                      <Node name="Data" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="Popups" expanded="True">
+                  <Node name="Base Popup" expanded="True" />
+                </Node>
+                <Node name="Tabs" expanded="True">
+                  <Node name="Home Tab" expanded="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.yphkd.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3B5E7AA4-D7A5-4377-99A1-B849AABB7449" />
   <MonoDevelop.Ide.ItemProperties.yphkd FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
-    <String>iOS/yphkd.iOS.csproj</String>
+    <String>Droid/yphkd.Droid.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" relfile="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" line="51" column="1" />
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="153" column="1" />
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="123" column="1" />
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="77" column="1" />
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/Facade/UsrManager.cs" relfile="Facade/UsrManager.cs" line="38" column="1" />
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="35" column="1" />
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="50" column="1" />
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/Facade/GameManager.cs" relfile="Facade/GameManager.cs" line="35" column="1" />
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="165" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="multiprojId" Name="Multiple Projects" />
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.ItemProperties.yphkd.Droid PreferredExecutionTarget="Android.pixel_3a_xl_q_10_0_-_api_29" />
 </Properties>

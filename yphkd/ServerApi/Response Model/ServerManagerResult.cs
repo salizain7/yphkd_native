@@ -11,7 +11,7 @@ namespace yphkd.ServerApi.ResponseModel
         [JsonProperty(PropertyName = "http_status")]
         public int http_status { get; set; }
 
-        [JsonProperty(PropertyName = "user_id")]
+        [JsonProperty(PropertyName = "usr_id")]
         public string user_id { get; set; }
         public ServerManagerResult()
         {
