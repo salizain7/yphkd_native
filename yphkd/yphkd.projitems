@@ -27,10 +27,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Events\DatabaseUpdatedMessage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Events\Publisher.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Definitions\GameTableDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Server Results\GameRoundWinnerResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)App Utils\" />
     <Folder Include="$(MSBuildThisFileDirectory)Model\Definitions\" />
     <Folder Include="$(MSBuildThisFileDirectory)Events\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\Server Results\" />
   </ItemGroup>
 </Project>
