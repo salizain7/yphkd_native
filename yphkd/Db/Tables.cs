@@ -334,12 +334,15 @@ namespace yphkd.Db
 
         [JsonProperty(PropertyName = "update_dt")]
         public DateTime? UpdateDt { get; set; }
+        public DateTime? UpdateDtUtc { get; set; }
 
         [JsonProperty(PropertyName = "dt")]
         public DateTime? Dt { get; set; }
+        public DateTime? DtUtc { get; set; }
 
         [JsonProperty(PropertyName = "expire_dt")]
         public DateTime? ExpireDt { get; set; }
+        public DateTime? ExpireDtUtc { get; set; }
 
         [JsonProperty(PropertyName = "winner_round_1")]
         public string WinnerRound1 { get; set; }
@@ -431,6 +434,36 @@ namespace yphkd.Db
                 o.TableType = d.GetInt("player5_symbol");
             }
 
+            if (d.Contains("update_dt"))
+            {
+                DateTime v;
+                if (DateTime.TryParse(d.GetString("update_dt"), out v))
+                {
+                    o.UpdateDtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                    o.UpdateDt = o.UpdateDtUtc?.ToLocalTime();
+                }
+            }
+            if (d.Contains("dt"))
+            {
+                DateTime v;
+                if (DateTime.TryParse(d.GetString("dt"), out v))
+                {
+                    o.DtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                    o.Dt = o.DtUtc?.ToLocalTime();
+                }
+            }
+            if (d.Contains("expire_dt"))
+            {
+                DateTime v;
+                if (DateTime.TryParse(d.GetString("expire_dt"), out v))
+                {
+                    o.ExpireDtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                    o.ExpireDt = o.ExpireDtUtc?.ToLocalTime();
+                }
+            }
+
+
+
             if (d.Contains("winner_round_1"))
             {
                 o.Id = d.GetString("winner_round_1");
@@ -479,66 +512,79 @@ namespace yphkd.Db
            
             if (this.TableDefId != null)
             {
-                md.SetInt("table_def_id", this.TableType);
+                md.SetInt("table_def_id", this.TableDefId);
             }
             if (this.TableType != null)
             {
                 md.SetInt("table_type", this.TableType);
             }
-            if (this.Id != null)
+            if (this.Status != null)
             {
-                md.SetString("status", this.Id);
+                md.SetInt("status", this.Status);
             }
 
 
 
-            if (this.TableType != null)
+            if (this.Player1Id != null)
             {
-                md.SetInt("player1_id", this.TableType);
+                md.SetString("player1_id", this.Player1Id);
             }
-            if (this.Id != null)
+            if (this.Player2Id != null)
             {
-                md.SetString("player2_id", this.Id);
-            }
-
-            if (this.TableType != null)
-            {
-                md.SetInt("player3_id", this.TableType);
-            }
-            if (this.Id != null)
-            {
-                md.SetString("player4_id", this.Id);
+                md.SetString("player2_id", this.Player2Id);
             }
 
-            if (this.TableType != null)
+            if (this.Player3Id != null)
             {
-                md.SetInt("player5_id", this.TableType);
+                md.SetString("player3_id", this.Player3Id);
+            }
+            if (this.Player4Id != null)
+            {
+                md.SetString("player4_id", this.Player4Id);
+            }
+
+            if (this.Player5Id != null)
+            {
+                md.SetString("player5_id", this.Player5Id);
             }
 
 
 
-            if (this.Id != null)
+            if (this.Player1Symbol != null)
             {
-                md.SetString("player1_symbol", this.Id);
+                md.SetInt("player1_symbol", this.Player1Symbol);
             }
 
-            if (this.TableType != null)
+            if (this.Player2Symbol != null)
             {
-                md.SetInt("player2_symbol", this.TableType);
+                md.SetInt("player2_symbol", this.Player2Symbol);
             }
-            if (this.Id != null)
+            if (this.Player3Symbol != null)
             {
-                md.SetString("player3_symbol", this.Id);
+                md.SetInt("player3_symbol", this.Player3Symbol);
             }
-            if (this.TableType != null)
+            if (this.Player4Symbol != null)
             {
-                md.SetInt("player4_symbol", this.TableType);
+                md.SetInt("player4_symbol", this.Player4Symbol);
             }
-            if (this.Id != null)
+            if (this.Player5Symbol != null)
             {
-                md.SetString("player5_symbol", this.Id);
+                md.SetInt("player5_symbol", this.Player5Symbol);
             }
 
+
+            if (this.UpdateDt != null)
+            {
+                md.SetDate("update_dt", this.UpdateDt.GetValueOrDefault());
+            }
+            if (this.Dt != null)
+            {
+                md.SetDate("dt", this.Dt.GetValueOrDefault());
+            }
+            if (this.ExpireDt != null)
+            {
+                md.SetDate("expire_dt", this.ExpireDt.GetValueOrDefault());
+            }
 
 
 
@@ -557,76 +603,32 @@ namespace yphkd.Db
             }
             if (this.Id != null)
             {
-                md.SetString("id", this.Id);
+                md.SetString("winner_round_4", this.Id);
             }
+
+
 
             if (this.TableType != null)
             {
-                md.SetInt("table_type", this.TableType);
+                md.SetInt("winner1_coins_earned", this.TableType);
             }
             if (this.Id != null)
             {
-                md.SetString("id", this.Id);
+                md.SetString("winner2_coins_earned", this.Id);
             }
 
             if (this.TableType != null)
             {
-                md.SetInt("table_type", this.TableType);
+                md.SetInt("winner3_coins_earned", this.TableType);
             }
             if (this.Id != null)
             {
-                md.SetString("id", this.Id);
+                md.SetString("winner4_coins_earned", this.Id);
             }
 
-            if (this.TableType != null)
-            {
-                md.SetInt("table_type", this.TableType);
-            }
-            if (this.Id != null)
-            {
-                md.SetString("id", this.Id);
-            }
 
-            if (this.TableType != null)
-            {
-                md.SetInt("table_type", this.TableType);
-            }
-            if (this.Id != null)
-            {
-                md.SetString("id", this.Id);
-            }
 
-            if (this.TableType != null)
-            {
-                md.SetInt("table_type", this.TableType);
-            }
-            if (this.Id != null)
-            {
-                md.SetString("id", this.Id);
-            }
-
-            if (this.TableType != null)
-            {
-                md.SetInt("table_type", this.TableType);
-            }
-            if (this.Id != null)
-            {
-                md.SetString("id", this.Id);
-            }
-
-            if (this.TableType != null)
-            {
-                md.SetInt("table_type", this.TableType);
-            }
-            if (this.Id != null)
-            {
-                md.SetString("id", this.Id);
-            }
-
-            if (this.TableType != null)
-            {
-                md.SetInt("table_type", this.TableType);
-            }
+            
 
             md.SetString("type", "game_table");
             return md;
