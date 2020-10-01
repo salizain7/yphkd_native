@@ -352,7 +352,7 @@ namespace yphkd.Db
             using (var query = QueryBuilder.Select(SelectResult.All())
               .From(DataSource.Database(DbHelper.GetDatabase()))
               .Where(Expression.Property("category_id").EqualTo(Expression.Int(Id))
-              .And(Expression.Property("type").EqualTo(Expression.String("ai_usr")))))
+              .And(Expression.Property("type").EqualTo(Expression.String("category")))))
             {
                 IResultSet rs = query.Execute();
                 if (rs == null)
@@ -381,7 +381,145 @@ namespace yphkd.Db
     }
 
 
+    [JsonObject(MemberSerialization.OptIn)]
+    public class GameRoundTable
+    {
+        [JsonProperty(PropertyName = "id")]
+        public int Id { get; set; }
 
+        [JsonProperty(PropertyName = "usr_id")]
+        public string UserId { get; set; }
+
+        [JsonProperty(PropertyName = "game_table_id")]
+        public string GameTableId { get; set; }
+
+        [JsonProperty(PropertyName = "symbol_selected")]
+        public int SymbolSelected { get; set; }
+
+        [JsonProperty(PropertyName = "round_number")]
+        public int RoundNumber { get; set; }
+        
+        [JsonProperty(PropertyName = "dt")]
+        public DateTime? Dt { get; set; }
+        public DateTime? DtUtc { get; set; }
+
+
+
+
+
+
+        public static GameRound FromDictionary(DictionaryObject d)
+        {
+            GameRound o = new GameRound();
+            if (d.Contains("id"))
+            {
+                o.Id = d.GetInt("id");
+            }
+
+            if (d.Contains("usr_id"))
+            {
+                o.UserId = d.GetString("usr_id");
+            }
+            if (d.Contains("game_table_id"))
+            {
+                o.GameTableId = d.GetString("game_table_id");
+            }
+            if (d.Contains("symbol_selected"))
+            {
+                o.SymbolSelected = d.GetInt("symbol_selected");
+            }
+            if (d.Contains("round_number"))
+            {
+                o.RoundNumber = d.GetInt("round_number");
+            }
+            if (d.Contains("dt"))
+            {
+                if (d.Contains("dt"))
+                {
+                    DateTime v;
+                    if (DateTime.TryParse(d.GetString("dt"), out v))
+                    {
+                        o.DtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                        o.Dt = o.DtUtc?.ToLocalTime();
+                    }
+                }
+            }
+
+
+
+            return o;
+        }
+
+        public MutableDocument ToMutableDocument()
+        {
+            MutableDocument md = new MutableDocument("game_round_" + this.UserId.ToString());
+            if (this.Id != null)
+            {
+                md.SetInt("id", this.Id);
+            }
+
+            
+            if (this.UserId != null)
+            {
+                md.SetString("usr_id", this.UserId);
+            }
+
+            if (this.GameTableId != null)
+            {
+                md.SetString("game_table_id", this.GameTableId);
+            }
+
+            if (this.SymbolSelected != null)
+            {
+                md.SetInt("symbol_selected", this.SymbolSelected);
+            }
+            if (this.RoundNumber != null)
+            {
+                md.SetInt("round_number", this.RoundNumber);
+            }
+
+            if (this.Dt != null)
+            {
+                md.SetDate("dt", this.Dt.GetValueOrDefault());
+            }
+
+            md.SetString("type", "game_round");
+            return md;
+        }
+        public static GameRound GetById(string Id)
+        {
+            GameRound o = null;
+
+            using (var query = QueryBuilder.Select(SelectResult.All())
+              .From(DataSource.Database(DbHelper.GetDatabase()))
+              .Where(Expression.Property("id").EqualTo(Expression.String(Id))
+              .And(Expression.Property("type").EqualTo(Expression.String("game_round")))))
+            {
+                IResultSet rs = query.Execute();
+                if (rs == null)
+                {
+                    return null;
+                }
+
+                List<Result> ls = rs.AllResults();
+                if (ls.Count == 0)
+                {
+                    return null;
+                }
+
+                if (ls.First() == null)
+                {
+                    return null;
+                }
+
+                DictionaryObject row = ls.First().GetDictionary(0);
+                o = GameRound.FromDictionary(row);
+            }
+
+            return o;
+        }
+
+    }
 
 
     [JsonObject(MemberSerialization.OptIn)]
