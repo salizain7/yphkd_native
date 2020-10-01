@@ -625,6 +625,126 @@ namespace yphkd.Db
     }
 
     [JsonObject(MemberSerialization.OptIn)]
+    public class UserTable
+    {
+        [JsonProperty(PropertyName = "username")]
+        public string Username { get; set; }
+
+        [JsonProperty(PropertyName = "email")]
+        public string Email { get; set; }
+
+        [JsonProperty(PropertyName = "password")]
+        public string Password { get; set; }
+
+        [JsonProperty(PropertyName = "create_time")]
+        public DateTime? CreateTime { get; set; }
+        public DateTime? CreateTimeUtc { get; set; }
+
+
+
+
+
+
+        public static User FromDictionary(DictionaryObject d)
+        {
+            User o = new User();
+            if (d.Contains("username"))
+            {
+                o.Username = d.GetString("username");
+            }
+
+            if (d.Contains("email"))
+            {
+                o.Email = d.GetString("email");
+            }
+            if (d.Contains("password"))
+            {
+                o.Email = d.GetString("password");
+            }
+            
+            if (d.Contains("create_time"))
+            {
+                if (d.Contains("create_time"))
+                {
+                    DateTime v;
+                    if (DateTime.TryParse(d.GetString("create_time"), out v))
+                    {
+                        o.CreateTimeUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                        o.CreateTime = o.CreateTimeUtc?.ToLocalTime();
+                    }
+                }
+            }
+
+
+
+            return o;
+        }
+
+        public MutableDocument ToMutableDocument()
+        {
+            MutableDocument md = new MutableDocument("user_" + this.Username.ToString());
+            if (this.Username != null)
+            {
+                md.SetString("username", this.Username);
+            }
+
+
+            if (this.Email != null)
+            {
+                md.SetString("email", this.Email);
+            }
+
+            if (this.Password != null)
+            {
+                md.SetString("password", this.Password);
+            }
+
+            
+            if (this.CreateTime != null)
+            {
+                md.SetDate("create_time", this.CreateTime.GetValueOrDefault());
+            }
+
+            md.SetString("type", "user");
+            return md;
+        }
+        public static User GetByUsername(string username)
+        {
+            User o = null;
+
+            using (var query = QueryBuilder.Select(SelectResult.All())
+              .From(DataSource.Database(DbHelper.GetDatabase()))
+              .Where(Expression.Property("username").EqualTo(Expression.String(username))
+              .And(Expression.Property("type").EqualTo(Expression.String("user")))))
+            {
+                IResultSet rs = query.Execute();
+                if (rs == null)
+                {
+                    return null;
+                }
+
+                List<Result> ls = rs.AllResults();
+                if (ls.Count == 0)
+                {
+                    return null;
+                }
+
+                if (ls.First() == null)
+                {
+                    return null;
+                }
+
+                DictionaryObject row = ls.First().GetDictionary(0);
+                o = User.FromDictionary(row);
+            }
+
+            return o;
+        }
+
+    }
+
+
+    [JsonObject(MemberSerialization.OptIn)]
     public class GameTableDefinitionTable
     {
         [JsonProperty(PropertyName = "id")]

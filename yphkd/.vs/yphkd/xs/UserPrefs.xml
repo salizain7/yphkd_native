@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Db/Tables.cs">
     <Files>
-      <File FileName="Db/Tables.cs" Line="513" Column="18" />
+      <File FileName="Db/Tables.cs" Line="619" Column="37" />
       <File FileName="Model/Game/AiUser.cs" Line="11" Column="6" />
       <File FileName="Model/Game/GameTable.cs" Line="1" Column="1" />
       <File FileName="Model/Game/Category.cs" Line="13" Column="1" />
       <File FileName="Model/Game/GameRound.cs" Line="6" Column="44" />
-      <File FileName="Model/Game/SymbolDefinition.cs" Line="1" Column="1" />
+      <File FileName="Model/Game/SymbolDefinition.cs" Line="6" Column="37" />
+      <File FileName="Model/Game/User.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
