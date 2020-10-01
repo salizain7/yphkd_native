@@ -659,7 +659,7 @@ namespace yphkd.Db
             }
             if (d.Contains("password"))
             {
-                o.Email = d.GetString("password");
+                o.Password = d.GetString("password");
             }
             
             if (d.Contains("create_time"))
