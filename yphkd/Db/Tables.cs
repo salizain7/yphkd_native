@@ -298,6 +298,91 @@ namespace yphkd.Db
 
     }
 
+    [JsonObject(MemberSerialization.OptIn)]
+    public class CategoryTable
+    {
+        [JsonProperty(PropertyName = "category_id")]
+        public int CategoryId { get; set; }
+
+        
+        [JsonProperty(PropertyName = "name")]
+        public string Name { get; set; }
+
+        
+        public static Category FromDictionary(DictionaryObject d)
+        {
+            Category o = new Category();
+            if (d.Contains("category_id"))
+            {
+                o.CategoryId = d.GetInt("category_id");
+            }
+
+            
+            if (d.Contains("name"))
+            {
+                o.Name = d.GetString("name");
+            }
+            
+
+            return o;
+        }
+
+        public MutableDocument ToMutableDocument()
+        {
+            MutableDocument md = new MutableDocument("category_" + this.CategoryId.ToString());
+            if (this.CategoryId != null)
+            {
+                md.SetInt("category_id", this.CategoryId);
+            }
+            
+            if (this.Name != null)
+            {
+                md.SetString("name", this.Name);
+            }
+
+            
+
+            md.SetString("type", "category");
+            return md;
+        }
+        public static Category GetById(int Id)
+        {
+            Category o = null;
+
+            using (var query = QueryBuilder.Select(SelectResult.All())
+              .From(DataSource.Database(DbHelper.GetDatabase()))
+              .Where(Expression.Property("category_id").EqualTo(Expression.Int(Id))
+              .And(Expression.Property("type").EqualTo(Expression.String("ai_usr")))))
+            {
+                IResultSet rs = query.Execute();
+                if (rs == null)
+                {
+                    return null;
+                }
+
+                List<Result> ls = rs.AllResults();
+                if (ls.Count == 0)
+                {
+                    return null;
+                }
+
+                if (ls.First() == null)
+                {
+                    return null;
+                }
+
+                DictionaryObject row = ls.First().GetDictionary(0);
+                o = Category.FromDictionary(row);
+            }
+
+            return o;
+        }
+
+    }
+
+
+
+
 
     [JsonObject(MemberSerialization.OptIn)]
     public class GameTableDefinitionTable
