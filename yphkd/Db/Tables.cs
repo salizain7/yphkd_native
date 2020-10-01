@@ -520,7 +520,109 @@ namespace yphkd.Db
         }
 
     }
+    [JsonObject(MemberSerialization.OptIn)]
+    public class SymbolDefinitionTable
+    {
+        [JsonProperty(PropertyName = "id")]
+        public int Id { get; set; }
 
+
+        [JsonProperty(PropertyName = "symbol_int")]
+        public int Symbol { get; set; }
+
+        [JsonProperty(PropertyName = "title_en")]
+        public string TitleEn { get; set; }
+
+        [JsonProperty(PropertyName = "img")]
+        public string Img { get; set; }
+
+
+        public static SymbolDefinition FromDictionary(DictionaryObject d)
+        {
+            SymbolDefinition o = new SymbolDefinition();
+            if (d.Contains("id"))
+            {
+                o.Id = d.GetInt("id");
+            }
+
+
+            if (d.Contains("symbol_int"))
+            {
+                o.Symbol = d.GetInt("symbol_int");
+            }
+            if (d.Contains("title_en"))
+            {
+                o.TitleEn = d.GetString("title_en");
+            }
+            if (d.Contains("img"))
+            {
+                o.Img = d.GetString("img");
+            }
+
+
+            return o;
+        }
+
+        public MutableDocument ToMutableDocument()
+        {
+            MutableDocument md = new MutableDocument("symbol_def_" + this.Id.ToString());
+            if (this.Id != null)
+            {
+                md.SetInt("id", this.Id);
+            }
+
+            if (this.Symbol != null)
+            {
+                md.SetInt("symbol_int", this.Symbol);
+            }
+            if (this.TitleEn != null)
+            {
+                md.SetString("title_en", this.TitleEn);
+            }
+            if (this.Img != null)
+            {
+                md.SetString("img", this.Img);
+            }
+
+
+
+            md.SetString("type", "symbol_def");
+            return md;
+        }
+        public static SymbolDefinition GetById(int Id)
+        {
+            SymbolDefinition o = null;
+
+            using (var query = QueryBuilder.Select(SelectResult.All())
+              .From(DataSource.Database(DbHelper.GetDatabase()))
+              .Where(Expression.Property("id").EqualTo(Expression.Int(Id))
+              .And(Expression.Property("type").EqualTo(Expression.String("symbol_def")))))
+            {
+                IResultSet rs = query.Execute();
+                if (rs == null)
+                {
+                    return null;
+                }
+
+                List<Result> ls = rs.AllResults();
+                if (ls.Count == 0)
+                {
+                    return null;
+                }
+
+                if (ls.First() == null)
+                {
+                    return null;
+                }
+
+                DictionaryObject row = ls.First().GetDictionary(0);
+                o = SymbolDefinition.FromDictionary(row);
+            }
+
+            return o;
+        }
+
+    }
 
     [JsonObject(MemberSerialization.OptIn)]
     public class GameTableDefinitionTable

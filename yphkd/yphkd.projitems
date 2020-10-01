@@ -32,6 +32,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Game\AiUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Game\Category.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Game\GameRound.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Game\SymbolDefinition.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)App Utils\" />
