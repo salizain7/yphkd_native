@@ -166,6 +166,140 @@ namespace yphkd.Db
 
     }
     [JsonObject(MemberSerialization.OptIn)]
+    public class AiUserTable
+    {
+        [JsonProperty(PropertyName = "usr_id")]
+        public string UserId { get; set; }
+
+        [JsonProperty(PropertyName = "create_dt")]
+        public DateTime? CreateDt { get; set; }
+        public DateTime? CreateDtUtc { get; set; }
+
+        [JsonProperty(PropertyName = "status")]
+        public int Status { get; set; }
+
+        [JsonProperty(PropertyName = "is_available")]
+        public int IsAvailable { get; set; }
+
+        [JsonProperty(PropertyName = "last_game_played_dt")]
+        public DateTime? LastGamePlayedDt { get; set; }
+        public DateTime? LastGamePlayedDtUtc { get; set; }
+
+
+
+
+
+
+        public static AiUser FromDictionary(DictionaryObject d)
+        {
+            AiUser o = new AiUser();
+            if (d.Contains("usr_id"))
+            {
+                o.UserId = d.GetString("usr_id");
+            }
+            
+            if (d.Contains("create_dt"))
+            {
+                DateTime v;
+                if (DateTime.TryParse(d.GetString("create_dt"), out v))
+                {
+                    o.CreateDtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                    o.CreateDt = o.CreateDtUtc?.ToLocalTime();
+                }
+            }
+            if (d.Contains("status"))
+            {
+                o.Status = d.GetInt("status");
+            }
+            if (d.Contains("is_available"))
+            {
+                o.IsAvailable = d.GetInt("is_available");
+            }
+            if (d.Contains("last_game_played_dt"))
+            {
+                if (d.Contains("last_game_played_dt"))
+                {
+                    DateTime v;
+                    if (DateTime.TryParse(d.GetString("last_game_played_dt"), out v))
+                    {
+                        o.LastGamePlayedDtUtc = DateTime.SpecifyKind(v, DateTimeKind.Utc);
+                        o.LastGamePlayedDt = o.LastGamePlayedDtUtc?.ToLocalTime();
+                    }
+                }
+            }
+            
+
+
+            return o;
+        }
+
+        public MutableDocument ToMutableDocument()
+        {
+            MutableDocument md = new MutableDocument("ai_usr_" + this.UserId.ToString());
+            if (this.UserId != null)
+            {
+                md.SetString("usr_id", this.UserId);
+            }
+            
+            if (this.CreateDt != null)
+            {
+                md.SetDate("create_dt", this.CreateDt.GetValueOrDefault());
+            }
+            if (this.Status != null)
+            {
+                md.SetInt("status", this.Status);
+            }
+
+            if (this.IsAvailable != null)
+            {
+                md.SetInt("is_available", this.IsAvailable);
+            }
+            
+            if (this.LastGamePlayedDt != null)
+            {
+                md.SetDate("last_game_played_dt", this.LastGamePlayedDt.GetValueOrDefault());
+            }
+
+            md.SetString("type", "ai_usr");
+            return md;
+        }
+        public static AiUser GetById(string Id)
+        {
+            AiUser o = null;
+
+            using (var query = QueryBuilder.Select(SelectResult.All())
+              .From(DataSource.Database(DbHelper.GetDatabase()))
+              .Where(Expression.Property("usr_id").EqualTo(Expression.String(Id))
+              .And(Expression.Property("type").EqualTo(Expression.String("ai_usr")))))
+            {
+                IResultSet rs = query.Execute();
+                if (rs == null)
+                {
+                    return null;
+                }
+
+                List<Result> ls = rs.AllResults();
+                if (ls.Count == 0)
+                {
+                    return null;
+                }
+
+                if (ls.First() == null)
+                {
+                    return null;
+                }
+
+                DictionaryObject row = ls.First().GetDictionary(0);
+                o = AiUser.FromDictionary(row);
+            }
+
+            return o;
+        }
+
+    }
+
+
+    [JsonObject(MemberSerialization.OptIn)]
     public class GameTableDefinitionTable
     {
         [JsonProperty(PropertyName = "id")]

@@ -29,6 +29,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Server Results\UserPlayRequestResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Game\GameTable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Game\GameTableDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Game\AiUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)App Utils\" />
