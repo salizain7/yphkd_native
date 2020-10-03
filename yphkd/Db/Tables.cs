@@ -645,9 +645,9 @@ namespace yphkd.Db
 
 
 
-        public static User FromDictionary(DictionaryObject d)
+        public static UserDef FromDictionary(DictionaryObject d)
         {
-            User o = new User();
+            UserDef o = new UserDef();
             if (d.Contains("username"))
             {
                 o.Username = d.GetString("username");
@@ -708,9 +708,9 @@ namespace yphkd.Db
             md.SetString("type", "user");
             return md;
         }
-        public static User GetByUsername(string username)
+        public static UserDef GetByUsername(string username)
         {
-            User o = null;
+            UserDef o = null;
 
             using (var query = QueryBuilder.Select(SelectResult.All())
               .From(DataSource.Database(DbHelper.GetDatabase()))
@@ -735,7 +735,7 @@ namespace yphkd.Db
                 }
 
                 DictionaryObject row = ls.First().GetDictionary(0);
-                o = User.FromDictionary(row);
+                o = UserDef.FromDictionary(row);
             }
 
             return o;

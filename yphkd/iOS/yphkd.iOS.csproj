@@ -348,6 +348,10 @@
     <Compile Include="Managers\AnimationManager.cs" />
     <Compile Include="Constants\ImageConstants.cs" />
     <Compile Include="Constants\ColorConstants.cs" />
+    <Compile Include="Views\Popups\Waiting For Players Popup\WaitPlayersPopup.cs" />
+    <Compile Include="Views\Popups\Waiting For Players Popup\WaitPlayersPopup.designer.cs">
+      <DependentUpon>WaitPlayersPopup.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
@@ -382,6 +386,10 @@
     <InterfaceDefinition Include="Views\Game\Player\Player View\PlayerView.xib" />
     <InterfaceDefinition Include="Views\Popups\Result Popup\ResultPopupView.xib" />
     <InterfaceDefinition Include="Views\Popups\Base Popup\BasePopupView.xib" />
+    <InterfaceDefinition Include="Views\Popups\Waiting For Players Popup\WaitPlayersPopup.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Popups\Waiting For Players Popup\" />
   </ItemGroup>
   <Import Project="..\yphkd.projitems" Label="Shared" Condition="Exists('..\yphkd.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

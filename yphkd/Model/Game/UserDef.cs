@@ -3,9 +3,9 @@ using yphkd.Db;
 
 namespace yphkd.Model.Game
 {
-    public class User : UserTable
+    public class UserDef : UserTable
     {
-        public User()
+        public UserDef()
         {
         }
     }

@@ -63,9 +63,6 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
                             gameTableView.setupPlayerView(cell.getViewTag());
                             gameTableView.setupPlayerScoreView(cell.getViewTag()) ;
                             
-
-
-
                             CommonMethods.clearView(homeViewcontroller.getMainView());
                             homeViewcontroller.getBottomView().showAdView(true);
 

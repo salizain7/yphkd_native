@@ -33,7 +33,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Game\Category.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Game\GameRound.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Game\SymbolDefinition.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Game\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Game\UserDef.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)App Utils\" />

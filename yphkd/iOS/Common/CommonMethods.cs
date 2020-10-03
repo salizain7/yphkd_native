@@ -105,6 +105,21 @@ namespace yphkd.iOS.Common
             view.Layer.ShadowOpacity = shadowOpacity;
 
         }
-        
+        public static void SetUpBlurBackground(UIView view)
+        {
+            view.BackgroundColor = UIColor.Clear;
+
+
+            UIVisualEffect blurEffect = UIBlurEffect.FromStyle(UIBlurEffectStyle.Dark);
+            UIVisualEffectView visualEffectView = new UIVisualEffectView(blurEffect);
+            visualEffectView.Frame = new CGRect(0, 0, view.Frame.Width, view.Frame.Height);
+            visualEffectView.Alpha = 0.90f;
+
+            view.Layer.MasksToBounds = true;
+
+            view.AddSubview(visualEffectView);
+
+        }
+
     }
 }

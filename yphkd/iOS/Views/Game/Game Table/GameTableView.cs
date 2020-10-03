@@ -13,6 +13,8 @@ namespace yphkd.iOS
         PlayerView playerView;
         PlayerScoreView playerScoreView;
         UIViewController rootController;
+        public static WaitPlayersPopup waitPlayerPopup;
+
         public GameTableView (IntPtr handle) : base (handle)
         {
         }
@@ -31,10 +33,45 @@ namespace yphkd.iOS
 
             
             setupHands();
+
         }
         public void setRootController(UIViewController controller)
         {
             rootController = controller;
+        }
+        private void showWaitingPopup()
+        {
+            var homeViewcontroller = rootController as HomeViewController;
+            if (homeViewcontroller != null)
+            {
+                var popupView = homeViewcontroller.getPopupView();
+
+                popupView.Hidden = false;
+                CommonMethods.clearView(popupView);
+                popupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
+
+                waitPlayerPopup = WaitPlayersPopup.Create();
+                //basePopupView.showSelectTablePopup(RootViewController, "SELECT YOUR TABLE", "GO BACK", true);
+                //basePopupView.showWinnerPopup(RootViewController, "Winner of Round 1", "Home", true);
+                //basePopupView.showWinnerPopup(RootViewController, "Sorry !\n Better luck next time", "Home", true);
+                waitPlayerPopup.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, popupView.Frame.Height);
+
+
+                homeViewcontroller.View.BringSubviewToFront(popupView);
+
+                CommonMethods.SetUpBlurBackground(popupView);
+
+
+
+                AnimationManager.Fade(popupView, true, onFinished: () =>
+                {
+                    popupView.AddSubview(waitPlayerPopup);
+                    AnimationManager.SlideVerticaly(waitPlayerPopup, true, true);
+
+                });
+            }
+
+                
         }
         private void setupHands()
         {

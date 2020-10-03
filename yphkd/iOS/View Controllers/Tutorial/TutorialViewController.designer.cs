@@ -1,53 +1,39 @@
 // WARNING
 //
-// This file has been generated automatically by Visual Studio to store outlets and
-// actions made in the UI designer. If it is removed, they will be lost.
-// Manual changes to this file may not be handled correctly.
+// This file has been generated automatically by Visual Studio from the outlets and
+// actions declared in your storyboard file.
+// Manual changes to this file will not be maintained.
 //
 using Foundation;
+using System;
 using System.CodeDom.Compiler;
 
 namespace yphkd.iOS.ViewControllers.Tutorial
 {
-	[Register ("TutorialViewController")]
-	partial class TutorialViewController
-	{
-		[Outlet]
-		UIKit.UIButton continueBtn { get; set; }
+    [Register ("TutorialViewController")]
+    partial class TutorialViewController
+    {
+        [Outlet]
+        UIKit.UIButton continueBtn { get; set; }
 
-		[Outlet]
-		UIKit.UIPageControl pageControl { get; set; }
 
-		[Outlet]
-		UIKit.UIImageView tutorialBgImgView { get; set; }
+        [Outlet]
+        UIKit.UIPageControl pageControl { get; set; }
 
-		[Outlet]
-		UIKit.UICollectionView tutorialCollectionView { get; set; }
 
-		[Action ("onClickContinue:")]
-		partial void onClickContinue (UIKit.UIButton sender);
-		
-		void ReleaseDesignerOutlets ()
-		{
-			if (tutorialCollectionView != null) {
-				tutorialCollectionView.Dispose ();
-				tutorialCollectionView = null;
-			}
+        [Outlet]
+        UIKit.UIImageView tutorialBgImgView { get; set; }
 
-			if (pageControl != null) {
-				pageControl.Dispose ();
-				pageControl = null;
-			}
 
-			if (continueBtn != null) {
-				continueBtn.Dispose ();
-				continueBtn = null;
-			}
+        [Outlet]
+        UIKit.UICollectionView tutorialCollectionView { get; set; }
 
-			if (tutorialBgImgView != null) {
-				tutorialBgImgView.Dispose ();
-				tutorialBgImgView = null;
-			}
-		}
-	}
+
+        [Action ("onClickContinue:")]
+        partial void onClickContinue (UIKit.UIButton sender);
+
+        void ReleaseDesignerOutlets ()
+        {
+        }
+    }
 }
