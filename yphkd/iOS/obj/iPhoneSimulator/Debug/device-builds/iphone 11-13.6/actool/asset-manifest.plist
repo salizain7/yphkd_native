@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.actool.compilation-results</key>
+	<dict>
+		<key>output-files</key>
+		<array>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/bundle/Assets.car</string>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/partial-info.plist</string>
+		</array>
+	</dict>
+	<key>com.apple.actool.document.warnings</key>
+	<array>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_friends.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_friends" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_shop.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_shop" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_three_finger.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_three_finger" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./coins_sack.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "coins_sack" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./medal_1.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "medal_1" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./usr_coins.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "usr_coins" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_one_finger.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_one_finger" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./splash.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "splash" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./popup_header_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "popup_header_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./light_blue_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "light_blue_tab_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_fav_hand.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_fav_hand" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_home.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_home" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_four_finger.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_four_finger" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./game_table.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "game_table" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_five_finger.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_five_finger" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./home_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "home_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./pink_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "pink_tab_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./medal_2.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "medal_2" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_exit.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_exit" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_share.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_share" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./yassu_panju.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "yassu_panju" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./medal_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "medal_3" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./reward_coinds.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "reward_coinds" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./placeholder_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "placeholder_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_facebook.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_facebook" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_notifications.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_notifications" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./green_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "green_tab_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_leaderboard.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_leaderboard" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./orange_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "orange_tab_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_two_finger.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_two_finger" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./choose_hand_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "choose_hand_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./dark_blue_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "dark_blue_tab_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_shop.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_shop.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_shop" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./medal_1.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_1.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "medal_1" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./yassu_panju.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./yassu_panju.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "yassu_panju" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_exit.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_exit.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_exit" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_home.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_home.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_home" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./choose_hand_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./choose_hand_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "choose_hand_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./splash.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./splash.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "splash" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_share.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_share.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_share" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./green_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./green_tab_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "green_tab_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./medal_2.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_2.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "medal_2" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_one_finger.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_one_finger.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_one_finger" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_friends.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_friends.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_friends" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./dark_blue_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./dark_blue_tab_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "dark_blue_tab_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_three_finger.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_three_finger.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_three_finger" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./reward_coinds.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./reward_coinds.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "reward_coinds" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_five_finger.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_five_finger.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_five_finger" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_fav_hand.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_fav_hand.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_fav_hand" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./pink_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./pink_tab_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "pink_tab_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./placeholder_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./placeholder_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "placeholder_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_facebook.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_facebook.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_facebook" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./light_blue_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./light_blue_tab_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "light_blue_tab_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./home_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./home_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "home_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_two_finger.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_two_finger.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_two_finger" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./usr_coins.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./usr_coins.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "usr_coins" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./game_table.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./game_table.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "game_table" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_notifications.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_notifications.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_notifications" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./orange_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./orange_tab_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "orange_tab_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./medal_3.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./medal_3.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "medal_3" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./popup_header_bg.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./popup_header_bg.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "popup_header_bg" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][watch][44x44][longLook][42mm][2x][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The app icon set "AppIcon" has an unassigned child.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./coins_sack.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./coins_sack.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "coins_sack" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_leaderboard.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_leaderboard.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_leaderboard" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./ic_four_finger.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./ic_four_finger.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "ic_four_finger" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+	</array>
+	<key>com.apple.actool.notices</key>
+	<array>
+		<dict>
+			<key>description</key>
+			<string>Failed to read file attributes for "/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/11"</string>
+			<key>failure-reason</key>
+			<string>No such file or directory</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Could not get trait set for device iPhone with version 13.6</string>
+		</dict>
+	</array>
+</dict>
+</plist>

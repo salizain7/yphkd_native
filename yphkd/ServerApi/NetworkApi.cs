@@ -11,6 +11,7 @@ using Newtonsoft.Json.Linq;
 using System.Reflection;
 using yphkd.AppUtils;
 using System.Diagnostics;
+using yphkd.Model.Game;
 
 namespace yphkd.ServerApi
 {
@@ -24,161 +25,156 @@ namespace yphkd.ServerApi
             httpClient.MaxResponseContentBufferSize = 256000;
         }
 
-        public Task<string> GetGameSeasonStanding(int seasonId)
+        
+
+        public Task<ServerManagerResult> CreateSubscriber(string deviceId , string firebaseId )
         {
+            ServerManagerResult managerResult = new ServerManagerResult();
             return Task.Run(async () =>
             {
-                if (UsrManager.CurrentUser.Profile.UsrCountry == null || UsrManager.CurrentUser.Profile.UsrCountry == 0)
-                {
-                    UsrManager.CurrentUser.Profile.UsrCountry = 297;
-                }
-                string result = null;
-                var uri = new Uri(string.Format(AppConstants.Game_URL + "getGameSeasonStanding?usr_id=" + UsrManager.CurrentUser.Guid + "&season_id=" + seasonId + "&country_id=" + UsrManager.CurrentUser.Profile.UsrCountry));
+                var stringVal = AppConstants.BASE_URL + "createSub?firebase_id=" + firebaseId + "dsdsd&device_id=" + deviceId;
+
                 try
                 {
-                    var response = httpClient.GetAsync(uri).Result;
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        var asyncRes = await response.Content.ReadAsStringAsync();
-                        if (!string.IsNullOrEmpty(asyncRes))
-                            result = asyncRes;
+                        client.BaseAddress = new Uri(String.Format(stringVal));
+                        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", AppConstants.Token);
+                        var request = await client.PostAsync(client.BaseAddress, null);
+                        var response = await request.Content.ReadAsStringAsync();
+                        if (request.IsSuccessStatusCode)
+                        {
+                            if (!string.IsNullOrEmpty(response))
+                            {
+                                managerResult = JsonConvert.DeserializeObject<ServerManagerResult>(response);
+                            }
+                        }
                     }
                 }
                 catch (Exception ex)
                 {
-                    Utils.TrackErrors(MethodBase.GetCurrentMethod(), ex);
-                    Debug.WriteLine(ex.StackTrace);
+                    Debug.WriteLine(ex.Message);
                 }
 
-                return result;
-            });
-        }
-
-        public Task<ServerManagerResult> CreateSubscriber(string deviceId, string firebaseId)
-        {
-            return Task.Run(async () =>
-            {
-
-                ServerManagerResult managerResult = new ServerManagerResult();
-                //var uri = new Uri(string.Format(AppConstants.BASE_URL_LOGIN_API + "createUser?device_id=" + deviceId + "&firebase_id=" + firebaseId));
-                //try
-                //{
-                //    var response = httpClient.GetAsync(uri).Result;
-                //    if (response.IsSuccessStatusCode)
-                //    {
-                //        var asyncRes = await response.Content.ReadAsStringAsync();
-                //        if (!string.IsNullOrEmpty(asyncRes))
-                //            managerResult = JsonConvert.DeserializeObject<ServerManagerResult>(asyncRes);
-                //        else
-                //            managerResult.State = -100;
-                //    }
-                //}
-                //catch (Exception ex)
-                //{
-                //    Utils.TrackErrors(MethodBase., ex);
-                //    Debug.WriteLine(ex.StackTrace);
-                //}
                 return managerResult;
             });
 
         }
 
-        public Task<string> GetJsonFile(string url, double secs, bool forceRefresh)
-        {
-            return Task.Run(() =>
-            {
-                //string fetchUrl = AppConstants.BASE_URL + url;
-
-                //if (Barrel.Current.Exists(fetchUrl) == true && Barrel.Current.IsExpired(fetchUrl) == false && forceRefresh == false)
-                //{
-                //    return Barrel.Current.Get<string>(fetchUrl);
-                //}
-
-                string responseStr = "";
-                //var uri = new Uri(string.Format(fetchUrl));
-                //try
-                //{
-                //    Console.WriteLine(DateTime.Now);
-                //    var response = httpClient.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead).Result;
-                //    Console.WriteLine(DateTime.Now);
-                //    if (response.IsSuccessStatusCode)
-                //    {
-                //        if (fetchUrl.Contains(".zip"))
-                //        {
-                //            Console.WriteLine(DateTime.Now);
-                //            responseStr = Unzip(response.Content.ReadAsByteArrayAsync().Result);
-                //            Console.WriteLine(DateTime.Now);
-                //        }
-                //        else
-                //        {
-                //            responseStr = response.Content.ReadAsStringAsync().Result;
-                //        }
-
-                //        JObject jObject = JObject.Parse(responseStr);
-                //        double ExpirySeconds = secs;
-
-                //        if (jObject.ContainsKey("cache_expiry_dt"))
-                //        {
-                //            var valuedt = jObject["cache_expiry_dt"].ToString();
-                //            if (!string.IsNullOrEmpty(valuedt))
-                //            {
-                //                DateTime expiryDateUtc = DateTime.Parse(valuedt).ToLocalTime();
-                //                if (expiryDateUtc > DateTime.Now.ToLocalTime())
-                //                {
-                //                    var durationExpiry = expiryDateUtc - DateTime.Now.ToLocalTime();
-                //                    ExpirySeconds = durationExpiry.TotalSeconds;
-                //                }
-                //                else
-                //                {
-                //                    secs = 1;
-                //                }
-
-                //            }
-                //        }
-                //        Barrel.Current.Add(fetchUrl, responseStr, TimeSpan.FromSeconds(ExpirySeconds));
-                //    }
-
-                //}
-                //catch (Exception ex)
-                //{
-                //    Models.Utils.TrackErrors(MethodBase.GetCurrentMethod(), ex);
-                //    Debug.WriteLine("Error --> " + ex.StackTrace);
-                //}
-
-
-                return responseStr;
-            });
-        }
         
-       
-
-        public Task<ServerManagerResult> VerifyUser(string id, string deviceId)
+        
+        public Task<int> UserAuth()
         {
+            
             return Task.Run(async () =>
             {
-                ServerManagerResult managerResult = new ServerManagerResult();
+                var stringVal = AppConstants.BASE_URL + "login?email=saqib@gmail.com&password=12345";
 
-                //Uri uri = new Uri(string.Format(AppConstants.BASE_URL_LOGIN_API + "verifyUser?usr_id=" + id + "&device_id=" + deviceId));
+                try
+                {
+                    using (var client = new HttpClient())
+                    {
+                        client.BaseAddress = new Uri(String.Format(stringVal));
+                        var request = await client.PostAsync(client.BaseAddress, null);
+                        var response = await request.Content.ReadAsStringAsync();
+                        if (request.IsSuccessStatusCode)
+                        {
+                            if (!string.IsNullOrEmpty(response))
+                            {
+                                JObject jObj = JObject.Parse(response);
+                                
+                                if (response.Contains("success"))
+                                {
+                                    JObject jResponseObj = JObject.Parse(jObj["success"].ToString());
+                                    if (jResponseObj.ContainsKey("token"))
+                                    {
+                                        AppConstants.Token = jResponseObj["token"].ToString();
+                                        //if(!string.IsNullOrEmpty(AppConstants.Token))
+                                        //{
+                                        //    AppConstants.Token = "Bearer " + AppConstants.Token;
+                                        //}
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                }
 
-                //try
-                //{
-                //    var response = httpClient.GetAsync(uri).Result;
-                //    if (response.IsSuccessStatusCode)
-                //    {
-                //        var asyncRes = await response.Content.ReadAsStringAsync();
-                //        if (!string.IsNullOrEmpty(asyncRes))
-                //            managerResult = JsonConvert.DeserializeObject<ServerManagerResult>(asyncRes);
-                //        else
-                //            managerResult.State = -100;
+                return 0;
+            });
+        }
+        public Task<ServerManagerResult> VerifyUser()
+        {
+            ServerManagerResult managerResult = new ServerManagerResult();
 
-                //    }
-                //}
-                //catch (Exception ex)
-                //{
-                //    Models.Utils.TrackErrors(MethodBase.GetCurrentMethod(), ex);
-                //    Debug.WriteLine(ex.StackTrace);
-                //}
+            return Task.Run(async () =>
+            {
+                var stringVal = AppConstants.BASE_URL + "verifyUser?user_id=";
+
+                try
+                {
+                    using (var client = new HttpClient())
+                    {
+                        client.BaseAddress = new Uri(String.Format(stringVal));
+                        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", AppConstants.Token);
+                        var request = await client.PostAsync(client.BaseAddress, null);
+                        var response = await request.Content.ReadAsStringAsync();
+                        if (request.IsSuccessStatusCode)
+                        {
+                            if (!string.IsNullOrEmpty(response))
+                            {
+                                managerResult = JsonConvert.DeserializeObject<ServerManagerResult>(response);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                }
+
                 return managerResult;
+            });
+        }
+        public Task<string> UserPlayRequest(int tableType)
+        {
+            string res = null;
+            return Task.Run(async () =>
+            {
+                
+
+                try
+                {
+                    var stringVal = AppConstants.BASE_URL + "userPlayRequest?usr_id=" + UsrManager.CurrentUser.Guid + "&usr_symbol=" + 1 + "&table_type=" + tableType;
+                    using (var client = new HttpClient())
+                    {
+                        client.BaseAddress = new Uri(String.Format(stringVal));
+                        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", AppConstants.Token);
+                        var request = await client.PostAsync(client.BaseAddress, null);
+                        var response = await request.Content.ReadAsStringAsync();
+                        if (request.IsSuccessStatusCode)
+                        {
+                            if (!string.IsNullOrEmpty(response))
+                            {
+                                res = response;
+                            }
+                        }
+
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                    
+                }
+                return res;
+                
             });
         }
 

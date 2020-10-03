@@ -3,3 +3,13 @@
 *.log
 **/bin
 **/obj
+<<<<<<< HEAD
+=======
+*.cache
+*.bin
+*.obj
+*.pdb
+*.exe
+**/vs
+
+>>>>>>> master
