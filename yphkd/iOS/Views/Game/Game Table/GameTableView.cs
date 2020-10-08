@@ -33,13 +33,13 @@ namespace yphkd.iOS
 
             
             setupHands();
-
+            //showWaitingPopup();
         }
         public void setRootController(UIViewController controller)
         {
             rootController = controller;
         }
-        private void showWaitingPopup()
+        public void showWaitingPopup()
         {
             var homeViewcontroller = rootController as HomeViewController;
             if (homeViewcontroller != null)
@@ -66,7 +66,8 @@ namespace yphkd.iOS
                 AnimationManager.Fade(popupView, true, onFinished: () =>
                 {
                     popupView.AddSubview(waitPlayerPopup);
-                    AnimationManager.SlideVerticaly(waitPlayerPopup, true, true);
+                    waitPlayerPopup.SetupCountDown();
+                    //AnimationManager.SlideVerticaly(waitPlayerPopup, true, true);
 
                 });
             }

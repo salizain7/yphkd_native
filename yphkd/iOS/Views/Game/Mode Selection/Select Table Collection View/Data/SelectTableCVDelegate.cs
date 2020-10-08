@@ -68,6 +68,7 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
 
                             homeViewcontroller.getMainView().AddSubview(gameTableView);
                             AnimationManager.Fade(gameTableView, true);
+                            gameTableView.showWaitingPopup();
 
                         });
                         

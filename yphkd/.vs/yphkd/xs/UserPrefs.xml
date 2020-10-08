@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Game/Game Table/GameTableView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Popups/Waiting For Players Popup/WaitPlayersPopup.cs">
     <Files>
       <File FileName="ServerApi/NetworkApi.cs" Line="41" Column="80" />
       <File FileName="Users/User.cs" Line="1" Column="1" />
-      <File FileName="iOS/Views/Tabs/Home Tab/HomeTabView.cs" Line="194" Column="13" />
+      <File FileName="iOS/Views/Tabs/Home Tab/HomeTabView.cs" Line="160" Column="25" />
       <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.cs" Line="38" Column="10" />
       <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/SelectTableCollectionView.cs" Line="33" Column="50" />
-      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" Line="41" Column="1" />
-      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="53" Column="35" />
-      <File FileName="iOS/Views/Popups/Waiting For Players Popup/WaitPlayersPopup.cs" Line="23" Column="10" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" Line="71" Column="52" />
+      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="69" Column="43" />
+      <File FileName="iOS/Views/Popups/Waiting For Players Popup/WaitPlayersPopup.cs" Line="43" Column="91" />
       <File FileName="iOS/View Controllers/Home Screen/HomeViewController.cs" Line="59" Column="10" />
-      <File FileName="iOS/Common/CommonMethods.cs" Line="122" Column="10" />
+      <File FileName="iOS/Common/CommonMethods.cs" Line="108" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,12 +24,11 @@
               <Node name="Common" expanded="True" />
               <Node name="View Controllers" expanded="True">
                 <Node name="Home Screen" expanded="True" />
+                <Node name="Splash View Controller" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Game" expanded="True">
-                  <Node name="Game Table" expanded="True">
-                    <Node name="GameTableView.cs" selected="True" />
-                  </Node>
+                  <Node name="Game Table" expanded="True" />
                   <Node name="Mode Selection" expanded="True">
                     <Node name="Select Table Collection View" expanded="True">
                       <Node name="Data" expanded="True" />
@@ -40,7 +39,7 @@
                   <Node name="Base Popup" expanded="True" />
                   <Node name="Result Popup" expanded="True" />
                   <Node name="Waiting For Players Popup" expanded="True">
-                    <Node name="WaitPlayersPopup.cs" expanded="True" />
+                    <Node name="WaitPlayersPopup.cs" expanded="True" selected="True" />
                   </Node>
                 </Node>
                 <Node name="Tabs" expanded="True">
