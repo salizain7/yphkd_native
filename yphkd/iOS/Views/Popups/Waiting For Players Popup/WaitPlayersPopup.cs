@@ -1,6 +1,8 @@
 using Foundation;
 using System;
 using UIKit;
+using yphkd.iOS.Constants;
+using yphkd.iOS.Managers;
 
 namespace yphkd.iOS
 {
@@ -27,12 +29,17 @@ namespace yphkd.iOS
 
             setupView();
             //SetUpBlurBackground();
+            AnimationManager.RotateContinous(loaderImg, Duration: 5);
         }
         private void setupView()
         {
             this.BackgroundColor = UIColor.Clear;
             waitingLbl.Text = "Waiting for players...";
             timerLbl.Text = "5";
+
+            loaderImg.Image = UIImage.FromBundle(ImageConstants.Splash.loaderImg);
+            loaderImg.ContentMode = UIViewContentMode.ScaleAspectFit;
+            loaderBgView.BackgroundColor = UIColor.Clear;
         }
         public void SetupCountDown()
         {
@@ -52,10 +59,15 @@ namespace yphkd.iOS
                     {
                         TimeLeftTimer.Invalidate();
                         TimeLeftTimer = null;
+                        AnimationManager.Fade(this.Superview, false, onFinished: ()=> {
+                            this.Superview.RemoveFromSuperview();
+
+                        });
                     }
                 });
             }
         }
+        
         
     }
 }
