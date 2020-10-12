@@ -352,6 +352,10 @@
     <Compile Include="Views\Popups\Waiting For Players Popup\WaitPlayersPopup.designer.cs">
       <DependentUpon>WaitPlayersPopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Popups\Select Hand Popup\SelectHandPopupView.cs" />
+    <Compile Include="Views\Popups\Select Hand Popup\SelectHandPopupView.designer.cs">
+      <DependentUpon>SelectHandPopupView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
@@ -387,9 +391,11 @@
     <InterfaceDefinition Include="Views\Popups\Result Popup\ResultPopupView.xib" />
     <InterfaceDefinition Include="Views\Popups\Base Popup\BasePopupView.xib" />
     <InterfaceDefinition Include="Views\Popups\Waiting For Players Popup\WaitPlayersPopup.xib" />
+    <InterfaceDefinition Include="Views\Popups\Select Hand Popup\SelectHandPopupView.xib" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Popups\Waiting For Players Popup\" />
+    <Folder Include="Views\Popups\Select Hand Popup\" />
   </ItemGroup>
   <Import Project="..\yphkd.projitems" Label="Shared" Condition="Exists('..\yphkd.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

@@ -13,6 +13,7 @@ namespace yphkd.iOS
         PlayerView playerView;
         PlayerScoreView playerScoreView;
         UIViewController rootController;
+        BasePopupView basePopupView;
         public static WaitPlayersPopup waitPlayerPopup;
 
         public GameTableView (IntPtr handle) : base (handle)
@@ -66,13 +67,105 @@ namespace yphkd.iOS
                 AnimationManager.Fade(popupView, true, onFinished: () =>
                 {
                     popupView.AddSubview(waitPlayerPopup);
-                    waitPlayerPopup.SetupCountDown();
+                    startFindingPlayers(popupView);
+
+
+                    
                     //AnimationManager.SlideVerticaly(waitPlayerPopup, true, true);
 
                 });
             }
 
                 
+        }
+        
+        private void startFindingPlayers(UIView popupView)
+        {
+            NSTimer TimeLeftTimer = null;
+            int TimeLeft = 5;
+            if (TimeLeftTimer == null)
+            {
+                TimeLeftTimer = NSTimer.CreateRepeatingScheduledTimer(new TimeSpan(0, 0, 1), (NSTimer obj) =>
+                {
+                    if (TimeLeft > 0)
+                    {
+                        TimeLeft--;
+                        waitPlayerPopup.BindData(TimeLeft);
+                        
+                    }
+                    else if (TimeLeft == 0)
+                    {
+                        TimeLeftTimer.Invalidate();
+                        TimeLeftTimer = null;
+
+                        AnimationManager.Fade(popupView, false, onFinished: () =>
+                        {
+                            popupView.Hidden = true;
+                            NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 3), delegate
+                            {
+                                showSelectHandPopup(popupView);
+                            });
+
+                        });
+                        
+                    }
+                });
+            }
+            
+        }
+        private void showSelectHandPopup(UIView popupView)
+        {
+            popupView.Hidden = false;
+            CommonMethods.clearView(popupView);
+            popupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
+
+            basePopupView = BasePopupView.Create();
+            basePopupView.showSelectHandPopup(rootController, "SELECT ANY HAND","", false);
+            //basePopupView.showWinnerPopup(RootViewController, "Winner of Round 1", "Home", true);
+            //basePopupView.showWinnerPopup(RootViewController, "Sorry !\n Better luck next time", "Home", true);
+            basePopupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, popupView.Frame.Height);
+
+            this.BringSubviewToFront(popupView);
+
+            CommonMethods.SetUpBlurBackground(popupView);
+
+
+
+            AnimationManager.Fade(popupView, true, onFinished: () =>
+            {
+                popupView.AddSubview(basePopupView);
+                setupSelectionTimer(basePopupView);
+
+            });
+        }
+        public void setupSelectionTimer(BasePopupView basePopupView)
+        {
+            NSTimer TimeLeftTimer = null;
+            int TimeLeft = 5;
+            if (TimeLeftTimer == null)
+            {
+                TimeLeftTimer = NSTimer.CreateRepeatingScheduledTimer(new TimeSpan(0, 0, 1), (NSTimer obj) =>
+                {
+                    if (TimeLeft > 0)
+                    {
+                        TimeLeft--;
+                        basePopupView.setBtnTitle("Time: " + TimeLeft.ToString());
+
+                    }
+                    else if (TimeLeft == 0)
+                    {
+                        TimeLeftTimer.Invalidate();
+                        TimeLeftTimer = null;
+                        AnimationManager.Fade(basePopupView.Superview, false, onFinished: () =>
+                        {
+                            basePopupView.Superview.Hidden = true;
+                            
+
+                        });
+
+                    }
+                });
+            }
         }
         private void setupHands()
         {

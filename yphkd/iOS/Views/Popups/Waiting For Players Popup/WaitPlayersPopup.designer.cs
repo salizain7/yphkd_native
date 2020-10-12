@@ -1,58 +1,39 @@
 // WARNING
 //
-// This file has been generated automatically by Visual Studio to store outlets and
-// actions made in the UI designer. If it is removed, they will be lost.
-// Manual changes to this file may not be handled correctly.
+// This file has been generated automatically by Visual Studio from the outlets and
+// actions declared in your storyboard file.
+// Manual changes to this file will not be maintained.
 //
 using Foundation;
+using System;
 using System.CodeDom.Compiler;
 
 namespace yphkd.iOS
 {
-	[Register ("WaitPlayersPopup")]
-	partial class WaitPlayersPopup
-	{
-		[Outlet]
-		UIKit.UIView bottomView { get; set; }
+    [Register ("WaitPlayersPopup")]
+    partial class WaitPlayersPopup
+    {
+        [Outlet]
+        UIKit.UIView bottomView { get; set; }
 
-		[Outlet]
-		UIKit.UIView loaderBgView { get; set; }
 
-		[Outlet]
-		UIKit.UIImageView loaderImg { get; set; }
+        [Outlet]
+        UIKit.UIView loaderBgView { get; set; }
 
-		[Outlet]
-		UIKit.UILabel timerLbl { get; set; }
 
-		[Outlet]
-		UIKit.UILabel waitingLbl { get; set; }
-		
-		void ReleaseDesignerOutlets ()
-		{
-			if (loaderBgView != null) {
-				loaderBgView.Dispose ();
-				loaderBgView = null;
-			}
+        [Outlet]
+        UIKit.UIImageView loaderImg { get; set; }
 
-			if (loaderImg != null) {
-				loaderImg.Dispose ();
-				loaderImg = null;
-			}
 
-			if (bottomView != null) {
-				bottomView.Dispose ();
-				bottomView = null;
-			}
+        [Outlet]
+        UIKit.UILabel timerLbl { get; set; }
 
-			if (timerLbl != null) {
-				timerLbl.Dispose ();
-				timerLbl = null;
-			}
 
-			if (waitingLbl != null) {
-				waitingLbl.Dispose ();
-				waitingLbl = null;
-			}
-		}
-	}
+        [Outlet]
+        UIKit.UILabel waitingLbl { get; set; }
+
+        void ReleaseDesignerOutlets ()
+        {
+        }
+    }
 }

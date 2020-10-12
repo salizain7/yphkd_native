@@ -11,6 +11,7 @@ namespace yphkd.iOS
     {
         SelectTableCollectionView collectionView;
         ResultPopupView resultPopupView;
+        SelectHandPopupView selectHandPopupView;
         UIViewController rootController;
         public BasePopupView (IntPtr handle) : base (handle)
         {
@@ -49,7 +50,24 @@ namespace yphkd.iOS
         {
             dismissPopup();
         }
+        public void showSelectHandPopup(UIViewController controller, string title, string btnTitle = "", bool isBtn = false)
+        {
+            rootController = controller;
+            selectHandPopupView = SelectHandPopupView.Create();
 
+            centerView.AddSubview(selectHandPopupView);
+
+            titleLbl.Text = title;
+
+            //bottomBtn.SetTitle("Time: ", UIControlState.Normal);
+            bottomBtn.UserInteractionEnabled = isBtn;
+            
+        }
+        public void setBtnTitle(string btnTitle)
+        {
+            bottomBtn.SetTitle(btnTitle, UIControlState.Normal);
+        }
+        
         public void showSelectTablePopup(UIViewController controller, string title, string btnTitle, bool isBtn = false)
         {
             rootController = controller;
