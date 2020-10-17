@@ -14,27 +14,37 @@ namespace yphkd.Facade
         public GameManager()
         {
         }
-        //public static UsrGameStatusByWeekResult GetGameStatusByWeek(string weekNo)
-        //{
-        //    UsrGameStatusByWeekResult UsrGameStatusResultObj = null;
-        //    var response = sm.GetGameStatusByWeek(weekNo).Result; //GetGameStatus by weekId
-
-        //    if (!string.IsNullOrEmpty(response))
-        //    {
-
-        //        UsrGameStatusResultObj = JsonConvert.DeserializeObject<UsrGameStatusByWeekResult>(response);
-
-        //    }
-        //    return UsrGameStatusResultObj;
-        //}
-        public async  Task<UserPlayRequestResult> UserPlayRequestAsync(int tableType)
+       
+        public async  Task<UserPlayRequestResult> UserPlayRequest(int tableType)
         {
             UserPlayRequestResult uprResult = null;
-            var response = await sm.UserPlayRequest(tableType);
-            uprResult = JsonConvert.DeserializeObject<UserPlayRequestResult>(response);
+            try
+            {
+                var response = await sm.UserPlayRequest(tableType);
+                uprResult = JsonConvert.DeserializeObject<UserPlayRequestResult>(response);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Exception : " +  e.StackTrace);
+            }
             return uprResult;
 
         }
 
+        public async Task<GameRoundWinnerResult> GetWinner(int roundNo, int gameTableId, int symbolSelected)
+        {
+            GameRoundWinnerResult rwResult = null;
+            try
+            {
+                var response = await sm.GetWinner(roundNo, gameTableId, symbolSelected);
+                rwResult = JsonConvert.DeserializeObject<GameRoundWinnerResult>(response);
+            }            
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception : " + e.StackTrace);
+            }
+            return rwResult;
+
+        }
     }
 }

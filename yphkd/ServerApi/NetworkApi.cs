@@ -178,6 +178,43 @@ namespace yphkd.ServerApi
             });
         }
 
+        public Task<string> GetWinner(int roundNo,int gameTableId, int symbolSelected)
+        {
+            string res = null;
+            return Task.Run(async () =>
+            {
+
+
+                try
+                {
+                    var stringVal = AppConstants.BASE_URL + "getWinner?usr_id=" + 199 + "&round_no=" + roundNo + "&game_table_id="+ gameTableId + "&symbol_selected=" + symbolSelected;
+                    using (var client = new HttpClient())
+                    {
+                        client.BaseAddress = new Uri(String.Format(stringVal));
+                        client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", AppConstants.Token);
+                        var request = await client.PostAsync(client.BaseAddress, null);
+                        var response = await request.Content.ReadAsStringAsync();
+                        if (request.IsSuccessStatusCode)
+                        {
+                            if (!string.IsNullOrEmpty(response))
+                            {
+                                res = response;
+                            }
+                        }
+
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+
+                }
+                return res;
+
+            });
+        }
+
         public Task<int> SavePreferencesToServer(string user)
         {
             return Task.Run(async () =>
