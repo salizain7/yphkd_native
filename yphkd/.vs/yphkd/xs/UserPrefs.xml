@@ -1,14 +1,18 @@
 ﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/View Controllers/Tutorial/TutorialViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Facade/GameManager.cs">
     <Files>
       <File FileName="iOS/View Controllers/Tutorial/TutorialViewController.cs" Line="41" Column="40" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" Line="52" Column="49" />
+      <File FileName="Facade/GameManager.cs" Line="18" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="yphkd" expanded="True">
             <Node name="yphkd" expanded="True">
-              <Node name="Facade" expanded="True" />
+              <Node name="Facade" expanded="True">
+                <Node name="GameManager.cs" selected="True" />
+              </Node>
               <Node name="ServerApi" expanded="True" />
               <Node name="Users" expanded="True" />
             </Node>
@@ -20,7 +24,6 @@
                 <Node name="Tutorial" expanded="True">
                   <Node name="Cell" expanded="True" />
                   <Node name="Data" expanded="True" />
-                  <Node name="TutorialViewController.cs" selected="True" />
                 </Node>
               </Node>
               <Node name="Views" expanded="True">

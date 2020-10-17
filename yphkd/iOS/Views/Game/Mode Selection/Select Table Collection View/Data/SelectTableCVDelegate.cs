@@ -49,7 +49,7 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
                 AnimationManager.Bounce(cell.ContentView, onFinished: async ()=> {
 
                     GameManager gameManager = new GameManager();
-                    await gameManager.UserPlayRequestAsync(5);
+                    await gameManager.UserPlayRequest(5);
                     var homeViewcontroller = controller as HomeViewController;
                     if(homeViewcontroller != null)
                     {
