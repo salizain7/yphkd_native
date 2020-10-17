@@ -54,7 +54,7 @@ namespace yphkd.iOS
         {
             rootController = controller;
             selectHandPopupView = SelectHandPopupView.Create();
-
+            selectHandPopupView.Frame = new CGRect(0, 0, centerView.Frame.Width, centerView.Frame.Height);
             centerView.AddSubview(selectHandPopupView);
 
             titleLbl.Text = title;

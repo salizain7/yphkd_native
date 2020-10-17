@@ -22,7 +22,7 @@ namespace yphkd.iOS.ViewControllers.Tutorial.Cell
         {
             // Note: this .ctor should not contain any initialization logic.
         }
-        public void setupTutorial(int cellNo)
+        public void setupTutorial(int cellNo, UIViewController parentController)
         {
             if(cellNo == 0)
             {
@@ -33,9 +33,11 @@ namespace yphkd.iOS.ViewControllers.Tutorial.Cell
             else
             {
                 selectFavHandView = SelectFavHandView.Create();
+                selectFavHandView.setRootController(parentController);
                 selectFavHandView.Frame = new CGRect(0, 0, this.Frame.Size.Width, this.Frame.Size.Height);
                 this.AddSubview(selectFavHandView);
             }
         }
+        
     }
 }

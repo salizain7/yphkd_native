@@ -1,6 +1,7 @@
 using Foundation;
 using System;
 using UIKit;
+using yphkd.iOS.ViewControllers.Tutorial;
 
 namespace yphkd.iOS
 {
@@ -15,5 +16,6 @@ namespace yphkd.iOS
             var v = arr.GetItem<WelcomeView>(0);
             return v;
         }
+        
     }
 }

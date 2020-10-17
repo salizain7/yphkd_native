@@ -14,7 +14,7 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
     {
         GameTableView gameTableView;
         UIViewController controller;
-        GameManager gameManager = new GameManager();
+        
 
         public SelectTableCVDelegate(UIViewController rootController)
         {
@@ -47,7 +47,8 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
             if (cell != null)
             {
                 AnimationManager.Bounce(cell.ContentView, onFinished: async ()=> {
-                    
+
+                    GameManager gameManager = new GameManager();
                     await gameManager.UserPlayRequestAsync(5);
                     var homeViewcontroller = controller as HomeViewController;
                     if(homeViewcontroller != null)

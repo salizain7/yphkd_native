@@ -1,31 +1,31 @@
 ﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Game/Game Table/GameTableView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/View Controllers/Tutorial/TutorialViewController.cs">
     <Files>
-      <File FileName="iOS/Views/Popups/Waiting For Players Popup/WaitPlayersPopup.cs" Line="36" Column="50" />
-      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="51" Column="52" />
-      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" Line="70" Column="43" />
-      <File FileName="iOS/Views/Tabs/Home Tab/HomeTabView.cs" Line="156" Column="36" />
-      <File FileName="iOS/Common/CommonMethods.cs" Line="1" Column="1" />
-      <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.cs" Line="53" Column="103" />
-      <File FileName="iOS/Views/Popups/Result Popup/ResultPopupView.cs" Line="22" Column="10" />
-      <File FileName="iOS/Views/Popups/Select Hand Popup/SelectHandPopupView.cs" Line="12" Column="1" />
-      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/SelectTableCollectionView.cs" Line="1" Column="1" />
-      <File FileName="iOS/View Controllers/Home Screen/HomeViewController.cs" Line="65" Column="25" />
-      <File FileName="iOS/View Controllers/Home Screen/HomeViewController.xib" />
+      <File FileName="iOS/View Controllers/Tutorial/TutorialViewController.cs" Line="41" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="yphkd" expanded="True">
+            <Node name="yphkd" expanded="True">
+              <Node name="Facade" expanded="True" />
+              <Node name="ServerApi" expanded="True" />
+              <Node name="Users" expanded="True" />
+            </Node>
             <Node name="yphkd.iOS" expanded="True">
+              <Node name="Common" expanded="True" />
               <Node name="View Controllers" expanded="True">
                 <Node name="Home Screen" expanded="True" />
+                <Node name="Splash View Controller" expanded="True" />
+                <Node name="Tutorial" expanded="True">
+                  <Node name="Cell" expanded="True" />
+                  <Node name="Data" expanded="True" />
+                  <Node name="TutorialViewController.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Game" expanded="True">
-                  <Node name="Game Table" expanded="True">
-                    <Node name="GameTableView.cs" selected="True" />
-                  </Node>
+                  <Node name="Game Table" expanded="True" />
                   <Node name="Mode Selection" expanded="True">
                     <Node name="Select Table Collection View" expanded="True">
                       <Node name="Data" expanded="True" />
@@ -40,6 +40,10 @@
                 </Node>
                 <Node name="Tabs" expanded="True">
                   <Node name="Home Tab" expanded="True" />
+                </Node>
+                <Node name="Tutorial" expanded="True">
+                  <Node name="Select Fav Hand" expanded="True" />
+                  <Node name="Welcome Screen" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -57,15 +61,20 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" relfile="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" line="51" column="1" />
-      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="153" column="1" />
-      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="123" column="1" />
       <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="77" column="1" />
-      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/Facade/UsrManager.cs" relfile="Facade/UsrManager.cs" line="38" column="1" />
-      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="35" column="1" />
       <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="50" column="1" />
-      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/Facade/GameManager.cs" relfile="Facade/GameManager.cs" line="35" column="1" />
-      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="165" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/Views/Popups/Base Popup/BasePopupView.cs" relfile="iOS/Views/Popups/Base Popup/BasePopupView.cs" line="55" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/Facade/GameManager.cs" relfile="Facade/GameManager.cs" line="32" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="153" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/Facade/UsrManager.cs" relfile="Facade/UsrManager.cs" line="21" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="217" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/Facade/UsrManager.cs" relfile="Facade/UsrManager.cs" line="37" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/Facade/UsrManager.cs" relfile="Facade/UsrManager.cs" line="35" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/Users/User.cs" relfile="Users/User.cs" line="50" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="117" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="123" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="35" column="1" />
+      <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="71" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>

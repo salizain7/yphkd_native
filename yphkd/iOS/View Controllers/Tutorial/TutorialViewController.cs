@@ -9,7 +9,8 @@ namespace yphkd.iOS.ViewControllers.Tutorial
 {
     public partial class TutorialViewController : UIViewController
     {
-       
+
+        public bool handleIsSelected { get; set; } = false;
         public TutorialViewController() : base("TutorialViewController", null)
         {
         }
@@ -30,10 +31,16 @@ namespace yphkd.iOS.ViewControllers.Tutorial
         {
             tutorialCollectionView.RegisterNibForCell(UINib.FromName(TutorialCollectionViewCell.Key, null), TutorialCollectionViewCell.Key);
 
-            tutorialCollectionView.DataSource = new TutorialCollectionViewDataSource();
-            tutorialCollectionView.Delegate = new TutorialCollectionViewDelegate();
+            tutorialCollectionView.DataSource = new TutorialCollectionViewDataSource(this);
+            tutorialCollectionView.Delegate = new TutorialCollectionViewDelegate(this);
             
         }
+        public void EnableContinueBtn(bool flag)
+        {
+            continueBtn.Enabled = flag;
+            continueBtn.Hidden = !flag;
+        }
+        
         partial void onClickContinue(UIButton sender)
         {
             if(tutorialCollectionView.IndexPathForCell(tutorialCollectionView.VisibleCells[0]).Row == 1)
@@ -44,7 +51,14 @@ namespace yphkd.iOS.ViewControllers.Tutorial
                 });
             } else
             {
-                tutorialCollectionView.ScrollToItem(NSIndexPath.FromRowSection(1, 0), UICollectionViewScrollPosition.CenteredHorizontally, true);
+                
+                BeginInvokeOnMainThread(() =>
+                {
+                    
+                    tutorialCollectionView.ScrollToItem(NSIndexPath.FromRowSection(1, 0), UICollectionViewScrollPosition.CenteredHorizontally, true);
+                    //tutorialCollectionView.ReloadData();
+                });
+                
             }
         }
     }
