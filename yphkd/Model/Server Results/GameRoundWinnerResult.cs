@@ -1,25 +1,23 @@
 ﻿using System;
+using Newtonsoft.Json;
 using yphkd.Facade;
+using yphkd.Model.Game;
 using yphkd.Users;
 
 namespace yphkd.Model.ServerResults
 {
     public class GameRoundWinnerResult
     {
-        private UsrProfile Up;
-        public UsrProfile UsrProfile
-        {
-            get
-            {
-                return Up;
-            }
-            set
-            {
-                // Up = value;
-                UsrManager.CurrentUser.Profile = value;
-                UsrManager.CurrentUser.SaveToPreferences();
-            }
-        }
+        [JsonProperty(PropertyName = "result")]
+        public int result { get; set; }
 
+        [JsonProperty(PropertyName = "game_table")]
+        public GameTable gameTable { get; set; }
+
+        [JsonProperty(PropertyName = "winner_profile")]
+        public UsrProfile winnerProfile { get; set; }
+
+        [JsonProperty(PropertyName = "game_round")]
+        public GameRound gameRound { get; set; }
     }
 }

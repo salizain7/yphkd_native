@@ -5,7 +5,9 @@ namespace yphkd.Users
 {
     public class UsrProfile
     {
-        
+        [JsonProperty(PropertyName = "id")]
+        public int id { get; set; }
+
         [JsonProperty(PropertyName = "usr_id")]
         public string Guid { get; set; }
 
@@ -24,6 +26,8 @@ namespace yphkd.Users
         [JsonProperty(PropertyName = "usr_lang")]
         public string UsrLang { get; set; }
 
+        [JsonProperty(PropertyName = "facebook_id")]
+        public string FacebookId { get; set; }
 
         [JsonProperty(PropertyName = "usr_level")]
         public int UsrLevel { get; set; }
@@ -36,7 +40,7 @@ namespace yphkd.Users
         public int UsrGender { get; set; }
 
         [JsonProperty(PropertyName = "usr_email")]
-        public int UsrEmail{ get; set; }
+        public string UsrEmail{ get; set; }
 
         
     }
