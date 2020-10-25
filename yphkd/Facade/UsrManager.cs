@@ -55,9 +55,18 @@ namespace yphkd.Facade
 
                     }
                     UsrManager.CurrentUser.SaveToPreferences();
+                } else if (UsrManager.CurrentUser == null)
+                {
+                    User user = new User();
+                    user.State = x.State;
+                    user.Guid = x.user_id;
+                    user.UserLang = "en";
+
+                    UsrManager.CurrentUser = user;
                 }
 
             }
+
             return smResult;
         }
         public bool DoShowHomeTutorial()

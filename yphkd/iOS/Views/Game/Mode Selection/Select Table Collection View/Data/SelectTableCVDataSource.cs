@@ -18,7 +18,7 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
             SelectTableCollectionViewCell Cell = collectionView.DequeueReusableCell(SelectTableCollectionViewCell.Key, indexPath) as SelectTableCollectionViewCell;
             
             Cell.BindData(((count * 100) + 200).ToString() + " COINS");
-            Cell.setViewTag(count);
+            Cell.setViewTag(count + 2);
             count++;
             return Cell;
         }

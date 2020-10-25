@@ -15,6 +15,7 @@ namespace yphkd.AppUtils
 
         public static string Game_URL = "http://35.229.202.243:51301/"; //sql8 
         public static string Token = "";
+
     }
     public static class Validation<T>
     {

@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using yphkd.Model;
+using yphkd.Model.GameDefinition;
 
 namespace yphkd.Users
 {
@@ -10,16 +11,13 @@ namespace yphkd.Users
         public UsrContent()
         {
         }
-        public UsrContent(int ContentId, int ContentType)
+        public UsrContent(int ContentId)
         {
             this.ContentId = ContentId;
-            this.ContentType = ContentType;
         }
 
         [JsonProperty(PropertyName = "user_id")]
         public string UsrId { get; set; }
-        [JsonProperty(PropertyName = "content_type")]
-        public int ContentType { get; set; }
         [JsonProperty(PropertyName = "content_id")]
         public int ContentId { get; set; }
         [JsonProperty(PropertyName = "is_fav")]
@@ -30,6 +28,8 @@ namespace yphkd.Users
         public async Task<Hand> GetHand()
         {
             Hand playerHand = new Hand();
+            playerHand.Id = ContentId;
+            playerHand.Title = Enum.GetName(typeof(GameEnums.HandEnum), ContentId);
             //playerHand = Hand.GetById(ContentId);
             //if (playerHand != null)
             //{

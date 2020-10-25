@@ -54,6 +54,11 @@ namespace yphkd.iOS
             rankViewRight.Hidden = !flag;
             rankViewLeft.Hidden = flag;
         }
+        public void BindData(string name, string favHand)
+        {
+            playerHandLbl.Text = favHand;
+            playerNameLbl.Text = name;
+        }
 
     }
 }

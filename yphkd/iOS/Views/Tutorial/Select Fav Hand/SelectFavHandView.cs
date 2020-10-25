@@ -1,6 +1,7 @@
 using Foundation;
 using System;
 using UIKit;
+using yphkd.iOS.Constants;
 using yphkd.iOS.ViewControllers.Tutorial;
 
 namespace yphkd.iOS
@@ -31,7 +32,7 @@ namespace yphkd.iOS
         {
             rootController = parentController;
             var controller = rootController as TutorialViewController;
-            if (controller != null && controller.handleIsSelected == false ) 
+            if (controller != null && controller.handIsSelected == false ) 
             {
                 controller.EnableContinueBtn(false);
             }
@@ -43,6 +44,11 @@ namespace yphkd.iOS
                 handView4.Layer.CornerRadius = handView5.Layer.CornerRadius = 10;
             handView1.Layer.MasksToBounds = handView2.Layer.MasksToBounds = handView3.Layer.MasksToBounds =
                     handView4.Layer.MasksToBounds = handView5.Layer.MasksToBounds = true;
+            image1.Image = UIImage.FromBundle(ImageConstants.Hands.hand_1);
+            image2.Image = UIImage.FromBundle(ImageConstants.Hands.hand_2);
+            image3.Image = UIImage.FromBundle(ImageConstants.Hands.hand_3);
+            image4.Image = UIImage.FromBundle(ImageConstants.Hands.hand_4);
+            image5.Image = UIImage.FromBundle(ImageConstants.Hands.hand_5);
         }
         public void setSelected(int viewNo)
         {
@@ -107,7 +113,8 @@ namespace yphkd.iOS
             if (controller != null)
             {
                 controller.EnableContinueBtn(true);
-                controller.handleIsSelected = true;
+                controller.handIsSelected = true;
+                controller.SaveHandAsFavourite(viewNo);
             }
         }
         partial void onClickHandBtn1(UIButton sender)

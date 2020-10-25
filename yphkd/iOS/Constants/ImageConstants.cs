@@ -58,7 +58,15 @@ namespace yphkd.iOS.Constants
             public static readonly string medal_2 = "medal_2";
             public static readonly string medal_3 = "medal_3";
         }
+        public struct Hands
+        {
+            public static readonly string hand_1 = "ic_one_finger";
+            public static readonly string hand_2 = "ic_two_finger";
+            public static readonly string hand_3 = "ic_three_finger";
+            public static readonly string hand_4 = "ic_four_finger";
+            public static readonly string hand_5 = "ic_five_finger";
 
+        }
 
 
     }

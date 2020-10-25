@@ -85,8 +85,8 @@ namespace yphkd.Users
             
             return usrContent;
         }
-
-        public void SaveUserContent(UsrContent usrContent)
+        
+        public void SetFavHand(UsrContent usrContent)
         {
 
             int indexOF = -1;
@@ -99,7 +99,7 @@ namespace yphkd.Users
                 {
                     UserContentList.RemoveAt(index);
                 }
-                indexOF = UserContentList.IndexOf(UserContentList.Find(c => c.ContentId.Equals(usrContent.ContentId) && c.ContentType.Equals(usrContent.ContentType)));
+                indexOF = UserContentList.IndexOf(UserContentList.Find(c => c.ContentId.Equals(usrContent.ContentId) ));
                 if (indexOF != -1)
                 {
                     UserContentList[indexOF] = usrContent;
@@ -186,6 +186,7 @@ namespace yphkd.Users
                     {
                         if (content.IsFav == 200)
                         {
+
                             return content.GetHand().Result;
                         }
                     }

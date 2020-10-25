@@ -7,6 +7,7 @@ using yphkd.Facade;
 using yphkd.iOS.Common;
 using yphkd.iOS.Managers;
 using yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Cell;
+using yphkd.Model.GameDefinition;
 
 namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
 {
@@ -49,7 +50,9 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
                 AnimationManager.Bounce(cell.ContentView, onFinished: async ()=> {
 
                     GameManager gameManager = new GameManager();
-                    await gameManager.UserPlayRequest(5);
+                    var cellTag = cell.getViewTag();
+                    await gameManager.UserPlayRequest(GameEnums.GetTableType(cellTag));
+                    //await gameManager.UserPlayRequest(5);
                     var homeViewcontroller = controller as HomeViewController;
                     if(homeViewcontroller != null)
                     {
@@ -63,7 +66,7 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
                             
                             gameTableView.setupPlayerView(cell.getViewTag());
                             gameTableView.setupPlayerScoreView(cell.getViewTag()) ;
-                            
+
                             CommonMethods.clearView(homeViewcontroller.getMainView());
                             homeViewcontroller.getBottomView().showAdView(true);
 

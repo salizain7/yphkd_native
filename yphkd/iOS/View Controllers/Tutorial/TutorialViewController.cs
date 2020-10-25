@@ -1,16 +1,21 @@
 ﻿using System;
+using System.Reflection;
 using Foundation;
 using UIKit;
+using yphkd.Facade;
 using yphkd.iOS.Common;
 using yphkd.iOS.ViewControllers.Tutorial.Cell;
 using yphkd.iOS.ViewControllers.Tutorial.Data;
+using yphkd.Users;
 
 namespace yphkd.iOS.ViewControllers.Tutorial
 {
     public partial class TutorialViewController : UIViewController
     {
 
-        public bool handleIsSelected { get; set; } = false;
+        public bool handIsSelected { get; set; } = false;
+        public int selectedHand { get; set; } = 0;
+
         public TutorialViewController() : base("TutorialViewController", null)
         {
         }
@@ -59,6 +64,26 @@ namespace yphkd.iOS.ViewControllers.Tutorial
                     //tutorialCollectionView.ReloadData();
                 });
                 
+            }
+        }
+        public void SaveHandAsFavourite(int handId)
+        {
+            try
+            {
+                
+                UsrContent uc = new UsrContent();
+                uc.UsrId = UsrManager.CurrentUser.Guid;
+                
+                uc.ContentId = handId;
+                uc.SetAsFavorite();
+                
+                UsrManager.CurrentUser.SetFavHand(uc);
+                UsrManager.CurrentUser.SaveToPreferences();
+               
+            }
+            catch (Exception ex)
+            {
+                Utils.TrackErrors(MethodBase.GetCurrentMethod(), ex);
             }
         }
     }

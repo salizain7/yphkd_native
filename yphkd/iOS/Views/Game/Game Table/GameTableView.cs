@@ -2,18 +2,31 @@ using CoreGraphics;
 using Foundation;
 using System;
 using UIKit;
+using yphkd.Facade;
 using yphkd.iOS.Common;
 using yphkd.iOS.Constants;
 using yphkd.iOS.Managers;
+using yphkd.Model.GameDefinition;
+using yphkd.Model.ServerResults;
 
 namespace yphkd.iOS
 {
     public partial class GameTableView : UIView
     {
-        PlayerView playerView;
+        PlayerView playerView_1;
+        PlayerView playerView_2;
+        PlayerView playerView_3;
+        PlayerView playerView_4;
+        PlayerView playerView_5;
+
         PlayerScoreView playerScoreView;
         UIViewController rootController;
         BasePopupView basePopupView;
+
+
+        UserPlayRequestResult usrPlayReqResult = new UserPlayRequestResult();
+
+        public static int selectedTableType;
         public static WaitPlayersPopup waitPlayerPopup;
 
         public GameTableView (IntPtr handle) : base (handle)
@@ -93,6 +106,13 @@ namespace yphkd.iOS
                         waitPlayerPopup.BindData(TimeLeft);
                         
                     }
+                    if (TimeLeft == 3)
+                    {
+                        InvokeInBackground(async () => {
+                            GameManager gameManager = new GameManager();
+                            usrPlayReqResult = await gameManager.UserPlayRequest(GameEnums.GetTableType(selectedTableType));
+                        });
+                    }
                     else if (TimeLeft == 0)
                     {
                         TimeLeftTimer.Invalidate();
@@ -135,7 +155,6 @@ namespace yphkd.iOS
             {
                 popupView.AddSubview(basePopupView);
                 setupSelectionTimer(basePopupView);
-
             });
         }
         public void setupSelectionTimer(BasePopupView basePopupView)
@@ -152,12 +171,16 @@ namespace yphkd.iOS
                         basePopupView.setBtnTitle("Time: " + TimeLeft.ToString());
 
                     }
+                    
                     else if (TimeLeft == 0)
                     {
                         TimeLeftTimer.Invalidate();
                         TimeLeftTimer = null;
+
+                        // hide select hand popup
                         AnimationManager.Fade(basePopupView.Superview, false, onFinished: () =>
                         {
+                            
                             basePopupView.Superview.Hidden = true;
                             
 
@@ -167,10 +190,14 @@ namespace yphkd.iOS
                 });
             }
         }
+        private void SetupPlayerProfile()
+        {
+            
+        }
         private void setupHands()
         {
             handImg1.Hidden = handImg2.Hidden = handImg3.Hidden = handImg4.Hidden = handImg5.Hidden = true;
-
+            handImg1.Image = handImg2.Image = handImg3.Image = handImg4.Image = handImg5.Image = null;
             handImg1.Transform = CGAffineTransform.MakeRotation((nfloat)(Math.PI / (1 / (180f / 180f))));
             handImg2.Transform = CGAffineTransform.MakeRotation((nfloat)(Math.PI / (1 / (90f / 180f))));
             handImg3.Transform = CGAffineTransform.MakeRotation(-(nfloat)(Math.PI / (1 / (90f / 180f))));
@@ -179,49 +206,47 @@ namespace yphkd.iOS
         }
         public void setupPlayerView(int numberOfPlayers)
         {
+            selectedTableType = numberOfPlayers;
             switch (numberOfPlayers)
             {
-                case 3:
-                    playerView = PlayerView.Create();
-                    playerView.Frame = new CGRect(0, 0, playerView5.Frame.Size.Width, playerView5.Frame.Size.Height);
-                    playerView.showRightRankView(true);
-                    playerView5.AddSubview(playerView);
+                case 5:
+                    playerView_5 = PlayerView.Create();
+                    playerView_5.Frame = new CGRect(0, 0, playerView5.Frame.Size.Width, playerView5.Frame.Size.Height);
+                    playerView_5.showRightRankView(true);
+                    playerView5.AddSubview(playerView_5);
                     handImg5.Hidden = false;
-                    goto case 2;
-                case 2:
-                    playerView = PlayerView.Create();
-                    playerView.Frame = new CGRect(0, 0, playerView4.Frame.Size.Width, playerView4.Frame.Size.Height);
-                    playerView.showRightRankView(false);
-                    playerView4.AddSubview(playerView);
+                    goto case 4;
+                case 4:
+                    playerView_4 = PlayerView.Create();
+                    playerView_4.Frame = new CGRect(0, 0, playerView4.Frame.Size.Width, playerView4.Frame.Size.Height);
+                    playerView_4.showRightRankView(false);
+                    playerView4.AddSubview(playerView_4);
                     handImg4.Hidden = false;
-                    goto case 1;
-                case 1:
-                    playerView = PlayerView.Create();
-                    playerView.Frame = new CGRect(0, 0, playerView1.Frame.Size.Width, playerView1.Frame.Size.Height);
-                    playerView.showRightRankView(true);
-                    playerView1.AddSubview(playerView);
+                    goto case 3;
+                case 3:
+                    playerView_1 = PlayerView.Create();
+                    playerView_1.Frame = new CGRect(0, 0, playerView1.Frame.Size.Width, playerView1.Frame.Size.Height);
+                    playerView_1.showRightRankView(true);
+                    playerView_1.BindData(UsrManager.CurrentUser.Profile.UsrName, UsrManager.CurrentUser.GetFavoriteHand().Title);
+                    handImg1.Image = UIImage.FromBundle(CommonMethods.GetHandImage(UsrManager.CurrentUser.GetFavoriteHand().Id));
+                    playerView1.AddSubview(playerView_1);
                     handImg1.Hidden = false;
 
-                    playerView = PlayerView.Create();
-                    playerView.Frame = new CGRect(0, 0, playerView2.Frame.Size.Width, playerView2.Frame.Size.Height);
-                    playerView.showRightRankView(false);
-                    playerView2.AddSubview(playerView);
+                    playerView_2 = PlayerView.Create();
+                    playerView_2.Frame = new CGRect(0, 0, playerView2.Frame.Size.Width, playerView2.Frame.Size.Height);
+                    playerView_2.showRightRankView(false);
+                    playerView2.AddSubview(playerView_2);
                     handImg2.Hidden = false;
 
-                    playerView = PlayerView.Create();
-                    playerView.Frame = new CGRect(0, 0, playerView3.Frame.Size.Width, playerView3.Frame.Size.Height);
-                    playerView.showRightRankView(true);
-                    playerView3.AddSubview(playerView);
+                    playerView_3 = PlayerView.Create();
+                    playerView_3.Frame = new CGRect(0, 0, playerView3.Frame.Size.Width, playerView3.Frame.Size.Height);
+                    playerView_3.showRightRankView(true);
+                    playerView3.AddSubview(playerView_3);
                     handImg3.Hidden = false;
                     break;
                 default:
                     break;
             }
-            
-
-            
-
-            
         }
 
 
@@ -229,19 +254,19 @@ namespace yphkd.iOS
         {
             switch (numberOfPlayers)
             {
-                case 3:
+                case 5:
                     playerScoreView = PlayerScoreView.Create();
                     playerScoreView.Frame = new CGRect(0, 0, playerScoreView5.Frame.Size.Width, playerScoreView5.Frame.Size.Height);
                     playerScoreView.getPlayerBgView().BackgroundColor = ColorConstants.PlayerScoreView.playerBg5;
                     playerScoreView5.AddSubview(playerScoreView);
-                    goto case 2;
-                case 2:
+                    goto case 4;
+                case 4:
                     playerScoreView = PlayerScoreView.Create();
                     playerScoreView.Frame = new CGRect(0, 0, playerScoreView4.Frame.Size.Width, playerScoreView4.Frame.Size.Height);
                     playerScoreView.getPlayerBgView().BackgroundColor = ColorConstants.PlayerScoreView.playerBg4;
                     playerScoreView4.AddSubview(playerScoreView);
-                    goto case 1;
-                case 1:
+                    goto case 3;
+                case 3:
                     playerScoreView = PlayerScoreView.Create();
                     playerScoreView.Frame = new CGRect(0, 0, playerScoreView1.Frame.Size.Width, playerScoreView1.Frame.Size.Height);
                     playerScoreView.getPlayerBgView().BackgroundColor = ColorConstants.PlayerScoreView.playerBg1;

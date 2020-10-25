@@ -36,7 +36,7 @@ namespace yphkd.iOS.ViewControllers.Tutorial.Data
                 var controller = rootController as TutorialViewController;
                 if (controller != null)
                 {
-                    if(controller.handleIsSelected == true)
+                    if(controller.handIsSelected == true)
                     {
                         controller.EnableContinueBtn(true);
                     }

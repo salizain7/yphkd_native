@@ -2,6 +2,7 @@
 using CoreAnimation;
 using CoreGraphics;
 using UIKit;
+using yphkd.iOS.Constants;
 using yphkd.iOS.ViewControllers.Tutorial;
 
 namespace yphkd.iOS.Common
@@ -120,6 +121,25 @@ namespace yphkd.iOS.Common
             view.AddSubview(visualEffectView);
 
         }
+        
+        public static string GetHandImage(int id)
+        {
+            switch (id)
+            {
+                case 1:
+                    return ImageConstants.Hands.hand_1;
 
+                case 2:
+                    return ImageConstants.Hands.hand_2;
+                case 3:
+                    return ImageConstants.Hands.hand_3;
+                case 4:
+                    return ImageConstants.Hands.hand_4;
+                case 5:
+                    return ImageConstants.Hands.hand_5;
+                default:
+                    return ImageConstants.Hands.hand_5;
+            }
+        }
     }
 }

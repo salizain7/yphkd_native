@@ -2,8 +2,10 @@ using CoreGraphics;
 using Foundation;
 using System;
 using UIKit;
+using yphkd.Facade;
 using yphkd.iOS.Constants;
 using yphkd.iOS.Managers;
+using yphkd.Model.GameDefinition;
 
 namespace yphkd.iOS
 {
@@ -55,6 +57,7 @@ namespace yphkd.iOS
             rootController = controller;
             selectHandPopupView = SelectHandPopupView.Create();
             selectHandPopupView.Frame = new CGRect(0, 0, centerView.Frame.Width, centerView.Frame.Height);
+            selectHandPopupView.setSelected(UsrManager.CurrentUser.GetFavoriteHand().Id);
             centerView.AddSubview(selectHandPopupView);
 
             titleLbl.Text = title;
