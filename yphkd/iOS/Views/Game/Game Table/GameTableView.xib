@@ -88,6 +88,12 @@
                         <action selector="onClickBackBtn:" destination="1" eventType="touchUpInside" id="bFh-Q0-Qdc"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9w-qr-Zgx">
+                    <rect key="frame" x="186" y="256" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
@@ -114,8 +120,10 @@
                 <constraint firstItem="lbw-6N-EnG" firstAttribute="trailing" secondItem="miR-9y-rvy" secondAttribute="leading" constant="15" id="NXJ-ND-GXC"/>
                 <constraint firstItem="uE4-6F-wMJ" firstAttribute="width" secondItem="SQx-KF-j5X" secondAttribute="width" id="Oit-oq-jaH"/>
                 <constraint firstItem="eBf-jS-ooX" firstAttribute="width" secondItem="GPE-4D-u3z" secondAttribute="width" id="P7Z-sm-S80"/>
+                <constraint firstItem="miR-9y-rvy" firstAttribute="top" secondItem="n9w-qr-Zgx" secondAttribute="bottom" constant="-172.5" id="QgK-Vr-tiC"/>
                 <constraint firstItem="xbt-FM-1Zb" firstAttribute="centerX" secondItem="miR-9y-rvy" secondAttribute="centerX" id="Qgg-Tj-YL4"/>
                 <constraint firstItem="iol-uK-wDh" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" multiplier="1.5" id="Qs5-4h-w42"/>
+                <constraint firstItem="n9w-qr-Zgx" firstAttribute="centerX" secondItem="miR-9y-rvy" secondAttribute="centerX" id="V27-bL-IgU"/>
                 <constraint firstItem="L0W-ce-k82" firstAttribute="width" secondItem="iol-uK-wDh" secondAttribute="width" id="VI9-aQ-qzM"/>
                 <constraint firstItem="uE4-6F-wMJ" firstAttribute="leading" secondItem="1RW-f0-smC" secondAttribute="trailing" constant="-15" id="VV5-2Q-8XZ"/>
                 <constraint firstItem="SQx-KF-j5X" firstAttribute="leading" secondItem="lbw-6N-EnG" secondAttribute="trailing" id="WGV-u5-4Oh"/>
@@ -177,6 +185,7 @@
                 <outlet property="playerView3" destination="WC1-XO-z4l" id="IQM-jb-jwe"/>
                 <outlet property="playerView4" destination="1RW-f0-smC" id="BMb-Ot-mUL"/>
                 <outlet property="playerView5" destination="RI4-bw-qi9" id="HpU-Me-w2x"/>
+                <outlet property="roundNoLbl" destination="n9w-qr-Zgx" id="1ki-pF-Ssp"/>
             </connections>
             <point key="canvasLocation" x="33.333333333333336" y="53.90625"/>
         </view>

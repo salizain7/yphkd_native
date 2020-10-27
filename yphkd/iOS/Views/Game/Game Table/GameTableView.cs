@@ -27,7 +27,7 @@ namespace yphkd.iOS
         UserPlayRequestResult usrPlayReqResult = new UserPlayRequestResult();
         GameRoundWinnerResult gameRoundWinnerResult = new GameRoundWinnerResult();
 
-
+        int roundNo = 1;
         public static WaitPlayersPopup waitPlayerPopup;
 
         public GameTableView (IntPtr handle) : base (handle)
@@ -122,15 +122,29 @@ namespace yphkd.iOS
                         AnimationManager.Fade(popupView, false, onFinished: () =>
                         {
                             popupView.Hidden = true;
-                            NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 3), delegate
-                            {
-                                showSelectHandPopup(popupView);
-                            });
+                            StartGamePlay(popupView);
 
                         });
                         
                     }
                 });
+            }
+            
+        }
+        private void StartGamePlay(UIView popupView)
+        {
+            if(roundNo <= UsrManager.CurrentUser.SelectedTableType)
+            {
+                roundNoLbl.Text = "Round " + roundNo;
+                NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 3), delegate
+                {
+                    showSelectHandPopup(popupView);
+                });
+
+            }
+            else
+            {
+                roundNoLbl.Text = "Game Over";
             }
             
         }
@@ -155,10 +169,10 @@ namespace yphkd.iOS
             AnimationManager.Fade(popupView, true, onFinished: () =>
             {
                 popupView.AddSubview(basePopupView);
-                setupSelectionTimer(basePopupView);
+                setupSelectionTimer(basePopupView, popupView);
             });
         }
-        public void setupSelectionTimer(BasePopupView basePopupView)
+        public void setupSelectionTimer(BasePopupView basePopupView, UIView superView)
         {
             NSTimer TimeLeftTimer = null;
             int TimeLeft = 5;
@@ -179,13 +193,14 @@ namespace yphkd.iOS
                         TimeLeftTimer = null;
 
                         // hide select hand popup
-                        AnimationManager.Fade(basePopupView.Superview, false, onFinished: async () =>
+                        AnimationManager.Fade(superView, false, onFinished: async () =>
                         {
                             GameManager gameManager = new GameManager();
                             basePopupView.Superview.Hidden = true;
                             SetUpUserHand();
                             gameRoundWinnerResult = await gameManager.GetWinner(1,GameEnums.GetTableType(UsrManager.CurrentUser.SelectedTableType),UsrManager.CurrentUser.SelectedHand);
-
+                            roundNo++;
+                            StartGamePlay(superView);
                         });
 
                     }
