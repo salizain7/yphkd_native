@@ -1,6 +1,7 @@
 using Foundation;
 using System;
 using UIKit;
+using yphkd.Facade;
 using yphkd.iOS.Constants;
 
 namespace yphkd.iOS
@@ -49,7 +50,7 @@ namespace yphkd.iOS
         }
         public void setSelected(int viewNo)
         {
-
+            UsrManager.CurrentUser.SelectedHand = viewNo;
             switch (viewNo)
             {
                 case 1:

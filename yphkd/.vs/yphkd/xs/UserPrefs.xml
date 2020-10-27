@@ -1,7 +1,15 @@
 ﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Game/Game Table/GameTableView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ServerApi/NetworkApi.cs">
     <Files>
-      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="252" Column="1" />
+      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="187" Column="75" />
+      <File FileName="Facade/GameManager.cs" Line="39" Column="45" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" Line="52" Column="65" />
+      <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.cs" Line="60" Column="51" />
+      <File FileName="iOS/Views/Popups/Select Hand Popup/SelectHandPopupView.cs" Line="51" Column="21" />
+      <File FileName="Model/Server Results/GameRoundWinnerResult.cs" Line="21" Column="23" />
+      <File FileName="Model/Game/GameRound.cs" Line="6" Column="38" />
+      <File FileName="Db/Tables.cs" Line="385" Column="18" />
+      <File FileName="ServerApi/NetworkApi.cs" Line="181" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +25,9 @@
                 <Node name="PlayerHand" expanded="True" />
                 <Node name="Server Results" expanded="True" />
               </Node>
-              <Node name="ServerApi" expanded="True" />
+              <Node name="ServerApi" expanded="True">
+                <Node name="NetworkApi.cs" selected="True" />
+              </Node>
               <Node name="Users" expanded="True" />
             </Node>
             <Node name="yphkd.iOS" expanded="True">
@@ -32,9 +42,7 @@
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Game" expanded="True">
-                  <Node name="Game Table" expanded="True">
-                    <Node name="GameTableView.cs" selected="True" />
-                  </Node>
+                  <Node name="Game Table" expanded="True" />
                   <Node name="Mode Selection" expanded="True">
                     <Node name="Select Table Collection View" expanded="True">
                       <Node name="Cell" expanded="True" />
@@ -74,7 +82,9 @@
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="190" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="multiprojId" Name="Multiple Projects" />

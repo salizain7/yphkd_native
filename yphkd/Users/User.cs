@@ -15,7 +15,8 @@ namespace yphkd.Users
         public string UserLang { get; set; }
 
         public int ISSynced { get; set; } = -100;
-      
+        public int SelectedHand { get; set; }
+        public int SelectedTableType { get; set; }
         public string DeviceToken { get; set; } //firebasetoken
         public int DeviceOs { get; set; } //Device OS : 10- android , 20 -ios
         public string DeviceId { get; set; }

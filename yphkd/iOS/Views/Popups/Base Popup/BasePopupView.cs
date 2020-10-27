@@ -52,12 +52,12 @@ namespace yphkd.iOS
         {
             dismissPopup();
         }
-        public void showSelectHandPopup(UIViewController controller, string title, string btnTitle = "", bool isBtn = false)
+        public void showSelectHandPopup(UIViewController controller, string title, string btnTitle = "", bool isBtn = false, int handId = 0)
         {
             rootController = controller;
             selectHandPopupView = SelectHandPopupView.Create();
             selectHandPopupView.Frame = new CGRect(0, 0, centerView.Frame.Width, centerView.Frame.Height);
-            selectHandPopupView.setSelected(UsrManager.CurrentUser.GetFavoriteHand().Id);
+            selectHandPopupView.setSelected(handId);
             centerView.AddSubview(selectHandPopupView);
 
             titleLbl.Text = title;

@@ -25,8 +25,9 @@ namespace yphkd.iOS
 
 
         UserPlayRequestResult usrPlayReqResult = new UserPlayRequestResult();
+        GameRoundWinnerResult gameRoundWinnerResult = new GameRoundWinnerResult();
 
-        public static int selectedTableType;
+
         public static WaitPlayersPopup waitPlayerPopup;
 
         public GameTableView (IntPtr handle) : base (handle)
@@ -110,7 +111,7 @@ namespace yphkd.iOS
                     {
                         InvokeInBackground(async () => {
                             GameManager gameManager = new GameManager();
-                            usrPlayReqResult = await gameManager.UserPlayRequest(GameEnums.GetTableType(selectedTableType));
+                            usrPlayReqResult = await gameManager.UserPlayRequest(GameEnums.GetTableType(UsrManager.CurrentUser.SelectedTableType));
                         });
                     }
                     else if (TimeLeft == 0)
@@ -140,7 +141,7 @@ namespace yphkd.iOS
             popupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
 
             basePopupView = BasePopupView.Create();
-            basePopupView.showSelectHandPopup(rootController, "SELECT ANY HAND","", false);
+            basePopupView.showSelectHandPopup(rootController, "SELECT ANY HAND","", false, handId: UsrManager.CurrentUser.GetFavoriteHand().Id);
             //basePopupView.showWinnerPopup(RootViewController, "Winner of Round 1", "Home", true);
             //basePopupView.showWinnerPopup(RootViewController, "Sorry !\n Better luck next time", "Home", true);
             basePopupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, popupView.Frame.Height);
@@ -178,17 +179,22 @@ namespace yphkd.iOS
                         TimeLeftTimer = null;
 
                         // hide select hand popup
-                        AnimationManager.Fade(basePopupView.Superview, false, onFinished: () =>
+                        AnimationManager.Fade(basePopupView.Superview, false, onFinished: async () =>
                         {
-                            
+                            GameManager gameManager = new GameManager();
                             basePopupView.Superview.Hidden = true;
-                            
+                            SetUpUserHand();
+                            gameRoundWinnerResult = await gameManager.GetWinner(1,GameEnums.GetTableType(UsrManager.CurrentUser.SelectedTableType),UsrManager.CurrentUser.SelectedHand);
 
                         });
 
                     }
                 });
             }
+        }
+        private void SetUpUserHand()
+        {
+            handImg1.Image = UIImage.FromBundle(CommonMethods.GetHandImage(UsrManager.CurrentUser.SelectedHand));
         }
         private void SetupPlayerProfile()
         {
@@ -206,7 +212,7 @@ namespace yphkd.iOS
         }
         public void setupPlayerView(int numberOfPlayers)
         {
-            selectedTableType = numberOfPlayers;
+            UsrManager.CurrentUser.SelectedTableType = numberOfPlayers;
             switch (numberOfPlayers)
             {
                 case 5:
@@ -228,7 +234,7 @@ namespace yphkd.iOS
                     playerView_1.Frame = new CGRect(0, 0, playerView1.Frame.Size.Width, playerView1.Frame.Size.Height);
                     playerView_1.showRightRankView(true);
                     playerView_1.BindData(UsrManager.CurrentUser.Profile.UsrName, UsrManager.CurrentUser.GetFavoriteHand().Title);
-                    handImg1.Image = UIImage.FromBundle(CommonMethods.GetHandImage(UsrManager.CurrentUser.GetFavoriteHand().Id));
+                    //handImg1.Image = UIImage.FromBundle(CommonMethods.GetHandImage(UsrManager.CurrentUser.GetFavoriteHand().Id));
                     playerView1.AddSubview(playerView_1);
                     handImg1.Hidden = false;
 
