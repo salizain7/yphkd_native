@@ -11,6 +11,7 @@ namespace yphkd.iOS
         public PlayerView (IntPtr handle) : base (handle)
         {
         }
+        bool isOnRightSideOfTable = false;
         public static PlayerView Create()
         {
             var arr = NSBundle.MainBundle.LoadNib("PlayerView", null, null);
@@ -46,18 +47,30 @@ namespace yphkd.iOS
 
             CommonMethods.makeRoundCircle(rankViewRight);
             CommonMethods.makeRoundCircle(rankViewLeft);
+            rankViewRight.Hidden = rankViewLeft.Hidden = true;
 
-            
         }
-        public void showRightRankView(bool flag)
+        public void setRankPosition(bool isOnRight)
         {
-            rankViewRight.Hidden = !flag;
-            rankViewLeft.Hidden = flag;
+            isOnRightSideOfTable = isOnRight;
+            
         }
         public void BindData(string name, string favHand)
         {
             playerHandLbl.Text = favHand;
             playerNameLbl.Text = name;
+        }
+        public void ShowWinnerRank(string rank)
+        {
+            if (isOnRightSideOfTable)
+            {
+                rankViewRight.Hidden = false;
+                rankLblRight.Text = rank;
+            } else
+            {
+                rankViewLeft.Hidden = false;
+                rankLblLeft.Text = rank;
+            }
         }
 
     }

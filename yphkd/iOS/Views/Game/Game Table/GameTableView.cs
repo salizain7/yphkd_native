@@ -133,8 +133,9 @@ namespace yphkd.iOS
         }
         private void StartGamePlay(UIView popupView)
         {
-            if(roundNo <= UsrManager.CurrentUser.SelectedTableType)
+            if(roundNo < UsrManager.CurrentUser.SelectedTableType)
             {
+                
                 roundNoLbl.Text = "Round " + roundNo;
                 NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 3), delegate
                 {
@@ -199,12 +200,47 @@ namespace yphkd.iOS
                             basePopupView.Superview.Hidden = true;
                             SetUpUserHand();
                             gameRoundWinnerResult = await gameManager.GetWinner(1,GameEnums.GetTableType(UsrManager.CurrentUser.SelectedTableType),UsrManager.CurrentUser.SelectedHand);
+                            setupRanks(roundNo);
                             roundNo++;
                             StartGamePlay(superView);
+
                         });
 
                     }
                 });
+            }
+        }
+        private void setupRanks(int winnerId)
+        {
+            //check if the current user is winner then 
+            if (winnerId != 0)
+            {
+                switch (winnerId)
+                {
+                    case 1:
+                        playerView_1.ShowWinnerRank("1st");
+
+                        break;
+                    case 2:
+                        playerView_2.ShowWinnerRank("2nd");
+                        break;
+                    case 3:
+                        if (UsrManager.CurrentUser.SelectedTableType > 3)
+                        {
+                            playerView_3.ShowWinnerRank("3rd");
+                        }
+
+                        break;
+                    case 4:
+                        if (UsrManager.CurrentUser.SelectedTableType > 4)
+                        {
+                            playerView_4.ShowWinnerRank("4th");
+                        }
+                        break;
+                    default:
+                        break;
+
+                }
             }
         }
         private void SetUpUserHand()
@@ -233,21 +269,21 @@ namespace yphkd.iOS
                 case 5:
                     playerView_5 = PlayerView.Create();
                     playerView_5.Frame = new CGRect(0, 0, playerView5.Frame.Size.Width, playerView5.Frame.Size.Height);
-                    playerView_5.showRightRankView(true);
+                    playerView_5.setRankPosition(true);
                     playerView5.AddSubview(playerView_5);
                     handImg5.Hidden = false;
                     goto case 4;
                 case 4:
                     playerView_4 = PlayerView.Create();
                     playerView_4.Frame = new CGRect(0, 0, playerView4.Frame.Size.Width, playerView4.Frame.Size.Height);
-                    playerView_4.showRightRankView(false);
+                    playerView_4.setRankPosition(false);
                     playerView4.AddSubview(playerView_4);
                     handImg4.Hidden = false;
                     goto case 3;
                 case 3:
                     playerView_1 = PlayerView.Create();
                     playerView_1.Frame = new CGRect(0, 0, playerView1.Frame.Size.Width, playerView1.Frame.Size.Height);
-                    playerView_1.showRightRankView(true);
+                    playerView_1.setRankPosition(true);
                     playerView_1.BindData(UsrManager.CurrentUser.Profile.UsrName, UsrManager.CurrentUser.GetFavoriteHand().Title);
                     //handImg1.Image = UIImage.FromBundle(CommonMethods.GetHandImage(UsrManager.CurrentUser.GetFavoriteHand().Id));
                     playerView1.AddSubview(playerView_1);
@@ -255,13 +291,13 @@ namespace yphkd.iOS
 
                     playerView_2 = PlayerView.Create();
                     playerView_2.Frame = new CGRect(0, 0, playerView2.Frame.Size.Width, playerView2.Frame.Size.Height);
-                    playerView_2.showRightRankView(false);
+                    playerView_2.setRankPosition(false);
                     playerView2.AddSubview(playerView_2);
                     handImg2.Hidden = false;
 
                     playerView_3 = PlayerView.Create();
                     playerView_3.Frame = new CGRect(0, 0, playerView3.Frame.Size.Width, playerView3.Frame.Size.Height);
-                    playerView_3.showRightRankView(true);
+                    playerView_3.setRankPosition(true);
                     playerView3.AddSubview(playerView_3);
                     handImg3.Hidden = false;
                     break;
