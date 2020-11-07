@@ -99,7 +99,7 @@ namespace yphkd.iOS
             int TimeLeft = 5;
             if (TimeLeftTimer == null)
             {
-                TimeLeftTimer = NSTimer.CreateRepeatingScheduledTimer(new TimeSpan(0, 0, 1), (NSTimer obj) =>
+                TimeLeftTimer = NSTimer.CreateRepeatingScheduledTimer(new TimeSpan(0, 0, 1), async (NSTimer obj) =>
                 {
                     if (TimeLeft > 0)
                     {
@@ -109,11 +109,10 @@ namespace yphkd.iOS
                     }
                     if (TimeLeft == 3)
                     {
-                        InvokeInBackground(async () => {
-                            GameManager gameManager = new GameManager();
-                            usrPlayReqResult = await gameManager.UserPlayRequest(GameEnums.GetTableType(UsrManager.CurrentUser.SelectedTableType));
-                        });
+                        GameManager gameManager = new GameManager();
+                        usrPlayReqResult = await gameManager.UserPlayRequest(GameEnums.GetTableType(UsrManager.CurrentUser.SelectedTableType));
                     }
+                    
                     else if (TimeLeft == 0)
                     {
                         TimeLeftTimer.Invalidate();
@@ -127,6 +126,7 @@ namespace yphkd.iOS
                         });
                         
                     }
+                    
                 });
             }
             
@@ -199,7 +199,7 @@ namespace yphkd.iOS
                             GameManager gameManager = new GameManager();
                             basePopupView.Superview.Hidden = true;
                             SetUpUserHand();
-                            gameRoundWinnerResult = await gameManager.GetWinner(1,GameEnums.GetTableType(UsrManager.CurrentUser.SelectedTableType),UsrManager.CurrentUser.SelectedHand);
+                            gameRoundWinnerResult = await gameManager.GetWinner(roundNo,GameEnums.GetTableType(UsrManager.CurrentUser.SelectedTableType),UsrManager.CurrentUser.SelectedHand);
                             setupRanks(roundNo);
                             roundNo++;
                             StartGamePlay(superView);

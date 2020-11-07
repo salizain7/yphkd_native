@@ -1,20 +1,49 @@
 ﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Game/Player/Player View/PlayerView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ServerApi/NetworkApi.cs">
     <Files>
-      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="241" Column="41" />
-      <File FileName="iOS/Views/Game/Player/Player View/PlayerView.cs" Line="52" Column="21" />
+      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="202" Column="76" />
+      <File FileName="iOS/Views/Game/Player/Player View/PlayerView.cs" />
+      <File FileName="Facade/GameManager.cs" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" />
+      <File FileName="Model/Server Results/UserPlayRequestResult.cs" />
+      <File FileName="Db/Tables.cs" />
+      <File FileName="ServerApi/NetworkApi.cs" Line="197" Column="1" />
+      <File FileName="Model/Game/Category.cs" />
+      <File FileName="Model/Game/UserDef.cs" />
+      <File FileName="Model/Game/GameTable.cs" />
+      <File FileName="Facade/UsrManager.cs" />
+      <File FileName="Users/User.cs" />
+      <File FileName="Model/Server Results/GameRoundWinnerResult.cs" />
+      <File FileName="Model/Game/GameRound.cs" />
+      <File FileName="iOS/Main.cs" />
+      <File FileName="Model/GameDefinition/GameEnums.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="yphkd" expanded="True">
+            <Node name="yphkd" expanded="True">
+              <Node name="Db" expanded="True" />
+              <Node name="Facade" expanded="True" />
+              <Node name="Model" expanded="True">
+                <Node name="Game" expanded="True" />
+                <Node name="GameDefinition" expanded="True" />
+                <Node name="Server Results" expanded="True" />
+              </Node>
+              <Node name="ServerApi" expanded="True">
+                <Node name="Interface" expanded="True" />
+                <Node name="Response Model" expanded="True" />
+                <Node name="NetworkApi.cs" selected="True" />
+              </Node>
+              <Node name="Users" expanded="True" />
+            </Node>
             <Node name="yphkd.iOS" expanded="True">
               <Node name="Views" expanded="True">
                 <Node name="Game" expanded="True">
                   <Node name="Game Table" expanded="True" />
-                  <Node name="Player" expanded="True">
-                    <Node name="Player View" expanded="True">
-                      <Node name="PlayerView.cs" selected="True" />
+                  <Node name="Mode Selection" expanded="True">
+                    <Node name="Select Table Collection View" expanded="True">
+                      <Node name="Data" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
@@ -28,7 +57,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.yphkd.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.160C676C-9301-49AE-B18C-4ED5E219C8E3" />
+  <MonoDevelop.Ide.ItemProperties.yphkd.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.655D36E7-2369-45BE-9B7E-B343E9D7EDE1" />
   <MonoDevelop.Ide.ItemProperties.yphkd FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
@@ -36,7 +65,9 @@
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="197" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="multiprojId" Name="Multiple Projects" />
