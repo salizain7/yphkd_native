@@ -98,9 +98,9 @@
 /Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/yphkd.iOS.exe
 /Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/yphkd.iOS.pdb
 /Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/yphkd.iOS.csprojAssemblyReference.cache
-/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-14.1/ibtool/_BundleResourceWithLogicalName.items
-/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-14.1/actool/_PartialAppManifest.items
-/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-14.1/actool/_BundleResourceWithLogicalName.items
-/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-14.1/coremlc/_PartialAppManifest.items
-/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-14.1/coremlc/_BundleResourceWithLogicalName.items
-/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-14.1/optimized/
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro max-14.1/ibtool/_BundleResourceWithLogicalName.items
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro max-14.1/actool/_PartialAppManifest.items
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro max-14.1/actool/_BundleResourceWithLogicalName.items
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro max-14.1/coremlc/_PartialAppManifest.items
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro max-14.1/coremlc/_BundleResourceWithLogicalName.items
+/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro max-14.1/optimized/

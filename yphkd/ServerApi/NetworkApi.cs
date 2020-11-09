@@ -150,6 +150,7 @@ namespace yphkd.ServerApi
 
                 try
                 {
+                    // pass fav symbol
                     var stringVal = AppConstants.BASE_URL + "userPlayRequest?usr_id=" + UsrManager.CurrentUser.Guid + "&usr_symbol=" + 1 + "&table_type=" + tableType;
                     using (var client = new HttpClient())
                     {

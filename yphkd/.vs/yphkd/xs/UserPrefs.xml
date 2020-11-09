@@ -3,20 +3,21 @@
     <Files>
       <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="202" Column="76" />
       <File FileName="iOS/Views/Game/Player/Player View/PlayerView.cs" />
-      <File FileName="Facade/GameManager.cs" />
+      <File FileName="Facade/GameManager.cs" Line="38" Column="14" />
       <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" />
       <File FileName="Model/Server Results/UserPlayRequestResult.cs" />
       <File FileName="Db/Tables.cs" />
-      <File FileName="ServerApi/NetworkApi.cs" Line="197" Column="1" />
+      <File FileName="ServerApi/NetworkApi.cs" Line="198" Column="1" />
       <File FileName="Model/Game/Category.cs" />
-      <File FileName="Model/Game/UserDef.cs" />
-      <File FileName="Model/Game/GameTable.cs" />
+      <File FileName="Model/Game/UserDef.cs" Line="1" Column="1" />
+      <File FileName="Model/Game/GameTable.cs" Line="1" Column="1" />
       <File FileName="Facade/UsrManager.cs" />
       <File FileName="Users/User.cs" />
-      <File FileName="Model/Server Results/GameRoundWinnerResult.cs" />
-      <File FileName="Model/Game/GameRound.cs" />
+      <File FileName="Model/Server Results/GameRoundWinnerResult.cs" Line="9" Column="18" />
+      <File FileName="Model/Game/GameRound.cs" Line="11" Column="6" />
       <File FileName="iOS/Main.cs" />
       <File FileName="Model/GameDefinition/GameEnums.cs" />
+      <File FileName="Model/Game/GameTableDefinition.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -57,7 +58,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.yphkd.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.655D36E7-2369-45BE-9B7E-B343E9D7EDE1" />
+  <MonoDevelop.Ide.ItemProperties.yphkd.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.57DF39CF-04A2-4652-8073-A41A2BB0A8EF" />
   <MonoDevelop.Ide.ItemProperties.yphkd FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
@@ -66,7 +67,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="197" column="1" />
+      <Breakpoint file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="198" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
