@@ -55,10 +55,18 @@ namespace yphkd.iOS
             isOnRightSideOfTable = isOnRight;
             
         }
-        public void BindData(string name, string favHand)
+        public void BindData(string name, string favHand, string image = "")
         {
             playerHandLbl.Text = favHand;
             playerNameLbl.Text = name;
+
+            if (!string.IsNullOrEmpty(image))
+            {
+                var url = new NSUrl(image);
+                var data = NSData.FromUrl(url);
+                playerImg.Image = UIImage.LoadFromData(data);
+            }
+            
         }
         public void ShowWinnerRank(string rank)
         {

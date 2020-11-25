@@ -6,6 +6,7 @@ using yphkd.Facade;
 using yphkd.iOS.Common;
 using yphkd.iOS.Constants;
 using yphkd.iOS.Managers;
+using yphkd.Model.Game;
 using yphkd.Model.GameDefinition;
 using yphkd.Model.ServerResults;
 
@@ -198,8 +199,13 @@ namespace yphkd.iOS
                         {
                             GameManager gameManager = new GameManager();
                             basePopupView.Superview.Hidden = true;
-                            SetUpUserHand();
+                            //SetUpUserHand();
+                            
                             gameRoundWinnerResult = await gameManager.GetWinner(roundNo,GameEnums.GetTableType(UsrManager.CurrentUser.SelectedTableType),UsrManager.CurrentUser.SelectedHand);
+                            if(gameRoundWinnerResult != null)
+                            {
+                                this.BindData(gameRoundWinnerResult, UsrManager.CurrentUser.SelectedTableType);
+                            }
                             setupRanks(roundNo);
                             roundNo++;
                             StartGamePlay(superView);
@@ -284,7 +290,7 @@ namespace yphkd.iOS
                     playerView_1 = PlayerView.Create();
                     playerView_1.Frame = new CGRect(0, 0, playerView1.Frame.Size.Width, playerView1.Frame.Size.Height);
                     playerView_1.setRankPosition(true);
-                    playerView_1.BindData(UsrManager.CurrentUser.Profile.UsrName, UsrManager.CurrentUser.GetFavoriteHand().Title);
+                    //playerView_1.BindData(UsrManager.CurrentUser.Profile.UsrName, UsrManager.CurrentUser.GetFavoriteHand().Title);
                     //handImg1.Image = UIImage.FromBundle(CommonMethods.GetHandImage(UsrManager.CurrentUser.GetFavoriteHand().Id));
                     playerView1.AddSubview(playerView_1);
                     handImg1.Hidden = false;
@@ -338,6 +344,36 @@ namespace yphkd.iOS
                     playerScoreView.Frame = new CGRect(0, 0, playerScoreView3.Frame.Size.Width, playerScoreView3.Frame.Size.Height);
                     playerScoreView.getPlayerBgView().BackgroundColor = ColorConstants.PlayerScoreView.playerBg3;
                     playerScoreView3.AddSubview(playerScoreView);
+                    break;
+                default:
+                    break;
+            }
+        }
+        public void BindData(GameRoundWinnerResult gameRoundWinnerResult, int numberOfPlayers)
+        {
+            GameTable gameTable = gameRoundWinnerResult.gameTable;
+            switch (numberOfPlayers)
+            {
+                case 5:
+                    handImg5.Image = UIImage.FromBundle(CommonMethods.GetHandImage(gameTable.Player5Symbol));
+                    
+                    handImg5.Hidden = false;
+                    goto case 4;
+                case 4:
+
+                    handImg4.Image = UIImage.FromBundle(CommonMethods.GetHandImage(gameTable.Player4Symbol));
+                    handImg4.Hidden = false;
+                    goto case 3;
+                case 3:
+                    playerView_1.BindData(UsrManager.CurrentUser.Profile.UsrName, UsrManager.CurrentUser.GetFavoriteHand().Title);
+                    handImg1.Image = UIImage.FromBundle(CommonMethods.GetHandImage(UsrManager.CurrentUser.SelectedHand));
+                    handImg1.Hidden = false;
+
+                    handImg2.Image = UIImage.FromBundle(CommonMethods.GetHandImage(gameTable.Player2Symbol));
+                    handImg2.Hidden = false;
+
+                    handImg3.Image = UIImage.FromBundle(CommonMethods.GetHandImage(gameTable.Player3Symbol));
+                    handImg3.Hidden = false;
                     break;
                 default:
                     break;
