@@ -102,6 +102,8 @@ namespace yphkd.iOS.Constants
         }
         public struct PlayerScoreView
         {
+
+
             // light blue
             public static readonly UIColor playerBg1 = UIColor.FromRGB(14, 141, 199);
 
@@ -116,6 +118,8 @@ namespace yphkd.iOS.Constants
 
             // green
             public static readonly UIColor playerBg5 = UIColor.FromRGB(72, 145, 61);
+
+            public static readonly UIColor[] playersColors = {playerBg1, playerBg2, playerBg3, playerBg4, playerBg5 };
         }
 
         public struct Shop

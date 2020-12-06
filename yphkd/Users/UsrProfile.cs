@@ -32,15 +32,14 @@ namespace yphkd.Users
         [JsonProperty(PropertyName = "usr_level")]
         public int UsrLevel { get; set; }
 
-      
         [JsonProperty(PropertyName = "usr_country")]
         public int UsrCountry { get; set; }
 
         [JsonProperty(PropertyName = "usr_gender")]
         public int UsrGender { get; set; }
 
-        [JsonProperty(PropertyName = "usr_email")]
-        public string UsrEmail{ get; set; }
+        [JsonProperty(PropertyName = "usr_symbol")]
+        public string UsrSymbol{ get; set; }
 
         
     }
