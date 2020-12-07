@@ -43,8 +43,17 @@ namespace yphkd.iOS
             playerImg.Image = UIImage.FromBundle( ImageConstants.Common.placeholder_img);
             
         }
-        public void BindData()
+        public void BindData(string favHand, string score = "", string image = "")
         {
+            playerHandLbl.Text = favHand;
+            playerScoreLbl.Text = score;
+
+            if (!string.IsNullOrEmpty(image))
+            {
+                var url = new NSUrl(image);
+                var data = NSData.FromUrl(url);
+                playerImg.Image = UIImage.LoadFromData(data);
+            }
 
         }
         public UIView getPlayerBgView()

@@ -170,28 +170,7 @@ namespace yphkd.iOS
             }
 
         }
-        private void showLooserPopup(UIView popupView)
-        {
-            popupView.Hidden = false;
-            CommonMethods.clearView(popupView);
-            popupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
-
-            basePopupView = BasePopupView.Create();
-            basePopupView.showLooserPopup(rootController, "Sorry you didn't win this round", "Continue");
-            //basePopupView.showWinnerPopup(RootViewController, "Winner of Round 1", "Home", true);
-            //basePopupView.showWinnerPopup(RootViewController, "Sorry !\n Better luck next time", "Home", true);
-            basePopupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, popupView.Frame.Height);
-
-            this.BringSubviewToFront(popupView);
-
-            CommonMethods.SetUpBlurBackground(popupView);
-
-            AnimationManager.Fade(popupView, true, onFinished: () =>
-            {
-                popupView.AddSubview(basePopupView);
-                setupSelectionTimer(basePopupView, popupView);
-            });
-        }
+        
         private void showSelectHandPopup(UIView popupView)
         {
             popupView.Hidden = false;
@@ -246,7 +225,7 @@ namespace yphkd.iOS
                             gameRoundWinnerResult = await gameManager.GetWinner(roundNo, GameEnums.GetTableType(UsrManager.CurrentUser.SelectedTableType), UsrManager.CurrentUser.SelectedHand);
                             if (gameRoundWinnerResult != null)
                             {
-                                this.ShowPlayersSelecteHands(gameRoundWinnerResult, UsrManager.CurrentUser.SelectedTableType);
+                                this.ShowPlayersSelectedHands(gameRoundWinnerResult, UsrManager.CurrentUser.SelectedTableType, superView);
                             }
                             NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 3), delegate
                             {
@@ -254,17 +233,11 @@ namespace yphkd.iOS
                                 roundNo++;
                             });
 
-                            NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 3), delegate
-                            {
-                                StartGamePlay(superView);
-                            });
 
-
-
-
-
-
-                            
+                            //NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 5), delegate
+                            //{
+                            //    StartGamePlay(superView);
+                            //});
 
                         });
 
@@ -282,6 +255,7 @@ namespace yphkd.iOS
                 playerViews[winnerId - 1].ShowWinnerRank(winnerId.ToString());
                 
             }
+
         }
        
         private void setupHands()
@@ -336,11 +310,16 @@ namespace yphkd.iOS
                 playerViews[i].BindData(playerProfiles[i].UsrName,
                         Enum.GetName(typeof(GameEnums.HandEnum), Int32.Parse(playerProfiles[i].UsrSymbol)),
                         playerProfiles[i].UsrImg);
+                playerScoreViews[i].BindData(
+                    Enum.GetName(typeof(GameEnums.HandEnum), Int32.Parse(playerProfiles[i].UsrSymbol)),
+                    playerProfiles[i].UsrCoins.ToString(),
+                    playerProfiles[i].UsrImg
+                    );
             }
 
             
         }
-        public void ShowPlayersSelecteHands(GameRoundWinnerResult gameRoundWinnerResult, int numberOfPlayers)
+        public void ShowPlayersSelectedHands(GameRoundWinnerResult gameRoundWinnerResult, int numberOfPlayers, UIView popupView)
         {
             GameTable gameTable = gameRoundWinnerResult.gameTable;
 
@@ -357,6 +336,73 @@ namespace yphkd.iOS
                 playerHandImages[i].Image = UIImage.FromBundle(CommonMethods.GetHandImage(playersFavSymbols[i]));
             }
 
+            if(UsrManager.CurrentUser.Guid == gameRoundWinnerResult.winnerProfile.Guid)
+            {
+                //show winner popup
+                showWinnerPopup(popupView);
+            }
+            else
+            {
+                //show looser popup
+                showLooserPopup(popupView);
+            }
+
+        }
+        private void showWinnerPopup(UIView popupView)
+        {
+            popupView.Hidden = false;
+            CommonMethods.clearView(popupView);
+            popupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
+
+            basePopupView = BasePopupView.Create();
+            //basePopupView.showLooserPopup(rootController, "Sorry you didn't win this round", "Continue", true);
+            basePopupView.showWinnerPopup(rootController, "Winner of Round " + roundNo, "Home", true);
+            //basePopupView.showWinnerPopup(RootViewController, "Sorry !\n Better luck next time", "Home", true);
+            basePopupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, popupView.Frame.Height);
+
+            this.BringSubviewToFront(popupView);
+
+            CommonMethods.SetUpBlurBackground(popupView);
+            NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 5), delegate
+            {
+                
+            });
+            AnimationManager.Fade(popupView, true, onFinished: () =>
+            {
+                popupView.AddSubview(basePopupView);
+                NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 5), delegate
+                {
+                    StartGamePlay(popupView);
+                });
+            });
+        }
+        private void showLooserPopup(UIView popupView)
+        {
+            popupView.Hidden = false;
+            CommonMethods.clearView(popupView);
+            popupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
+
+            basePopupView = BasePopupView.Create();
+            basePopupView.showLooserPopup(rootController, "Sorry you didn't win this round", "Continue", true);
+            //basePopupView.showWinnerPopup(RootViewController, "Winner of Round 1", "Home", true);
+            //basePopupView.showWinnerPopup(RootViewController, "Sorry !\n Better luck next time", "Home", true);
+            basePopupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, popupView.Frame.Height);
+
+            this.BringSubviewToFront(popupView);
+
+            CommonMethods.SetUpBlurBackground(popupView);
+            NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 5), delegate
+            {
+
+            });
+            AnimationManager.Fade(popupView, true, onFinished: () =>
+            {
+                popupView.AddSubview(basePopupView);
+                NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 5), delegate
+                {
+                    StartGamePlay(popupView);
+                });
+            });
         }
         partial void onClickBackBtn(UIButton sender)
         {

@@ -1,22 +1,15 @@
 ﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Constants/ColorConstants.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ServerApi/NetworkApi.cs">
     <Files>
-      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="385" Column="108" />
-      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" Line="78" Column="51" />
-      <File FileName="Facade/GameManager.cs" Line="32" Column="1" />
-      <File FileName="Model/Server Results/UserPlayRequestResult.cs" Line="32" Column="9" />
-      <File FileName="Users/UsrProfile.cs" Line="42" Column="23" />
-      <File FileName="Users/User.cs" Line="179" Column="21" />
-      <File FileName="iOS/Common/CommonMethods.cs" Line="1" Column="1" />
-      <File FileName="Model/GameDefinition/GameEnums.cs" Line="9" Column="23" />
-      <File FileName="Users/UsrContent.cs" Line="32" Column="84" />
-      <File FileName="iOS/Views/Game/Player/Player View/PlayerView.cs" Line="58" Column="21" />
-      <File FileName="ServerApi/NetworkApi.cs" Line="150" Column="1" />
-      <File FileName="Model/Server Results/GameRoundWinnerResult.cs" Line="1" Column="1" />
-      <File FileName="Model/Game/GameRound.cs" Line="1" Column="1" />
-      <File FileName="Model/Game/GameTable.cs" Line="1" Column="1" />
+      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="225" Column="1" />
+      <File FileName="Facade/GameManager.cs" Line="39" Column="46" />
+      <File FileName="ServerApi/NetworkApi.cs" Line="193" Column="10" />
+      <File FileName="iOS/Views/Game/Player/Player Score View/PlayerScoreView.cs" Line="49" Column="41" />
+      <File FileName="iOS/Views/Game/Player/Player View/PlayerView.cs" Line="70" Column="10" />
+      <File FileName="Model/Server Results/GameRoundWinnerResult.cs" Line="9" Column="18" />
+      <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.cs" Line="98" Column="21" />
       <File FileName="iOS/Main.cs" Line="12" Column="1" />
-      <File FileName="iOS/Constants/ColorConstants.cs" Line="105" Column="1" />
+      <File FileName="Users/User.cs" Line="12" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,13 +23,14 @@
                 <Node name="PlayerHand" expanded="True" />
                 <Node name="Server Results" expanded="True" />
               </Node>
-              <Node name="ServerApi" expanded="True" />
+              <Node name="ServerApi" expanded="True">
+                <Node name="NetworkApi.cs" selected="True" />
+              </Node>
+              <Node name="Users" expanded="True" />
             </Node>
             <Node name="yphkd.iOS" expanded="True">
               <Node name="Common" expanded="True" />
-              <Node name="Constants" expanded="True">
-                <Node name="ColorConstants.cs" selected="True" />
-              </Node>
+              <Node name="Constants" expanded="True" />
               <Node name="Managers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Game" expanded="True">
@@ -47,8 +41,12 @@
                     </Node>
                   </Node>
                   <Node name="Player" expanded="True">
+                    <Node name="Player Score View" expanded="True" />
                     <Node name="Player View" expanded="True" />
                   </Node>
+                </Node>
+                <Node name="Popups" expanded="True">
+                  <Node name="Base Popup" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -70,6 +68,10 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/ServerApi/NetworkApi.cs" relfile="ServerApi/NetworkApi.cs" line="255" column="1" />
+      <Breakpoint file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/Views/Popups/Base Popup/BasePopupView.cs" relfile="iOS/Views/Popups/Base Popup/BasePopupView.cs" line="131" column="1" />
+      <Breakpoint file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/Views/Game/Game Table/GameTableView.cs" relfile="iOS/Views/Game/Game Table/GameTableView.cs" line="339" column="1" />
+      <Breakpoint file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/Views/Game/Game Table/GameTableView.cs" relfile="iOS/Views/Game/Game Table/GameTableView.cs" line="353" column="1" />
+      <Breakpoint file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/iOS/Views/Game/Game Table/GameTableView.cs" relfile="iOS/Views/Game/Game Table/GameTableView.cs" line="225" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
