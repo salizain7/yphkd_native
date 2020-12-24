@@ -370,7 +370,7 @@ namespace yphkd.iOS
             AnimationManager.Fade(popupView, true, onFinished: () =>
             {
                 popupView.AddSubview(basePopupView);
-                NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 5), delegate
+                NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 0), delegate
                 {
                     StartGamePlay(popupView);
                 });
@@ -398,7 +398,7 @@ namespace yphkd.iOS
             AnimationManager.Fade(popupView, true, onFinished: () =>
             {
                 popupView.AddSubview(basePopupView);
-                NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 5), delegate
+                NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 0), delegate
                 {
                     StartGamePlay(popupView);
                 });
