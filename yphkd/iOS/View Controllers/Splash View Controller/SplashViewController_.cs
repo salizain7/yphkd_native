@@ -31,7 +31,7 @@ namespace yphkd.iOS
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
-            bool isFirstTime = true;
+            //bool isFirstTime = true;
             int duration = 3;
 
             AnimationManager.RotateContinous(loaderImg, Duration: duration);
@@ -46,14 +46,8 @@ namespace yphkd.iOS
             {
                 InvokeOnMainThread(() =>
                 {
-                    if (isFirstTime)
-                    {
-                        CommonMethods.SetupTutorialScreen();
-                    }
-                    else
-                    {
-                        CommonMethods.SetupHomeScreen();
-                    }
+                    CommonMethods.SetupHomeScreen();
+                    //AnimationManager.Fade(CommonMethods.GetAppDelegate().Window, true, 0.6);
                 });
 
             });

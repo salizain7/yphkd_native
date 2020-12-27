@@ -1,6 +1,7 @@
 ﻿using Foundation;
 using UIKit;
 using yphkd.iOS.Common;
+using yphkd.iOS.Managers;
 
 namespace yphkd.iOS
 {
@@ -20,6 +21,8 @@ namespace yphkd.iOS
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
             CommonMethods.SetupInitialScreen(Window);
+            
+            //AnimationManager.Fade(Window, true, 0.6);
             application.StatusBarHidden = true;
 
             return true;

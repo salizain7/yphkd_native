@@ -21,8 +21,6 @@ namespace yphkd.iOS
         public override void AwakeFromNib()
         {
             base.AwakeFromNib();
-            
-            
         }
         public void setCollectionView(UIViewController controller)
         {
@@ -31,6 +29,8 @@ namespace yphkd.iOS
 
             collectionView.DataSource = new SelectTableCVDataSource();
             collectionView.Delegate = new SelectTableCVDelegate(rootController);
+            collectionView.ScrollEnabled = false;
+            //collectionView.BackgroundColor = UIColor.White;
         }
     }
 }

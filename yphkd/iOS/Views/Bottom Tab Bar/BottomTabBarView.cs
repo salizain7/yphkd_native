@@ -63,11 +63,6 @@ namespace yphkd.iOS
         private void setupViews()
         {
             //LayoutIfNeeded();
-            imgView1.Image = UIImage.FromBundle(ImageConstants.BottomTabBar.shop_bg);
-            imgView2.Image = UIImage.FromBundle(ImageConstants.BottomTabBar.friends_bg);
-            imgView3.Image = UIImage.FromBundle(ImageConstants.BottomTabBar.home_bg);
-            imgView4.Image = UIImage.FromBundle(ImageConstants.BottomTabBar.leaderboard_bg);
-            imgView5.Image = UIImage.FromBundle(ImageConstants.BottomTabBar.notifications_bg);
 
             tab1_icon.Image = UIImage.FromBundle(ImageConstants.BottomTabBar.ic_shop);
             tab2_icon.Image = UIImage.FromBundle(ImageConstants.BottomTabBar.ic_friends);
@@ -82,8 +77,7 @@ namespace yphkd.iOS
             //buttonDictionary.Add(button5, false);
             
             currentSelectedBtnTag = 3;
-            safeAreaView.BackgroundColor = UIColor.FromRGB(26, 25, 26);
-            adView.BackgroundColor = UIColor.Purple;
+            safeAreaView.BackgroundColor = adView.BackgroundColor = UIColor.FromRGB(21, 25, 37); 
         }
 
         partial void onClickBtn1(UIButton sender)

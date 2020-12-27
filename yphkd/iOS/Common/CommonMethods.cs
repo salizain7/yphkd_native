@@ -23,7 +23,10 @@ namespace yphkd.iOS.Common
             appDelegate.Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
             appDelegate.Window.RootViewController = new SplashViewController();
+            
+            
             appDelegate.Window.MakeKeyAndVisible();
+            
 
 
         }

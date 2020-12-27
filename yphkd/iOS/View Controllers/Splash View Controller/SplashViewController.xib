@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,20 +18,20 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="usv-Ik-dzD">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rej-cq-Z9s">
-                    <rect key="frame" x="107" y="408" width="200" height="80"/>
+                    <rect key="frame" x="139" y="548.66666666666663" width="150" height="60"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yassu_panju" translatesAutoresizingMaskIntoConstraints="NO" id="Z5y-cQ-RTx">
-                            <rect key="frame" x="0.0" y="0.0" width="200" height="80"/>
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Z5y-cQ-RTx" secondAttribute="trailing" id="3oK-Jb-uGi"/>
                         <constraint firstAttribute="width" secondItem="rej-cq-Z9s" secondAttribute="height" multiplier="5:2" id="6OY-Bf-mfW"/>
@@ -39,22 +40,52 @@
                         <constraint firstItem="Z5y-cQ-RTx" firstAttribute="top" secondItem="rej-cq-Z9s" secondAttribute="top" id="owu-YE-hKW"/>
                     </constraints>
                 </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="lx7-9B-gOL">
+                    <rect key="frame" x="18" y="248" width="392" height="245"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="lx7-9B-gOL" secondAttribute="height" multiplier="1.6:1" id="uVs-gg-xJl"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered By: Interfuse Minds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFx-5D-twJ">
+                    <rect key="frame" x="20.000000000000007" y="865.33333333333337" width="118.66666666666669" height="40.666666666666629"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0.5 YPHKD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2i8-U8-S5P">
+                    <rect key="frame" x="312.66666666666669" y="885.66666666666663" width="95.333333333333314" height="20.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.84705882352941175" green="0.85490196078431369" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="rej-cq-Z9s" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="0c0-rb-NhH"/>
+                <constraint firstItem="lx7-9B-gOL" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="04f-LS-ZPs"/>
+                <constraint firstItem="rej-cq-Z9s" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" multiplier="1.25" id="0c0-rb-NhH"/>
+                <constraint firstAttribute="trailing" secondItem="lx7-9B-gOL" secondAttribute="trailing" constant="18" id="0do-JC-KXW"/>
                 <constraint firstAttribute="trailing" secondItem="usv-Ik-dzD" secondAttribute="trailing" id="3GJ-Eu-cPs"/>
-                <constraint firstItem="rej-cq-Z9s" firstAttribute="width" secondItem="1" secondAttribute="width" multiplier="0.483092" id="CMk-hm-Yn5"/>
+                <constraint firstAttribute="bottom" secondItem="sFx-5D-twJ" secondAttribute="bottom" constant="20" id="AIE-CK-j2S"/>
+                <constraint firstItem="rej-cq-Z9s" firstAttribute="width" secondItem="1" secondAttribute="width" multiplier="0.35" id="CMk-hm-Yn5"/>
+                <constraint firstAttribute="trailing" secondItem="2i8-U8-S5P" secondAttribute="trailing" constant="20" id="I6J-2X-RXj"/>
+                <constraint firstItem="lx7-9B-gOL" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="18" id="RhG-UX-Ubj"/>
+                <constraint firstAttribute="bottom" secondItem="2i8-U8-S5P" secondAttribute="bottom" constant="20" id="drn-S3-vIh"/>
+                <constraint firstItem="lx7-9B-gOL" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" multiplier="0.8" id="hPv-id-MQG"/>
                 <constraint firstItem="usv-Ik-dzD" firstAttribute="top" secondItem="1" secondAttribute="top" id="nLs-wY-oDZ"/>
                 <constraint firstItem="rej-cq-Z9s" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="nRk-8H-JPi"/>
                 <constraint firstItem="usv-Ik-dzD" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="qcR-iK-EjI"/>
+                <constraint firstItem="sFx-5D-twJ" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="tLe-Vw-T4w"/>
                 <constraint firstAttribute="bottom" secondItem="usv-Ik-dzD" secondAttribute="bottom" id="vxo-co-L2B"/>
             </constraints>
             <point key="canvasLocation" x="33.333333333333336" y="53.571428571428569"/>
         </view>
     </objects>
     <resources>
-        <image name="splash" width="185" height="328.5"/>
-        <image name="yassu_panju" width="226" height="54.5"/>
+        <image name="splash" width="138" height="298.66665649414062"/>
+        <image name="splash_logo" width="378" height="224"/>
+        <image name="yassu_panju" width="314" height="187"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

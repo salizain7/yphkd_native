@@ -1,26 +1,53 @@
 ﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Game/Game Table/GameTableView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Popups/Base Popup/BasePopupView.cs">
     <Files>
-      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="151" Column="10" />
-      <File FileName="Facade/GameManager.cs" />
-      <File FileName="ServerApi/NetworkApi.cs" />
-      <File FileName="iOS/Views/Game/Player/Player Score View/PlayerScoreView.cs" />
-      <File FileName="iOS/Views/Game/Player/Player View/PlayerView.cs" />
-      <File FileName="Model/Server Results/GameRoundWinnerResult.cs" />
-      <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.cs" />
-      <File FileName="iOS/Main.cs" />
-      <File FileName="Users/User.cs" />
-      <File FileName="Users/UsrContent.cs" />
-      <File FileName="Model/GameDefinition/GameEnums.cs" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" Line="33" Column="12" />
+      <File FileName="iOS/Constants/ImageConstants.cs" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDataSource.cs" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Cell/SelectTableCollectionViewCell.cs" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Cell/SelectTableCollectionViewCell.designer.cs" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/SelectTableCollectionView.cs" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/SelectTableCollectionView.designer.cs" />
+      <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.cs" Line="82" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="yphkd" expanded="True" />
+          <Node name="yphkd" expanded="True">
+            <Node name="yphkd" expanded="True" />
+            <Node name="yphkd.iOS" expanded="True">
+              <Node name="Common" expanded="True" />
+              <Node name="Constants" expanded="True" />
+              <Node name="Managers" expanded="True" />
+              <Node name="View Controllers" expanded="True">
+                <Node name="Home Screen" expanded="True" />
+                <Node name="Splash View Controller" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Base Dialogue" expanded="True" />
+                <Node name="Bottom Tab Bar" expanded="True" />
+                <Node name="Game" expanded="True">
+                  <Node name="Game Table" expanded="True" />
+                  <Node name="Mode Selection" expanded="True">
+                    <Node name="Select Table Collection View" expanded="True">
+                      <Node name="Cell" expanded="True" />
+                      <Node name="Data" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="Header View" expanded="True" />
+                <Node name="Popups" expanded="True">
+                  <Node name="Base Popup" expanded="True">
+                    <Node name="BasePopupView.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="Tabs" expanded="True">
+                  <Node name="Home Tab" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

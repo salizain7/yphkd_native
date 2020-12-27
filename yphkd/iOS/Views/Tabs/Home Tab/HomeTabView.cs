@@ -46,8 +46,6 @@ namespace yphkd.iOS
             base.LayoutSubviews();
 
             setupView();
-            letsPlayGradlayer.Frame = new CGRect(0, 0, letsPlayInnerBgView.Frame.Width, letsPlayInnerBgView.Frame.Height + 100); ;
-            pwfGradlayer.Frame = new CGRect(0, 0, pwfInnerBgView.Frame.Width, pwfInnerBgView.Frame.Height + 100);
         }
         
         private void setupText()
@@ -60,7 +58,6 @@ namespace yphkd.iOS
             //banners
             favHandLbl.Text = "Favourite\nHand";
             loginLbl.Text = "Login";
-            inviteFriendsLbl.Text = "Invite Friends";
 
         }
         private void setupView()
@@ -68,65 +65,43 @@ namespace yphkd.iOS
             LayoutIfNeeded();
 
             CommonMethods.makeRoundCircle(loginIconBgView);
-            CommonMethods.makeRoundCircle(inviteFriendsIconBgView);
             CommonMethods.makeRoundCircle(favHandIconBgView);
 
-            loginLblBgView.BackgroundColor = loginIconBgView.BackgroundColor =
-                inviteFriendsBgView.BackgroundColor = inviteFriendsIconBgView.BackgroundColor = ColorConstants.Home.fbBanner;
+            loginLblBgView.BackgroundColor = loginIconBgView.BackgroundColor =ColorConstants.Home.fbBanner;
             favHandBgView.BackgroundColor = favHandIconBgView.BackgroundColor = ColorConstants.Home.favHandBg;
 
-            loginLbl.TextColor = inviteFriendsLbl.TextColor = favHandLbl.TextColor = UIColor.White;
+            loginLbl.TextColor =  favHandLbl.TextColor = UIColor.White;
 
             letsPlayBtn.SetTitleColor(UIColor.White, UIControlState.Normal);
             pwfBtn.SetTitleColor(UIColor.White, UIControlState.Normal);
 
-            letsPlayBtnWhiteBorderBgView.BackgroundColor = pwfBtnWhiteBorderBgView.BackgroundColor = UIColor.Clear;
-            letsPlayGradlayer = CommonMethods.addGradient(letsPlayInnerBgView, startColor: ColorConstants.Home.letsPlayBtnStartColor.CGColor, endColor: ColorConstants.Home.letsPlayBtnEndColor.CGColor);
-            pwfGradlayer = CommonMethods.addGradient(pwfInnerBgView, startColor: ColorConstants.Home.PwfBtnStartColor.CGColor, endColor: ColorConstants.Home.PwfBtnEndColor.CGColor);
-            letsPlayOutterBgView.BackgroundColor = pwfOutterBgView.BackgroundColor = UIColor.White.ColorWithAlpha(0.4f);
 
-            letsPlayBtnWhiteBorderBgView.Layer.BorderColor = pwfBtnWhiteBorderBgView.Layer.BorderColor =
-                 favHandIconBgView.Layer.BorderColor = loginIconBgView.Layer.BorderColor =
-                 inviteFriendsIconBgView.Layer.BorderColor = UIColor.White.CGColor;
+            letsPlayGradlayer = CommonMethods.addGradient(letsPlayOutterBgView, startColor: ColorConstants.Home.letsPlayBtnStartColor.CGColor, endColor: ColorConstants.Home.letsPlayBtnEndColor.CGColor);
+            pwfGradlayer = CommonMethods.addGradient(pwfOutterBgView, startColor: ColorConstants.Home.PwfBtnStartColor.CGColor, endColor: ColorConstants.Home.PwfBtnEndColor.CGColor);
 
-            letsPlayBtnWhiteBorderBgView.Layer.BorderWidth = pwfBtnWhiteBorderBgView.Layer.BorderWidth = 2;
-            favHandIconBgView.Layer.BorderWidth = loginIconBgView.Layer.BorderWidth =
-                 inviteFriendsIconBgView.Layer.BorderWidth = 1;
+            //letsPlayOutterBgView.BackgroundColor = pwfOutterBgView.BackgroundColor = UIColor.White.ColorWithAlpha(0.4f);
+
+            loginIconBgView.Layer.BorderColor = UIColor.White.CGColor;
+            favHandIconBgView.Layer.BorderColor = UIColor.FromRGB(211, 176,29).CGColor;
+
+            loginLblBgView.Layer.BorderWidth = favHandBgView.Layer.BorderWidth =
+            favHandIconBgView.Layer.BorderWidth = loginIconBgView.Layer.BorderWidth = 2;
+
+            //favHandIconBgView.Layer.MasksToBounds  = loginIconBgView.Layer.MasksToBounds = true;
+
+            letsPlayOutterBgView.Layer.CornerRadius = pwfOutterBgView.Layer.CornerRadius = 10;
 
 
-            //letsPlayShadowView.Layer.CornerRadius = pwfShadowView.Layer.CornerRadius =
-            //    letsPlayInnerBgView.Layer.CornerRadius = pwfInnerBgView.Layer.CornerRadius = letsPlayInnerBgView.Frame.Width / 7.0f;
 
-            //letsPlayOutterBgView.Layer.CornerRadius = pwfOutterBgView.Layer.CornerRadius = letsPlayOutterBgView.Frame.Width / 6.0f;
-
-            //letsPlayBtnWhiteBorderBgView.Layer.CornerRadius =
-            //    pwfBtnWhiteBorderBgView.Layer.CornerRadius = letsPlayBtnWhiteBorderBgView.Frame.Width / 8.0f;
-
-            letsPlayShadowView.Layer.CornerRadius = pwfShadowView.Layer.CornerRadius =
-    letsPlayInnerBgView.Layer.CornerRadius = pwfInnerBgView.Layer.CornerRadius = letsPlayInnerBgView.Frame.Height / 2.0f;
-
-            letsPlayOutterBgView.Layer.CornerRadius = pwfOutterBgView.Layer.CornerRadius = letsPlayOutterBgView.Frame.Height / 2.0f;
-
-            letsPlayBtnWhiteBorderBgView.Layer.CornerRadius =
-                pwfBtnWhiteBorderBgView.Layer.CornerRadius = letsPlayBtnWhiteBorderBgView.Frame.Height / 2.0f;
-
-            //letsPlayShadowView.Layer.CornerRadius = pwfShadowView.Layer.CornerRadius =
-            //    letsPlayInnerBgView.Layer.CornerRadius = pwfInnerBgView.Layer.CornerRadius = letsPlayInnerBgView.Frame.Width / 8;
-            //letsPlayOutterBgView.Layer.CornerRadius = pwfOutterBgView.Layer.CornerRadius = letsPlayOutterBgView.Frame.Width / 6;
-            //letsPlayBtnWhiteBorderBgView.Layer.CornerRadius =
-            //    pwfBtnWhiteBorderBgView.Layer.CornerRadius = letsPlayBtnWhiteBorderBgView.Frame.Width / 10;
-
-            letsPlayBtnWhiteBorderBgView.Layer.MasksToBounds = letsPlayInnerBgView.Layer.MasksToBounds =
-                letsPlayOutterBgView.Layer.MasksToBounds = pwfBtnWhiteBorderBgView.Layer.MasksToBounds =
-                pwfInnerBgView.Layer.MasksToBounds = pwfOutterBgView.Layer.MasksToBounds = true;
+            
+            letsPlayOutterBgView.Layer.MasksToBounds = pwfOutterBgView.Layer.MasksToBounds = true;
 
             
 
-            CommonMethods.AddShadow(letsPlayShadowView, ColorConstants.Home.letsPlayBtnEndColor.ColorWithAlpha(0.6f),shadowOpacity: 0.6f,x: 0,y: 9,shadowRadius: 7);
-            CommonMethods.AddShadow(pwfShadowView, ColorConstants.Home.PwfBtnEndColor.ColorWithAlpha(0.6f), shadowOpacity: 0.6f, x: 0, y: 9, shadowRadius: 7);
+            //CommonMethods.AddShadow(letsPlayShadowView, ColorConstants.Home.letsPlayBtnEndColor.ColorWithAlpha(0.6f),shadowOpacity: 0.6f,x: 0,y: 9,shadowRadius: 7);
+            //CommonMethods.AddShadow(pwfShadowView, ColorConstants.Home.PwfBtnEndColor.ColorWithAlpha(0.6f), shadowOpacity: 0.6f, x: 0, y: 9, shadowRadius: 7);
 
             favHandIconImg.Image = UIImage.FromBundle(ImageConstants.HomeScreen.ic_fav_hand);
-            inviteFriendsIconImg.Image = UIImage.FromBundle(ImageConstants.HomeScreen.ic_share);
             loginIconImg.Image = UIImage.FromBundle(ImageConstants.HomeScreen.ic_facebook);
 
             //LayoutSubviews();
@@ -134,7 +109,7 @@ namespace yphkd.iOS
         }
         partial void onClickLetsPlayBtn(UIButton sender)
         {
-            AnimationManager.Bounce(letsPlayShadowView, onFinished: ()=>
+            AnimationManager.Bounce(letsPlayOutterBgView, onFinished: ()=>
             {
                 
                 if (RootViewController != null)
@@ -195,7 +170,7 @@ namespace yphkd.iOS
         }
         partial void onClickPwfBtn(UIButton sender)
         {
-            AnimationManager.Bounce(pwfShadowView);
+            AnimationManager.Bounce(pwfOutterBgView);
         }
 
     }

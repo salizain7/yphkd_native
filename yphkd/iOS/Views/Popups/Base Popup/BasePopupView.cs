@@ -45,8 +45,7 @@ namespace yphkd.iOS
             mainView.Layer.CornerRadius = 10;
             mainView.Layer.MasksToBounds = true;
 
-            bottomView.BackgroundColor = ColorConstants.BasePopup.bottomView;
-            bottomBtn.SetTitleColor(UIColor.White, UIControlState.Normal);
+            //bottomBtn.SetTitleColor(UIColor.White, UIControlState.Normal);
         }
         partial void onClickBottomBtn(UIButton sender)
         {
@@ -64,12 +63,12 @@ namespace yphkd.iOS
 
             //bottomBtn.SetTitle("Time: ", UIControlState.Normal);
             bottomBtn.UserInteractionEnabled = isBtn;
-            
+
         }
-        public void setBtnTitle(string btnTitle)
-        {
-            bottomBtn.SetTitle(btnTitle, UIControlState.Normal);
-        }
+        //public void setBtnTitle(string btnTitle)
+        //{
+        //    bottomBtn.SetTitle(btnTitle, UIControlState.Normal);
+        //}
         
         public void showSelectTablePopup(UIViewController controller, string title, string btnTitle, bool isBtn = false)
         {
@@ -77,10 +76,12 @@ namespace yphkd.iOS
             collectionView = SelectTableCollectionView.Create();
             
             collectionView.setCollectionView(rootController);
-            centerView.AddSubview(collectionView);
+            collectionView.Frame = new CGRect(0, 0, centerView.Frame.Width, centerView.Frame.Height);
 
+            centerView.AddSubview(collectionView);
+            titleLbl.TextColor = UIColor.White;
             titleLbl.Text = title;
-            bottomBtn.SetTitle(btnTitle, UIControlState.Normal);
+            //bottomBtn.SetTitle(btnTitle, UIControlState.Normal);
             bottomBtn.UserInteractionEnabled = isBtn;
         }
         public void showWinnerPopup(UIViewController controller, string title, string btnTitle, bool isBtn = false)
@@ -92,7 +93,7 @@ namespace yphkd.iOS
             centerView.AddSubview(resultPopupView);
 
             titleLbl.Text = title;
-            bottomBtn.SetTitle(btnTitle, UIControlState.Normal);
+            //bottomBtn.SetTitle(btnTitle, UIControlState.Normal);
             bottomBtn.UserInteractionEnabled = isBtn;
         }
         public void showLooserPopup(UIViewController controller, string title, string btnTitle, bool isBtn = false)
@@ -104,7 +105,7 @@ namespace yphkd.iOS
             centerView.AddSubview(resultPopupView);
 
             titleLbl.Text = title;
-            bottomBtn.SetTitle(btnTitle, UIControlState.Normal);
+            //bottomBtn.SetTitle(btnTitle, UIControlState.Normal);
             bottomBtn.UserInteractionEnabled = isBtn;
         }
 

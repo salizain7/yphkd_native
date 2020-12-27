@@ -1,51 +1,64 @@
 // WARNING
 //
-// This file has been generated automatically by Visual Studio from the outlets and
-// actions declared in your storyboard file.
-// Manual changes to this file will not be maintained.
+// This file has been generated automatically by Visual Studio to store outlets and
+// actions made in the UI designer. If it is removed, they will be lost.
+// Manual changes to this file may not be handled correctly.
 //
 using Foundation;
-using System;
 using System.CodeDom.Compiler;
 
 namespace yphkd.iOS
 {
-    [Register ("BasePopupView")]
-    partial class BasePopupView
-    {
-        [Outlet]
-        UIKit.UIButton bottomBtn { get; set; }
+	[Register ("BasePopupView")]
+	partial class BasePopupView
+	{
+		[Outlet]
+		UIKit.UIButton bottomBtn { get; set; }
 
+		[Outlet]
+		UIKit.UIView centerView { get; set; }
 
-        [Outlet]
-        UIKit.UIView bottomView { get; set; }
+		[Outlet]
+		UIKit.UIView mainView { get; set; }
 
+		[Outlet]
+		UIKit.UIButton popupBtn { get; set; }
 
-        [Outlet]
-        UIKit.UIView centerView { get; set; }
+		[Outlet]
+		UIKit.UILabel titleLbl { get; set; }
 
+		[Action ("onClickBottomBtn:")]
+		partial void onClickBottomBtn (UIKit.UIButton sender);
 
-        [Outlet]
-        UIKit.UIView mainView { get; set; }
+		[Action ("onclickPopupBtn:")]
+		partial void onclickPopupBtn (UIKit.UIButton sender);
+		
+		void ReleaseDesignerOutlets ()
+		{
+			if (bottomBtn != null) {
+				bottomBtn.Dispose ();
+				bottomBtn = null;
+			}
 
+			if (centerView != null) {
+				centerView.Dispose ();
+				centerView = null;
+			}
 
-        [Outlet]
-        UIKit.UIButton popupBtn { get; set; }
+			if (mainView != null) {
+				mainView.Dispose ();
+				mainView = null;
+			}
 
+			if (popupBtn != null) {
+				popupBtn.Dispose ();
+				popupBtn = null;
+			}
 
-        [Outlet]
-        UIKit.UILabel titleLbl { get; set; }
-
-
-        [Action ("onClickBottomBtn:")]
-        partial void onClickBottomBtn (UIKit.UIButton sender);
-
-
-        [Action ("onclickPopupBtn:")]
-        partial void onclickPopupBtn (UIKit.UIButton sender);
-
-        void ReleaseDesignerOutlets ()
-        {
-        }
-    }
+			if (titleLbl != null) {
+				titleLbl.Dispose ();
+				titleLbl = null;
+			}
+		}
+	}
 }

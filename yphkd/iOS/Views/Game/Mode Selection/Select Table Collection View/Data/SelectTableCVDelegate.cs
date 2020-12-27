@@ -24,30 +24,32 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
         }
         public override CGSize GetSizeForItem(UICollectionView collectionView, UICollectionViewLayout layout, NSIndexPath indexPath)
         {
-            return new CGSize(collectionView.Frame.Width/2 - 40, collectionView.Frame.Height/2 - 40);
+            return new CGSize(collectionView.Frame.Width / 2, collectionView.Frame.Height / 3 - 10 );
+            //return new CGSize(collectionView.Frame.Width/2 - 40, collectionView.Frame.Height/2 - 40);
         }
         //public override nfloat GetMinimumLineSpacingForSection(UICollectionView collectionView, UICollectionViewLayout layout, nint section)
         //{
         //    return 20;
         //}
 
-        public override UIEdgeInsets GetInsetForSection(UICollectionView collectionView, UICollectionViewLayout layout, nint section)
-        {
+        //public override UIEdgeInsets GetInsetForSection(UICollectionView collectionView, UICollectionViewLayout layout, nint section)
+        //{
 
-            var flowLayout = layout as UICollectionViewFlowLayout;
+        //    var flowLayout = layout as UICollectionViewFlowLayout;
 
-            var numberOfItems = collectionView.NumberOfItemsInSection(section: section);
-            var combinedItemWidth = (numberOfItems * flowLayout.ItemSize.Width) + ((numberOfItems - 1) * flowLayout.MinimumInteritemSpacing);
-            var padding = (collectionView.Frame.Width - combinedItemWidth) / 2;
-            var topPadding = (collectionView.Frame.Height - ((2 * flowLayout.ItemSize.Height) + ((2 - 1) * flowLayout.MinimumInteritemSpacing)) ) / 2;
-            return new UIEdgeInsets(top: topPadding, left: padding, bottom: 0, right: padding);
+        //    var numberOfItems = collectionView.NumberOfItemsInSection(section: section);
+        //    var combinedItemWidth = (numberOfItems * flowLayout.ItemSize.Width) + ((numberOfItems - 1) * flowLayout.MinimumInteritemSpacing);
+        //    var padding = (collectionView.Frame.Width - combinedItemWidth) / 2;
+        //    var topPadding = (collectionView.Frame.Height - ((2 * flowLayout.ItemSize.Height) + ((2 - 1) * flowLayout.MinimumInteritemSpacing)) ) / 2;
+        //    return new UIEdgeInsets(top: topPadding, left: padding, bottom: 0, right: padding);
             
-        }
+        //}
         public override void ItemSelected(UICollectionView collectionView, NSIndexPath indexPath)
         {
             var cell = collectionView.CellForItem(indexPath) as SelectTableCollectionViewCell;
             if (cell != null)
             {
+                cell.SetSelected();
                 AnimationManager.Bounce(cell.ContentView, onFinished: async ()=> {
 
                     GameManager gameManager = new GameManager();

@@ -30,10 +30,18 @@ namespace yphkd.iOS.Constants
             public static readonly string homeBackgroundImage = "home_bg";
             public static readonly string ic_facebook = "ic_facebook";
             public static readonly string ic_fav_hand = "ic_fav_hand";
-            public static readonly string ic_share = "ic_share";
+            
+
+        }
+        public struct TableType
+        {
+            public static readonly string [] table_images = { "usr_coins" , "table2_img" , "table3_img" };
+            //public static readonly string table2_img = "table2_img";
+            //public static readonly string table3_img = "table3_img";
 
 
         }
+
         public struct Splash
         {
             public static readonly string splashImage = "splash";

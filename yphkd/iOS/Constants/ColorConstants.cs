@@ -26,13 +26,13 @@ namespace yphkd.iOS.Constants
 
             // dark yellow
             // also for progress tint
-            public static readonly UIColor coinsLblBgViewBorder = UIColor.FromRGB(255, 183, 39);
+            public static readonly UIColor coinsLblBgViewBorder = UIColor.FromRGB(199, 127, 32);
 
             // dark blue
-            public static readonly UIColor progressBarBorder = UIColor.FromRGB(21, 61, 144);
+            public static readonly UIColor progressBarBorder = UIColor.FromRGB(42, 190, 130);
 
             // blue
-            public static readonly UIColor progressTrackTint = UIColor.FromRGB(53, 138, 205);
+            public static readonly UIColor progressTrackTint = UIColor.FromRGB(34, 45, 63);
 
 
         }
@@ -59,19 +59,19 @@ namespace yphkd.iOS.Constants
         public struct Home
         {
             // blue
-            public static readonly UIColor letsPlayBtnStartColor = UIColor.FromRGB(2, 95, 203);
+            public static readonly UIColor letsPlayBtnStartColor = UIColor.FromRGB(255, 185, 1);
 
             // red
-            public static readonly UIColor letsPlayBtnEndColor = UIColor.FromRGB(252, 26, 63);
+            public static readonly UIColor letsPlayBtnEndColor = UIColor.FromRGB(250, 124, 0);
 
             // orange
-            public static readonly UIColor PwfBtnStartColor = UIColor.FromRGB(252, 102, 20);
+            public static readonly UIColor PwfBtnStartColor = UIColor.FromRGB(60, 88, 152);
 
             // blue
-            public static readonly UIColor PwfBtnEndColor = UIColor.FromRGB(37, 79, 248);
+            public static readonly UIColor PwfBtnEndColor = UIColor.FromRGB(41, 72, 125);
 
             // green
-            public static readonly UIColor favHandBg = UIColor.FromRGB(40, 150, 105);
+            public static readonly UIColor favHandBg = UIColor.FromRGB(41, 22, 68);
 
             // blue
             public static readonly UIColor fbBanner = UIColor.FromRGB(41, 81, 150);

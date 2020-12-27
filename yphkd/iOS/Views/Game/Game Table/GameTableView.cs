@@ -206,7 +206,7 @@ namespace yphkd.iOS
                     if (TimeLeft > 0)
                     {
                         TimeLeft--;
-                        basePopupView.setBtnTitle("Time: " + TimeLeft.ToString());
+                        //basePopupView.setBtnTitle("Time: " + TimeLeft.ToString());
 
                     }
 
