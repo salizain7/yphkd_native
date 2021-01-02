@@ -50,7 +50,7 @@ namespace yphkd.iOS
         }
         public void setSelected(int viewNo)
         {
-            UsrManager.CurrentUser.SelectedHand = viewNo;
+            //UsrManager.CurrentUser.SelectedHand = viewNo;
             switch (viewNo)
             {
                 case 1:

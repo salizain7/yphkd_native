@@ -5,6 +5,7 @@ using System;
 using UIKit;
 using yphkd.iOS.Common;
 using yphkd.iOS.Constants;
+using yphkd.iOS.Managers;
 
 namespace yphkd.iOS
 {
@@ -12,6 +13,7 @@ namespace yphkd.iOS
     {
         public static BottomTabBarView bottomView;
         public static HeaderView headerView;
+        BasePopupView basePopupView;
 
         public HomeViewController() : base("HomeViewController", null)
         {
@@ -53,8 +55,37 @@ namespace yphkd.iOS
             HeaderBgView.AddSubview(headerView);
             
             bottomView.setRootViewController(this);
-        }
 
+            //if first time
+            showHandSelectionPopup();
+
+
+        }
+        private void showHandSelectionPopup()
+        {
+            popupView.Hidden = false;   
+            
+            CommonMethods.clearView(popupView);
+            popupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
+
+            basePopupView = BasePopupView.Create();
+            basePopupView.showSelectHandPopup(this, "SELECT ANY HAND", "", false);
+            //basePopupView.showWinnerPopup(RootViewController, "Winner of Round 1", "Home", true);
+            //basePopupView.showWinnerPopup(RootViewController, "Sorry !\n Better luck next time", "Home", true);
+            basePopupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, popupView.Frame.Height);
+
+
+
+            CommonMethods.SetUpBlurBackground(popupView);
+
+
+
+            AnimationManager.Fade(popupView, true, onFinished: () =>
+            {
+                popupView.AddSubview(basePopupView);
+                this.View.BringSubviewToFront(popupView);
+            });
+        }
         public UIView getMainView()
         {
             return MainView;

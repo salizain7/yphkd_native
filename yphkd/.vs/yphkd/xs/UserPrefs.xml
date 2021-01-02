@@ -1,57 +1,34 @@
 ﻿<Properties StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Popups/Base Popup/BasePopupView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Popups/Select Hand Popup/SelectHandPopupView.cs">
     <Files>
-      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" Line="33" Column="12" />
+      <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDelegate.cs" Line="77" Column="1" />
       <File FileName="iOS/Constants/ImageConstants.cs" />
       <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Data/SelectTableCVDataSource.cs" />
       <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Cell/SelectTableCollectionViewCell.cs" />
       <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/Cell/SelectTableCollectionViewCell.designer.cs" />
       <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/SelectTableCollectionView.cs" />
       <File FileName="iOS/Views/Game/Mode Selection/Select Table Collection View/SelectTableCollectionView.designer.cs" />
-      <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.cs" Line="82" Column="22" />
+      <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.cs" Line="60" Column="55" />
+      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="165" Column="1" />
+      <File FileName="iOS/Main.cs" />
+      <File FileName="Users/User.cs" />
+      <File FileName="iOS/View Controllers/Home Screen/HomeViewController.cs" Line="72" Column="36" />
+      <File FileName="iOS/Views/Popups/Select Hand Popup/SelectHandPopupView.cs" Line="65" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="yphkd" expanded="True">
-            <Node name="yphkd" expanded="True" />
-            <Node name="yphkd.iOS" expanded="True">
-              <Node name="Common" expanded="True" />
-              <Node name="Constants" expanded="True" />
-              <Node name="Managers" expanded="True" />
-              <Node name="View Controllers" expanded="True">
-                <Node name="Home Screen" expanded="True" />
-                <Node name="Splash View Controller" expanded="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Base Dialogue" expanded="True" />
-                <Node name="Bottom Tab Bar" expanded="True" />
-                <Node name="Game" expanded="True">
-                  <Node name="Game Table" expanded="True" />
-                  <Node name="Mode Selection" expanded="True">
-                    <Node name="Select Table Collection View" expanded="True">
-                      <Node name="Cell" expanded="True" />
-                      <Node name="Data" expanded="True" />
-                    </Node>
-                  </Node>
-                </Node>
-                <Node name="Header View" expanded="True" />
-                <Node name="Popups" expanded="True">
-                  <Node name="Base Popup" expanded="True">
-                    <Node name="BasePopupView.cs" selected="True" />
-                  </Node>
-                </Node>
-                <Node name="Tabs" expanded="True">
-                  <Node name="Home Tab" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
+            <Node name="yphkd.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.yphkd.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.57DF39CF-04A2-4652-8073-A41A2BB0A8EF" />
+  <MonoDevelop.Ide.ItemProperties.yphkd.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8E2AF46F-B9F6-4523-AFCA-BCCBF089641A" />
   <MonoDevelop.Ide.ItemProperties.yphkd FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
@@ -59,7 +36,9 @@
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/Hassan/Documents/GitHub/yphkd_native/yphkd/Users/User.cs" relfile="Users/User.cs" line="182" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="multiprojId" Name="Multiple Projects" />

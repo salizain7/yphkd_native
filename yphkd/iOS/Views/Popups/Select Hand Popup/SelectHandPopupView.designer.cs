@@ -28,6 +28,36 @@ namespace yphkd.iOS
 		UIKit.UIButton btn5 { get; set; }
 
 		[Outlet]
+		UIKit.UILabel handLbl1 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel handLbl2 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel handLbl3 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel handLbl4 { get; set; }
+
+		[Outlet]
+		UIKit.UILabel handLbl5 { get; set; }
+
+		[Outlet]
+		UIKit.UIView handLblBg1 { get; set; }
+
+		[Outlet]
+		UIKit.UIView handLblBg2 { get; set; }
+
+		[Outlet]
+		UIKit.UIView handLblBg3 { get; set; }
+
+		[Outlet]
+		UIKit.UIView handLblBg4 { get; set; }
+
+		[Outlet]
+		UIKit.UIView handLblBg5 { get; set; }
+
+		[Outlet]
 		UIKit.UIImageView image1 { get; set; }
 
 		[Outlet]
@@ -74,6 +104,31 @@ namespace yphkd.iOS
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (btn1 != null) {
+				btn1.Dispose ();
+				btn1 = null;
+			}
+
+			if (btn2 != null) {
+				btn2.Dispose ();
+				btn2 = null;
+			}
+
+			if (btn3 != null) {
+				btn3.Dispose ();
+				btn3 = null;
+			}
+
+			if (btn4 != null) {
+				btn4.Dispose ();
+				btn4 = null;
+			}
+
+			if (btn5 != null) {
+				btn5.Dispose ();
+				btn5 = null;
+			}
+
 			if (image1 != null) {
 				image1.Dispose ();
 				image1 = null;
@@ -124,29 +179,54 @@ namespace yphkd.iOS
 				imageBg5 = null;
 			}
 
-			if (btn1 != null) {
-				btn1.Dispose ();
-				btn1 = null;
+			if (handLbl1 != null) {
+				handLbl1.Dispose ();
+				handLbl1 = null;
 			}
 
-			if (btn2 != null) {
-				btn2.Dispose ();
-				btn2 = null;
+			if (handLbl2 != null) {
+				handLbl2.Dispose ();
+				handLbl2 = null;
 			}
 
-			if (btn3 != null) {
-				btn3.Dispose ();
-				btn3 = null;
+			if (handLbl3 != null) {
+				handLbl3.Dispose ();
+				handLbl3 = null;
 			}
 
-			if (btn4 != null) {
-				btn4.Dispose ();
-				btn4 = null;
+			if (handLbl4 != null) {
+				handLbl4.Dispose ();
+				handLbl4 = null;
 			}
 
-			if (btn5 != null) {
-				btn5.Dispose ();
-				btn5 = null;
+			if (handLbl5 != null) {
+				handLbl5.Dispose ();
+				handLbl5 = null;
+			}
+
+			if (handLblBg1 != null) {
+				handLblBg1.Dispose ();
+				handLblBg1 = null;
+			}
+
+			if (handLblBg2 != null) {
+				handLblBg2.Dispose ();
+				handLblBg2 = null;
+			}
+
+			if (handLblBg3 != null) {
+				handLblBg3.Dispose ();
+				handLblBg3 = null;
+			}
+
+			if (handLblBg4 != null) {
+				handLblBg4.Dispose ();
+				handLblBg4 = null;
+			}
+
+			if (handLblBg5 != null) {
+				handLblBg5.Dispose ();
+				handLblBg5 = null;
 			}
 		}
 	}

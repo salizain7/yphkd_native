@@ -24,13 +24,13 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
         }
         public override CGSize GetSizeForItem(UICollectionView collectionView, UICollectionViewLayout layout, NSIndexPath indexPath)
         {
-            return new CGSize(collectionView.Frame.Width / 2, collectionView.Frame.Height / 3 - 10 );
+            return new CGSize(collectionView.Frame.Width / 2, collectionView.Frame.Height / 3 - 20 );
             //return new CGSize(collectionView.Frame.Width/2 - 40, collectionView.Frame.Height/2 - 40);
         }
-        //public override nfloat GetMinimumLineSpacingForSection(UICollectionView collectionView, UICollectionViewLayout layout, nint section)
-        //{
-        //    return 20;
-        //}
+        public override nfloat GetMinimumLineSpacingForSection(UICollectionView collectionView, UICollectionViewLayout layout, nint section)
+        {
+            return 20;
+        }
 
         //public override UIEdgeInsets GetInsetForSection(UICollectionView collectionView, UICollectionViewLayout layout, nint section)
         //{
@@ -42,7 +42,7 @@ namespace yphkd.iOS.Views.Game.ModeSelection.SelectTableCollectionView.Data
         //    var padding = (collectionView.Frame.Width - combinedItemWidth) / 2;
         //    var topPadding = (collectionView.Frame.Height - ((2 * flowLayout.ItemSize.Height) + ((2 - 1) * flowLayout.MinimumInteritemSpacing)) ) / 2;
         //    return new UIEdgeInsets(top: topPadding, left: padding, bottom: 0, right: padding);
-            
+
         //}
         public override void ItemSelected(UICollectionView collectionView, NSIndexPath indexPath)
         {

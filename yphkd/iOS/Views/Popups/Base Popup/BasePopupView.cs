@@ -39,8 +39,8 @@ namespace yphkd.iOS
         }
         private void setupView()
         {
-            mainView.Layer.BorderColor = ColorConstants.BasePopup.bottomView.CGColor;
-            mainView.Layer.BorderWidth = 2;
+            //mainView.Layer.BorderColor = ColorConstants.BasePopup.bottomView.CGColor;
+            //mainView.Layer.BorderWidth = 2;
 
             mainView.Layer.CornerRadius = 10;
             mainView.Layer.MasksToBounds = true;
@@ -55,15 +55,15 @@ namespace yphkd.iOS
         {
             rootController = controller;
             selectHandPopupView = SelectHandPopupView.Create();
+            
             selectHandPopupView.Frame = new CGRect(0, 0, centerView.Frame.Width, centerView.Frame.Height);
-            selectHandPopupView.setSelected(handId);
+            //selectHandPopupView.setSelected(handId);
             centerView.AddSubview(selectHandPopupView);
 
             titleLbl.Text = title;
 
             //bottomBtn.SetTitle("Time: ", UIControlState.Normal);
             bottomBtn.UserInteractionEnabled = isBtn;
-
         }
         //public void setBtnTitle(string btnTitle)
         //{
