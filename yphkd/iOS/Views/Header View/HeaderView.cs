@@ -31,7 +31,7 @@ namespace yphkd.iOS
         }
         public void setupView()
         {
-            usernameLbl.TextColor = coinsLbl.TextColor = usrBadgeLbl.TextColor = UIColor.White;
+            usernameLbl.TextColor = coinsLbl.TextColor =  UIColor.White;
 
             //coinsBgView.BackgroundColor = ColorConstants.Header.coinsLblBg;
             coinsBgView.Layer.BorderColor = ColorConstants.Header.coinsLblBgViewBorder.CGColor;
@@ -57,6 +57,8 @@ namespace yphkd.iOS
             //this.BackgroundColor = UIColor.White;
             coinsImgFrame.Image = UIImage.FromBundle(ImageConstants.Header.user_coins);
             profileImgFrame.Image = UIImage.FromBundle(ImageConstants.Common.placeholder_img);
+
+            
 
         }
     }

@@ -52,7 +52,7 @@ namespace yphkd.iOS
         {
             //buttons
             
-            letsPlayBtn.SetTitle("LETS PLAY", UIControlState.Normal);
+            letsPlayBtn.SetTitle("LET'S PLAY", UIControlState.Normal);
             pwfBtn.SetTitle("PLAY WITH FRIENDS", UIControlState.Normal);
 
             //banners
@@ -70,12 +70,13 @@ namespace yphkd.iOS
             loginLblBgView.BackgroundColor = loginIconBgView.BackgroundColor =ColorConstants.Home.fbBanner;
             favHandBgView.BackgroundColor = favHandIconBgView.BackgroundColor = ColorConstants.Home.favHandBg;
 
-            loginLbl.TextColor =  favHandLbl.TextColor = UIColor.White;
+            loginLbl.TextColor = UIColor.White;
+            
+            favHandLbl.TextColor = UIColor.FromRGB(211, 176, 29);
 
             letsPlayBtn.SetTitleColor(UIColor.White, UIControlState.Normal);
             pwfBtn.SetTitleColor(UIColor.White, UIControlState.Normal);
-
-
+            
             letsPlayGradlayer = CommonMethods.addGradient(letsPlayOutterBgView, startColor: ColorConstants.Home.letsPlayBtnStartColor.CGColor, endColor: ColorConstants.Home.letsPlayBtnEndColor.CGColor);
             pwfGradlayer = CommonMethods.addGradient(pwfOutterBgView, startColor: ColorConstants.Home.PwfBtnStartColor.CGColor, endColor: ColorConstants.Home.PwfBtnEndColor.CGColor);
 
@@ -83,24 +84,25 @@ namespace yphkd.iOS
 
             loginIconBgView.Layer.BorderColor = UIColor.White.CGColor;
             favHandIconBgView.Layer.BorderColor = UIColor.FromRGB(211, 176,29).CGColor;
+            favHandBgView.Layer.BorderColor = UIColor.FromRGB(211, 176, 29).CGColor;
+            loginLblBgView.Layer.BorderColor = UIColor.White.CGColor;
 
             loginLblBgView.Layer.BorderWidth = favHandBgView.Layer.BorderWidth =
             favHandIconBgView.Layer.BorderWidth = loginIconBgView.Layer.BorderWidth = 2;
 
+            notiCountLbl.Hidden = true;
+            bellIcon.Hidden = true;
             //favHandIconBgView.Layer.MasksToBounds  = loginIconBgView.Layer.MasksToBounds = true;
 
             letsPlayOutterBgView.Layer.CornerRadius = pwfOutterBgView.Layer.CornerRadius = 10;
 
-
-
-            
             letsPlayOutterBgView.Layer.MasksToBounds = pwfOutterBgView.Layer.MasksToBounds = true;
-
-            
 
             //CommonMethods.AddShadow(letsPlayShadowView, ColorConstants.Home.letsPlayBtnEndColor.ColorWithAlpha(0.6f),shadowOpacity: 0.6f,x: 0,y: 9,shadowRadius: 7);
             //CommonMethods.AddShadow(pwfShadowView, ColorConstants.Home.PwfBtnEndColor.ColorWithAlpha(0.6f), shadowOpacity: 0.6f, x: 0, y: 9, shadowRadius: 7);
-
+            notiCountLbl.Layer.CornerRadius = 10.0f;
+            notiCountLbl.Layer.BorderColor = UIColor.White.CGColor;
+            notiCountLbl.Layer.BorderWidth = 1.0f;
             favHandIconImg.Image = UIImage.FromBundle(ImageConstants.HomeScreen.ic_fav_hand);
             loginIconImg.Image = UIImage.FromBundle(ImageConstants.HomeScreen.ic_facebook);
 
