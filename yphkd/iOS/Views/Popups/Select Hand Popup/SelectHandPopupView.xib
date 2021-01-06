@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
@@ -6,6 +6,8 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -18,7 +20,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="653" height="577"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Ob7-Q0-zr7">
-                            <rect key="frame" x="53.5" y="0.0" width="546" height="288.5"/>
+                            <rect key="frame" x="53.5" y="0.0" width="546.5" height="288.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvW-bb-XZL">
                                     <rect key="frame" x="0.0" y="26" width="173.5" height="236.5"/>
@@ -53,6 +55,7 @@
                                             <connections>
                                                 <action selector="onClickBtn1:" destination="1" eventType="touchUpInside" id="ND2-lN-nKe"/>
                                             </connections>
+                                            <state key="normal"/>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -72,10 +75,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXP-j7-9zK">
-                                    <rect key="frame" x="186.5" y="26" width="173" height="236.5"/>
+                                    <rect key="frame" x="186.5" y="26" width="173.5" height="236.5"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhK-BH-AXh">
-                                            <rect key="frame" x="5" y="5" width="163" height="194"/>
+                                            <rect key="frame" x="5" y="5" width="163.5" height="194"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ugg-mY-cdh">
                                             <rect key="frame" x="0.0" y="201" width="173" height="35.5"/>
@@ -120,7 +123,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTR-2a-xnH">
-                                    <rect key="frame" x="372.5" y="26" width="173.5" height="236.5"/>
+                                    <rect key="frame" x="373" y="26" width="173.5" height="236.5"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PzI-xE-EOY">
                                             <rect key="frame" x="5" y="5" width="163.5" height="194"/>
@@ -177,7 +180,7 @@
                             </constraints>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="gZE-jv-9Th">
-                            <rect key="frame" x="147" y="288.5" width="359.5" height="288.5"/>
+                            <rect key="frame" x="147" y="288.5" width="359" height="288.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcG-iC-qvS">
                                     <rect key="frame" x="0.0" y="26" width="173" height="236.5"/>
@@ -228,7 +231,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrZ-5O-VtQ">
-                                    <rect key="frame" x="186" y="26" width="173.5" height="236.5"/>
+                                    <rect key="frame" x="186" y="26" width="173" height="236.5"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dKG-wu-0xU">
                                             <rect key="frame" x="5" y="5" width="163.5" height="194"/>
@@ -328,9 +331,6 @@
     </objects>
     <resources>
         <image name="ic_three_finger" width="41.5" height="101"/>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

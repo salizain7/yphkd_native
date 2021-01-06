@@ -1,10 +1,14 @@
 ﻿<Properties HasIOSDesignerOverlayBeenDismissed="True" StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Header View/HeaderView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
     <Files>
-      <File FileName="iOS/Views/Tabs/Home Tab/HomeTabView.cs" Line="92" Column="1" />
+      <File FileName="iOS/Views/Tabs/Home Tab/HomeTabView.cs" Line="141" Column="1" />
       <File FileName="iOS/Views/Tabs/Home Tab/HomeTabView.xib" />
       <File FileName="iOS/Views/Header View/HeaderView.xib" />
-      <File FileName="iOS/Views/Header View/HeaderView.cs" Line="1" Column="1" />
+      <File FileName="iOS/Views/Header View/HeaderView.cs" Line="47" Column="89" />
+      <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.cs" Line="78" Column="1" />
+      <File FileName="iOS/Views/Popups/Select Hand Popup/SelectHandPopupView.xib" />
+      <File FileName="iOS/Views/Popups/Base Popup/BasePopupView.xib" />
+      <File FileName="iOS/Main.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,13 +31,22 @@
                     <Node name="Player View" expanded="True" />
                   </Node>
                 </Node>
-                <Node name="Header View" expanded="True">
-                  <Node name="HeaderView.cs" selected="True" />
+                <Node name="Header View" expanded="True" />
+                <Node name="Popups" expanded="True">
+                  <Node name="Base Popup" expanded="True" />
+                  <Node name="Result Popup" expanded="True" />
+                  <Node name="Select Hand Popup" expanded="True" />
+                  <Node name="Waiting For Players Popup" expanded="True" />
                 </Node>
                 <Node name="Tabs" expanded="True">
+                  <Node name="Friends Tab" expanded="True" />
                   <Node name="Home Tab" expanded="True" />
                 </Node>
+                <Node name="Tutorial" expanded="True">
+                  <Node name="Select Fav Hand" expanded="True" />
+                </Node>
               </Node>
+              <Node name="Main.cs" selected="True" />
             </Node>
           </Node>
         </State>

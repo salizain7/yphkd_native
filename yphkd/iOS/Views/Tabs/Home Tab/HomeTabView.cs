@@ -139,8 +139,6 @@ namespace yphkd.iOS
 
                         SetUpBlurBackground(popupView);
 
-                        
-                        
                         AnimationManager.Fade(popupView, true, onFinished: () =>
                         {
                             popupView.AddSubview(basePopupView);
