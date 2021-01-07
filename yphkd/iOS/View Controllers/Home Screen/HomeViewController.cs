@@ -69,7 +69,7 @@ namespace yphkd.iOS
             popupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, UIScreen.MainScreen.Bounds.Height);
 
             basePopupView = BasePopupView.Create();
-            basePopupView.showSelectHandPopup(this, "SELECT ANY HAND", "", false);
+            basePopupView.showSelectHandPopup(this, "SELECT FAVOURITE HAND", "", false);
             //basePopupView.showWinnerPopup(RootViewController, "Winner of Round 1", "Home", true);
             //basePopupView.showWinnerPopup(RootViewController, "Sorry !\n Better luck next time", "Home", true);
             basePopupView.Frame = new CGRect(0, 0, UIScreen.MainScreen.Bounds.Width, popupView.Frame.Height);

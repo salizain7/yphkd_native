@@ -105,7 +105,7 @@ namespace yphkd.iOS
             centerView.AddSubview(resultPopupView);
 
             titleLbl.Text = title;
-            //bottomBtn.SetTitle(btnTitle, UIControlState.Normal);
+            
             bottomBtn.UserInteractionEnabled = isBtn;
         }
 
@@ -133,10 +133,6 @@ namespace yphkd.iOS
             
         }
         private void dismissPopup() {
-
-           
-
-            //this.RemoveFromSuperview();
 
             var controller = rootController as HomeViewController;
             if (controller != null)

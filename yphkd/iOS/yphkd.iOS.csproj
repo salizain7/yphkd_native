@@ -274,6 +274,26 @@
     <ImageAsset Include="Assets.xcassets\table3_img.imageset\table3_img.png" />
     <ImageAsset Include="Assets.xcassets\table3_img.imageset\table3_img%402x.png" />
     <ImageAsset Include="Assets.xcassets\table3_img.imageset\table3_img%403x.png" />
+    <ImageAsset Include="Assets.xcassets\yassu_select.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\panju_select.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\haar_select.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\kabootar_select.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\doli_select.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\yassu_select.imageset\one.png" />
+    <ImageAsset Include="Assets.xcassets\yassu_select.imageset\one%402x.png" />
+    <ImageAsset Include="Assets.xcassets\yassu_select.imageset\one%403x.png" />
+    <ImageAsset Include="Assets.xcassets\panju_select.imageset\two.png" />
+    <ImageAsset Include="Assets.xcassets\panju_select.imageset\two%402x.png" />
+    <ImageAsset Include="Assets.xcassets\panju_select.imageset\two%403x.png" />
+    <ImageAsset Include="Assets.xcassets\haar_select.imageset\Three.png" />
+    <ImageAsset Include="Assets.xcassets\haar_select.imageset\Three%402x.png" />
+    <ImageAsset Include="Assets.xcassets\haar_select.imageset\Three%403x.png" />
+    <ImageAsset Include="Assets.xcassets\kabootar_select.imageset\four.png" />
+    <ImageAsset Include="Assets.xcassets\kabootar_select.imageset\four%402x.png" />
+    <ImageAsset Include="Assets.xcassets\kabootar_select.imageset\four%403x.png" />
+    <ImageAsset Include="Assets.xcassets\doli_select.imageset\five.png" />
+    <ImageAsset Include="Assets.xcassets\doli_select.imageset\five%402x.png" />
+    <ImageAsset Include="Assets.xcassets\doli_select.imageset\five%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
@@ -400,6 +420,12 @@
     <Folder Include="Assets.xcassets\table2_img.imageset\" />
     <Folder Include="Assets.xcassets\table3_img.imageset\" />
     <Folder Include="Views\Game\Mode Selection\TableType\" />
+    <Folder Include="Views\Popups\Select Fav Hand Popup\" />
+    <Folder Include="Assets.xcassets\yassu_select.imageset\" />
+    <Folder Include="Assets.xcassets\panju_select.imageset\" />
+    <Folder Include="Assets.xcassets\haar_select.imageset\" />
+    <Folder Include="Assets.xcassets\kabootar_select.imageset\" />
+    <Folder Include="Assets.xcassets\doli_select.imageset\" />
   </ItemGroup>
   <Import Project="..\yphkd.projitems" Label="Shared" Condition="Exists('..\yphkd.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

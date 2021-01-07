@@ -9,7 +9,7 @@ namespace yphkd.iOS
     public partial class SelectHandPopupView : UIView
     {
         int borderWidth = 3;
-        UIColor borderColor = UIColor.Yellow;
+        UIColor borderColor = UIColor.FromRGB(251,146,0);
         public SelectHandPopupView (IntPtr handle) : base (handle)
         {
         }
@@ -38,15 +38,16 @@ namespace yphkd.iOS
                 imageBg5.BackgroundColor = UIColor.Clear;
 
             imageBg1.Layer.CornerRadius = imageBg2.Layer.CornerRadius = imageBg3.Layer.CornerRadius =
-                imageBg4.Layer.CornerRadius = imageBg5.Layer.CornerRadius = 10;
+                imageBg4.Layer.CornerRadius = imageBg5.Layer.CornerRadius = 3;
             imageBg1.Layer.MasksToBounds = imageBg2.Layer.MasksToBounds = imageBg3.Layer.MasksToBounds =
                     imageBg4.Layer.MasksToBounds = imageBg5.Layer.MasksToBounds = true;
-
-            image1.Image = UIImage.FromBundle(ImageConstants.Hands.hand_1);
-            image2.Image = UIImage.FromBundle(ImageConstants.Hands.hand_2);
-            image3.Image = UIImage.FromBundle(ImageConstants.Hands.hand_3);
-            image4.Image = UIImage.FromBundle(ImageConstants.Hands.hand_4);
-            image5.Image = UIImage.FromBundle(ImageConstants.Hands.hand_5);
+            
+            handLblBg1.Layer.CornerRadius =  handLblBg2.Layer.CornerRadius = handLblBg3.Layer.CornerRadius = handLblBg4.Layer.CornerRadius = handLblBg5.Layer.CornerRadius = 3;
+            //image1.Image = UIImage.FromBundle(ImageConstants.Hands.hand_1);
+            //image2.Image = UIImage.FromBundle(ImageConstants.Hands.hand_2);
+            //image3.Image = UIImage.FromBundle(ImageConstants.Hands.hand_3);
+            //image4.Image = UIImage.FromBundle(ImageConstants.Hands.hand_4);
+            //image5.Image = UIImage.FromBundle(ImageConstants.Hands.hand_5);
         }
         public void setSelected(int viewNo)
         {
