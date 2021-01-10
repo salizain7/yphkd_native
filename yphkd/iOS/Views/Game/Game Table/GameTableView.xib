@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -78,25 +80,32 @@
                     <rect key="frame" x="220.5" y="472.5" width="180" height="45"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVF-aI-bJS">
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVF-aI-bJS">
                     <rect key="frame" x="15" y="15" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="uVF-aI-bJS" secondAttribute="height" multiplier="1:1" id="KcL-xl-JfQ"/>
                     </constraints>
-                    <state key="normal" image="ic_exit"/>
+                    <state key="normal" backgroundImage="ic_exit"/>
                     <connections>
                         <action selector="onClickBackBtn:" destination="1" eventType="touchUpInside" id="bFh-Q0-Qdc"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9w-qr-Zgx">
-                    <rect key="frame" x="186" y="256" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Round 01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1120">
+                    <rect key="frame" x="145" y="0.0" width="124" height="21"/>
+                    <color key="backgroundColor" red="0.831372549019608" green="0.36470588235294099" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" identifier="roundNo"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1120" secondAttribute="height" multiplier="124:21" id="1123"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="1120" firstAttribute="top" secondItem="1" secondAttribute="top" id="1121"/>
+                <constraint firstItem="1120" firstAttribute="centerX" secondItem="xbt-FM-1Zb" secondAttribute="centerX" id="1122"/>
                 <constraint firstItem="miR-9y-rvy" firstAttribute="width" secondItem="1" secondAttribute="width" multiplier="0.652174" id="0Jp-Sg-a2Q"/>
                 <constraint firstItem="RI4-bw-qi9" firstAttribute="trailing" secondItem="WC1-XO-z4l" secondAttribute="centerX" id="2Za-Qe-zcO"/>
                 <constraint firstItem="xbt-FM-1Zb" firstAttribute="height" secondItem="1" secondAttribute="height" multiplier="0.136986" id="3XR-dr-O31"/>
@@ -120,10 +129,8 @@
                 <constraint firstItem="lbw-6N-EnG" firstAttribute="trailing" secondItem="miR-9y-rvy" secondAttribute="leading" constant="15" id="NXJ-ND-GXC"/>
                 <constraint firstItem="uE4-6F-wMJ" firstAttribute="width" secondItem="SQx-KF-j5X" secondAttribute="width" id="Oit-oq-jaH"/>
                 <constraint firstItem="eBf-jS-ooX" firstAttribute="width" secondItem="GPE-4D-u3z" secondAttribute="width" id="P7Z-sm-S80"/>
-                <constraint firstItem="miR-9y-rvy" firstAttribute="top" secondItem="n9w-qr-Zgx" secondAttribute="bottom" constant="-172.5" id="QgK-Vr-tiC"/>
                 <constraint firstItem="xbt-FM-1Zb" firstAttribute="centerX" secondItem="miR-9y-rvy" secondAttribute="centerX" id="Qgg-Tj-YL4"/>
                 <constraint firstItem="iol-uK-wDh" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" multiplier="1.5" id="Qs5-4h-w42"/>
-                <constraint firstItem="n9w-qr-Zgx" firstAttribute="centerX" secondItem="miR-9y-rvy" secondAttribute="centerX" id="V27-bL-IgU"/>
                 <constraint firstItem="L0W-ce-k82" firstAttribute="width" secondItem="iol-uK-wDh" secondAttribute="width" id="VI9-aQ-qzM"/>
                 <constraint firstItem="uE4-6F-wMJ" firstAttribute="leading" secondItem="1RW-f0-smC" secondAttribute="trailing" constant="-15" id="VV5-2Q-8XZ"/>
                 <constraint firstItem="SQx-KF-j5X" firstAttribute="leading" secondItem="lbw-6N-EnG" secondAttribute="trailing" id="WGV-u5-4Oh"/>
@@ -185,14 +192,14 @@
                 <outlet property="playerView3" destination="WC1-XO-z4l" id="IQM-jb-jwe"/>
                 <outlet property="playerView4" destination="1RW-f0-smC" id="BMb-Ot-mUL"/>
                 <outlet property="playerView5" destination="RI4-bw-qi9" id="HpU-Me-w2x"/>
-                <outlet property="roundNoLbl" destination="n9w-qr-Zgx" id="1ki-pF-Ssp"/>
+                <outlet property="roundNoLblTop" destination="1120" id="name-outlet-1120"/>
             </connections>
             <point key="canvasLocation" x="33.333333333333336" y="53.90625"/>
         </view>
     </objects>
     <resources>
         <image name="game_table" width="254" height="302"/>
-        <image name="ic_exit" width="43.5" height="43.5"/>
+        <image name="ic_exit" width="13" height="13"/>
         <image name="ic_five_finger" width="53.5" height="101"/>
         <image name="ic_four_finger" width="43.5" height="100"/>
         <image name="ic_one_finger" width="36" height="101"/>

@@ -4,9 +4,30 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="yphkd" expanded="True">
+            <Node name="yphkd" expanded="True">
+              <Node name="Facade" expanded="True" />
+              <Node name="Model" expanded="True">
+                <Node name="PlayerHand" expanded="True" />
+              </Node>
+              <Node name="Users" expanded="True" />
+            </Node>
             <Node name="yphkd.iOS" expanded="True">
+              <Node name="Common" expanded="True">
+                <Node name="CommonMethods.cs" selected="True" />
+              </Node>
+              <Node name="Constants" expanded="True" />
+              <Node name="Managers" expanded="True" />
+              <Node name="View Controllers" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Game" expanded="True">
+                  <Node name="Game Table" expanded="True" />
+                  <Node name="Player" expanded="True">
+                    <Node name="Player Score View" expanded="True" />
+                    <Node name="Player View" expanded="True" />
+                  </Node>
+                </Node>
                 <Node name="Popups" expanded="True">
+                  <Node name="Base Popup" expanded="True" />
                   <Node name="Select Hand Popup" expanded="True" />
                 </Node>
               </Node>
@@ -24,7 +45,9 @@
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/Views/Popups/Select Hand Popup/SelectHandPopupView.cs" relfile="iOS/Views/Popups/Select Hand Popup/SelectHandPopupView.cs" line="60" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="multiprojId" Name="Multiple Projects" />

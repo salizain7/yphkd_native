@@ -14,38 +14,33 @@ namespace yphkd.iOS
     partial class PlayerView
     {
         [Outlet]
-        UIKit.UILabel playerHandLbl { get; set; }
-
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel playerHand { get; set; }
 
         [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView playerImg { get; set; }
 
-
         [Outlet]
-        UIKit.UIView playerImgBgView { get; set; }
-
-
-        [Outlet]
-        UIKit.UILabel playerNameLbl { get; set; }
-
-
-        [Outlet]
-        UIKit.UILabel rankLblLeft { get; set; }
-
-
-        [Outlet]
-        UIKit.UILabel rankLblRight { get; set; }
-
-
-        [Outlet]
-        UIKit.UIView rankViewLeft { get; set; }
-
-
-        [Outlet]
-        UIKit.UIView rankViewRight { get; set; }
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel playerName { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (playerHand != null) {
+                playerHand.Dispose ();
+                playerHand = null;
+            }
+
+            if (playerImg != null) {
+                playerImg.Dispose ();
+                playerImg = null;
+            }
+
+            if (playerName != null) {
+                playerName.Dispose ();
+                playerName = null;
+            }
         }
     }
 }

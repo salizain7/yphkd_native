@@ -80,9 +80,9 @@ namespace yphkd.iOS
         [Outlet]
         UIKit.UIView playerView5 { get; set; }
 
-
         [Outlet]
-        UIKit.UILabel roundNoLbl { get; set; }
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel roundNoLblTop { get; set; }
 
 
         [Action ("onClickBackBtn:")]
@@ -90,6 +90,10 @@ namespace yphkd.iOS
 
         void ReleaseDesignerOutlets ()
         {
+            if (roundNoLblTop != null) {
+                roundNoLblTop.Dispose ();
+                roundNoLblTop = null;
+            }
         }
     }
 }

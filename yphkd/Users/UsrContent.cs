@@ -28,14 +28,10 @@ namespace yphkd.Users
         public async Task<Hand> GetHand()
         {
             Hand playerHand = new Hand();
+
             playerHand.Id = ContentId;
             playerHand.Title = Enum.GetName(typeof(GameEnums.HandEnum), ContentId);
-            //playerHand = Hand.GetById(ContentId);
-            //if (playerHand != null)
-            //{
-            //    playerHand.IsFavourite = IsFav == 200;
-            //}
-
+            
             return playerHand;
         }
 

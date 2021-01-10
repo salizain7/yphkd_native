@@ -98,7 +98,7 @@ namespace yphkd.iOS.Constants
             public static readonly UIColor playerHandBg = UIColor.FromRGB( 56, 38, 0);
 
             // yellow
-            public static readonly UIColor playerHandText = UIColor.FromRGB(254, 174, 1);
+            public static readonly UIColor playerHandText = UIColor.FromRGB(254, 211, 81);
         }
         public struct PlayerScoreView
         {

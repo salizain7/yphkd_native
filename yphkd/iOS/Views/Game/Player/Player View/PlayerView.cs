@@ -30,25 +30,18 @@ namespace yphkd.iOS
         }
         private void setupView()
         {
-            playerHandLbl.TextColor = ColorConstants.PlayerView.playerHandText;
-            playerHandLbl.BackgroundColor = ColorConstants.PlayerView.playerHandBg;
-            playerHandLbl.Layer.BorderColor = ColorConstants.PlayerView.playerBgViewBorder.CGColor;
-            playerHandLbl.Layer.BorderWidth = 2;
-            playerHandLbl.Layer.MasksToBounds = true;
-            playerHandLbl.Layer.CornerRadius = 5;
+            playerHand.TextColor = ColorConstants.PlayerView.playerHandText;
+            //playerHandLbl.BackgroundColor = ColorConstants.PlayerView.playerHandBg;
+            //playerHandLbl.Layer.BorderColor = ColorConstants.PlayerView.playerBgViewBorder.CGColor;
+            //playerHandLbl.Layer.BorderWidth = 2;
+            //playerHandLbl.Layer.MasksToBounds = true;
+            //playerHandLbl.Layer.CornerRadius = 5;
 
-            playerNameLbl.BackgroundColor = ColorConstants.PlayerView.playerNameBg;
-
-            playerImgBgView.Layer.BorderWidth = 2;
-            playerImgBgView.Layer.CornerRadius = 8;
-            playerImgBgView.Layer.BorderColor = ColorConstants.PlayerView.playerBgViewBorder.CGColor;
-            playerImgBgView.Layer.MasksToBounds = true;
-            playerNameLbl.TextColor = UIColor.White;
-
-            CommonMethods.makeRoundCircle(rankViewRight);
-            CommonMethods.makeRoundCircle(rankViewLeft);
-            rankViewRight.Hidden = rankViewLeft.Hidden = true;
-
+            playerImg.Layer.BorderWidth = 2;
+            playerImg.Layer.BorderColor = UIColor.White.CGColor;
+           
+            CommonMethods.makeRoundCircle(playerImg);
+           
         }
         public void setRankPosition(bool isOnRight)
         {
@@ -57,8 +50,8 @@ namespace yphkd.iOS
         }
         public void BindData(string name, string favHand, string image = "")
         {
-            playerHandLbl.Text = favHand;
-            playerNameLbl.Text = name;
+            playerHand.Text = favHand;
+            playerName.Text = name;
 
             if (!string.IsNullOrEmpty(image))
             {
@@ -68,18 +61,7 @@ namespace yphkd.iOS
             }
             
         }
-        public void ShowWinnerRank(string rank)
-        {
-            if (isOnRightSideOfTable)
-            {
-                rankViewRight.Hidden = false;
-                rankLblRight.Text = rank;
-            } else
-            {
-                rankViewLeft.Hidden = false;
-                rankLblLeft.Text = rank;
-            }
-        }
+        
 
     }
 }

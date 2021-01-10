@@ -118,28 +118,6 @@ namespace yphkd.Users
             SaveToPreferences();
         }
 
-        //public void SaveUserLanguage(string lan)
-        //{
-        //    // UserLang = lan;
-
-        //    //  if (State.Equals(100) || State.Equals(90)){
-
-        //    UserLang = lan;
-        //    try
-        //    {
-        //        SecureStorage.SetAsync("PREF_LAN", lan).Wait();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Preferences.Set("PREF_LAN", lan);
-        //    }
-        //    SaveToPreferences();
-        //    ISSynced = -100;
-        //    //  }
-        //}
-
-
-
         public bool HasAnyFavHand()
         {
             if (UserContentList != null)
@@ -156,51 +134,30 @@ namespace yphkd.Users
             return false;
         }
 
-
-        //public UsrContent GetFavouriteHand()
-        //{
-        //    UsrContent rtnValue = null;
-
-        //    if (UserContentList != null && UserContentList.Count != 0)
-        //    {
-        //        foreach (UsrContent content in UserContentList)
-        //        {
-        //            if ( content.IsFav > 100 && rtnValue == null)
-        //            {
-        //                rtnValue = content;
-        //            }
-        //        }
-        //    }
-
-        //    return rtnValue;
-        //}
-
-
         public Hand GetFavoriteHand()
         {
-            //Team team = new Team();
-            if (UserContentList != null)
-            {
-                if (UserContentList.Count != 0)
-                {
-                    foreach (UsrContent content in UserContentList)
-                    {
-                        if (content.IsFav == 200)
-                        {
+            Hand playerHand = new Hand();
 
-                            return content.GetHand().Result;
-                        }
-                    }
-                }
+            playerHand.Id = 1;
+            playerHand.Title = "Yassu";
+            return playerHand;
+            //if (UserContentList != null)
+            //{
+            //    if (UserContentList.Count != 0)
+            //    {
+            //        foreach (UsrContent content in UserContentList)
+            //        {
+            //            if (content.IsFav == 200)
+            //            {
 
-            }
-            return null;
+            //                return content.GetHand().Result;
+            //            }
+            //        }
+            //    }
+
+            //}
+            //return null;
         }
 
-       
-
-        
-
-       
     }
 }

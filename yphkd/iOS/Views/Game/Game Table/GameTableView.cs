@@ -61,6 +61,10 @@ namespace yphkd.iOS
 
             playerHandImages = new UIImageView[] {handImg1, handImg2, handImg3, handImg4, handImg5 };
 
+
+            roundNoLblTop.Layer.CornerRadius = 4;
+            roundNoLblTop.Layer.MasksToBounds = true;
+
             setupHands();
 
             //showWaitingPopup();
@@ -153,9 +157,9 @@ namespace yphkd.iOS
             {
                 NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 3), delegate
                 {
-                    roundNoLbl.Text = "Round " + roundNo;
+                    roundNoLblTop.Text = "Round " + roundNo;
                 });
-                AnimationManager.Zoom(roundNoLbl, true, 0.8, onFinished: () =>
+                AnimationManager.Zoom(roundNoLblTop, true, 0.8, onFinished: () =>
                 {
                     NSTimer.CreateScheduledTimer(new TimeSpan(0, 0, 0, 5), delegate
                     {
@@ -166,7 +170,7 @@ namespace yphkd.iOS
             }
             else
             {
-                roundNoLbl.Text = "Game Over";
+                roundNoLblTop.Text = "Game Over";
             }
 
         }
@@ -252,7 +256,7 @@ namespace yphkd.iOS
             
             if (winnerId != 0 && winnerId <= playerViews.Length)
             {
-                playerViews[winnerId - 1].ShowWinnerRank(winnerId.ToString());
+               // playerViews[winnerId - 1].ShowWinnerRank(winnerId.ToString());
                 
             }
 
