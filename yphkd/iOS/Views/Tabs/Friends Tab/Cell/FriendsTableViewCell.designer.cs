@@ -16,19 +16,6 @@ namespace yphkd.iOS.Views.Tabs.FriendsTab.Cell
         [Outlet]
         UIKit.UIView cellView { get; set; }
 
-
-        [Outlet]
-        UIKit.UIView liveStatusView { get; set; }
-
-
-        [Outlet]
-        UIKit.UIImageView medalImg { get; set; }
-
-
-        [Outlet]
-        UIKit.UILabel pointsLbl { get; set; }
-
-
         [Outlet]
         UIKit.UIImageView profileImg { get; set; }
 
@@ -40,8 +27,16 @@ namespace yphkd.iOS.Views.Tabs.FriendsTab.Cell
         [Outlet]
         UIKit.UILabel usrnameLbl { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton inviteBtn { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (inviteBtn != null) {
+                inviteBtn.Dispose ();
+                inviteBtn = null;
+            }
         }
     }
 }

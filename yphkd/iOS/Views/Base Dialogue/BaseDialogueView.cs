@@ -9,6 +9,7 @@ namespace yphkd.iOS
     public partial class BaseDialogueView : UIView
     {
         bool isFromFriends = false;
+        int screen = 0;
         public BaseDialogueView (IntPtr handle) : base (handle)
         {
         }
@@ -24,58 +25,35 @@ namespace yphkd.iOS
         {
             base.AwakeFromNib();
             
-            setupView();
         }
-
-        public void setTitleLabel(string text)
+        public void setBanner(int screenNo)
         {
-            titleLabel.Text = text;
+            screen = screenNo;
+            setupView();
         }
         private void setupView()
         {
-            headerBgImg.Image = UIImage.FromBundle(ImageConstants.Dialogue.headerImg);
-            headerBgImg.ContentMode = UIViewContentMode.ScaleToFill;
-
-            //titleLabel.TextColor = UIColor.White;
-
-
-            mainBgView.BackgroundColor = ColorConstants.BaseDialogue.centerViewBg;
-            mainBgView.Layer.BorderColor = ColorConstants.BaseDialogue.centerViewBorder.CGColor;
-
-            mainBgView.Layer.CornerRadius = 12;
-            mainBgView.Layer.BorderWidth = 8;
-
-            titleLabel.TextColor = UIColor.White;
-
-            inviteButtonBgView.Layer.BorderColor = ColorConstants.Dialogue.buttomViewBorder.CGColor;
-            CommonMethods.addGradient(inviteButtonBgView, ColorConstants.Dialogue.buttomBgStartColor.CGColor,
-                ColorConstants.Dialogue.buttomBgEndColor.CGColor, false);
-            inviteButtonBgView.Layer.BorderWidth = 2;
-            inviteButtonBgView.Layer.CornerRadius = 14;
-            inviteButtonBgView.Layer.MasksToBounds = true;
+            if(screen==1)
+                headerBgImg.Image = UIImage.FromBundle(ImageConstants.Dialogue.headerImgBundle);
+            else if(screen==2)
+                headerBgImg.Image = UIImage.FromBundle(ImageConstants.Dialogue.headerImgFriend);
+            else if(screen ==3)
+                headerBgImg.Image = UIImage.FromBundle(ImageConstants.Dialogue.headerImgLeaderboard);
 
         }
+
         public UIView getCenterView()
         {
             return centerView;
         }
-        public void hideBottomBtnView(bool flag, bool isFromFrnds = false)
-        {
-            inviteBtn.Hidden = inviteButtonBgView.Hidden = flag;
-            inviteBtn.UserInteractionEnabled = !flag;
-            isFromFriends = isFromFrnds;
-            if (isFromFriends)
-            {
-                inviteBtn.SetTitle("Invite Friend", UIControlState.Normal);
-                inviteBtn.SetTitleColor(UIColor.White, UIControlState.Normal);
-            }
-        }
-        partial void onClickInviteBtn(UIButton sender)
-        {
-            if (isFromFriends)
-            {
 
-            }
-        }
+       
+        //partial void onClickInviteBtn(UIButton sender)
+        //{
+        //    if (isFromFriends)
+        //    {
+
+        //    }
+        //}
     }
 }

@@ -49,8 +49,10 @@ namespace yphkd.iOS.Constants
         }
 
         public struct Dialogue
-        {
-            public static readonly string headerImg = "popup_header_bg";
+        {  
+            public static readonly string headerImgFriend = "friendLbl";
+            public static readonly string headerImgBundle = "bundleLbl";
+            public static readonly string headerImgLeaderboard = "leaderboardLbl";
         }
         public struct Header
         {

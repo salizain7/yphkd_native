@@ -20,22 +20,8 @@ namespace yphkd.iOS
         [Outlet]
         UIKit.UIImageView headerBgImg { get; set; }
 
-
-        [Outlet]
-        UIKit.UIButton inviteBtn { get; set; }
-
-
-        [Outlet]
-        UIKit.UIView inviteButtonBgView { get; set; }
-
-
         [Outlet]
         UIKit.UIView mainBgView { get; set; }
-
-
-        [Outlet]
-        UIKit.UILabel titleLabel { get; set; }
-
 
         [Action ("onClickInviteBtn:")]
         partial void onClickInviteBtn (UIKit.UIButton sender);

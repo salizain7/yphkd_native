@@ -140,7 +140,7 @@ namespace yphkd.iOS.Constants
             public static readonly UIColor pointsLbl = UIColor.FromRGB(254, 188, 40);
 
             // grey
-            public static readonly UIColor cellViewBorder = UIColor.FromRGB(105, 103, 103);
+            public static readonly UIColor cellViewBorder = UIColor.FromRGB(0, 149, 205);
 
             // dark green
             public static readonly UIColor cellViewBorderLive = UIColor.FromRGB(0, 124, 19);
@@ -154,10 +154,10 @@ namespace yphkd.iOS.Constants
 
 
             // light grey
-            public static readonly UIColor cellViewStartColor = UIColor.FromRGB(241, 247, 254);
+            public static readonly UIColor cellViewStartColor = UIColor.FromRGB(0, 82, 204);
 
             // grey
-            public static readonly UIColor cellViewEndColor = UIColor.FromRGB(156, 165, 174);
+            public static readonly UIColor cellViewEndColor = UIColor.FromRGB(0, 104, 252);
 
             // light green
             public static readonly UIColor cellViewStartColorLive = UIColor.FromRGB(198, 243, 220);

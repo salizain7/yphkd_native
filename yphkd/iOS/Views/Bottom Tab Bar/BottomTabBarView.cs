@@ -185,10 +185,8 @@ namespace yphkd.iOS
                         dialogueView = BaseDialogueView.Create();
                         //CommonMethods.clearView(dialogueView.getCenterView());
 
-                        dialogueView.setTitleLabel("FRIENDS");
-                        dialogueView.hideBottomBtnView(false, true);
-
-
+                        dialogueView.setBanner(2);
+                        
                         friendsTabView = FriendsTabView.Create();
                         friendsTabView.Frame = new CGRect(0, 0, dialogueView.getCenterView().Frame.Size.Width, dialogueView.getCenterView().Frame.Size.Height);
                         dialogueView.getCenterView().AddSubview(friendsTabView);
@@ -219,9 +217,8 @@ namespace yphkd.iOS
                         CommonMethods.clearView(controller.getMainView());
                         dialogueView = BaseDialogueView.Create();
 
-                        dialogueView.setTitleLabel("COINS STORE");
-                        dialogueView.hideBottomBtnView(true);
-
+                        dialogueView.setBanner(1);
+                        
                         shopTabView = ShopTabView.Create();
                         shopTabView.Frame = new CGRect(0, 0, dialogueView.getCenterView().Frame.Size.Width, dialogueView.getCenterView().Frame.Size.Height);
                         dialogueView.getCenterView().AddSubview(shopTabView);
@@ -251,9 +248,8 @@ namespace yphkd.iOS
                         CommonMethods.clearView(controller.getMainView());
 
                         dialogueView = BaseDialogueView.Create();
-                        dialogueView.setTitleLabel("LEADERBOARD");
-                        dialogueView.hideBottomBtnView(true);
-
+                        dialogueView.setBanner(3);
+                        
                         leaderboardTabView = LeaderboardTabView.Create();
                         leaderboardTabView.Frame = new CGRect(0, 0, dialogueView.getCenterView().Frame.Size.Width, dialogueView.getCenterView().Frame.Size.Height);
                         //CommonMethods.clearView(dialogueView.getCenterView());
@@ -283,9 +279,8 @@ namespace yphkd.iOS
                         CommonMethods.clearView(controller.getMainView());
 
                         dialogueView = BaseDialogueView.Create();
-                        dialogueView.setTitleLabel("NOTIFICATIONS");
-                        dialogueView.hideBottomBtnView(true);
-
+                        dialogueView.setBanner(4);
+                       
                         notificationTabView = NotificationTabView.Create();
                         notificationTabView.Frame = new CGRect(0, 0, dialogueView.getCenterView().Frame.Size.Width, dialogueView.getCenterView().Frame.Size.Height);
                         //CommonMethods.clearView(dialogueView.getCenterView());

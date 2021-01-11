@@ -180,7 +180,6 @@
     <ImageAsset Include="Assets.xcassets\game_table.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\game_table.imageset\Table%401x.png" />
     <ImageAsset Include="Assets.xcassets\game_table.imageset\Table%402x-1.png" />
-    <ImageAsset Include="Assets.xcassets\popup_header_bg.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\usr_coins.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\ic_fav_hand.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\ic_facebook.imageset\FB-1.png" />
@@ -200,9 +199,6 @@
     <ImageAsset Include="Assets.xcassets\splash.imageset\Splash.png" />
     <ImageAsset Include="Assets.xcassets\splash.imageset\Splash%402x.png" />
     <ImageAsset Include="Assets.xcassets\splash.imageset\Splash%403x.png" />
-    <ImageAsset Include="Assets.xcassets\popup_header_bg.imageset\popup_header_bg.png" />
-    <ImageAsset Include="Assets.xcassets\popup_header_bg.imageset\popup_header_bg%402x.png" />
-    <ImageAsset Include="Assets.xcassets\popup_header_bg.imageset\popup_header_bg%403x.png" />
     <ImageAsset Include="Assets.xcassets\medal_1.imageset\medal_1.png" />
     <ImageAsset Include="Assets.xcassets\medal_1.imageset\medal_1%402x.png" />
     <ImageAsset Include="Assets.xcassets\medal_1.imageset\medal_1%403x.png" />
@@ -294,6 +290,22 @@
     <ImageAsset Include="Assets.xcassets\ic_exit.imageset\backbtnCircle.png" />
     <ImageAsset Include="Assets.xcassets\ic_exit.imageset\backbtnCircle%402x.png" />
     <ImageAsset Include="Assets.xcassets\ic_exit.imageset\backbtnCircle%403x.png" />
+    <ImageAsset Include="Assets.xcassets\friendLbl.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\leaderboardLbl.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\bundleLbl.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\friendLbl.imageset\friendsLbl.png" />
+    <ImageAsset Include="Assets.xcassets\friendLbl.imageset\friendsLbl%402x.png" />
+    <ImageAsset Include="Assets.xcassets\friendLbl.imageset\friendsLbl%403x.png" />
+    <ImageAsset Include="Assets.xcassets\leaderboardLbl.imageset\leader.png" />
+    <ImageAsset Include="Assets.xcassets\leaderboardLbl.imageset\leader%402x.png" />
+    <ImageAsset Include="Assets.xcassets\leaderboardLbl.imageset\leader%403x.png" />
+    <ImageAsset Include="Assets.xcassets\bundleLbl.imageset\bundleLbl.png" />
+    <ImageAsset Include="Assets.xcassets\bundleLbl.imageset\bundleLbl%402x.png" />
+    <ImageAsset Include="Assets.xcassets\bundleLbl.imageset\bundleLbl%403x.png" />
+    <ImageAsset Include="Assets.xcassets\inviteBtnBg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\inviteBtnBg.imageset\btnInvite.png" />
+    <ImageAsset Include="Assets.xcassets\inviteBtnBg.imageset\btnInvite%402x.png" />
+    <ImageAsset Include="Assets.xcassets\inviteBtnBg.imageset\btnInvite%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
@@ -423,6 +435,10 @@
     <Folder Include="Assets.xcassets\kabootar_select.imageset\" />
     <Folder Include="Assets.xcassets\doli_select.imageset\" />
     <Folder Include="Assets.xcassets\roundNoBg.imageset\" />
+    <Folder Include="Assets.xcassets\friendLbl.imageset\" />
+    <Folder Include="Assets.xcassets\leaderboardLbl.imageset\" />
+    <Folder Include="Assets.xcassets\bundleLbl.imageset\" />
+    <Folder Include="Assets.xcassets\inviteBtnBg.imageset\" />
   </ItemGroup>
   <Import Project="..\yphkd.projitems" Label="Shared" Condition="Exists('..\yphkd.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

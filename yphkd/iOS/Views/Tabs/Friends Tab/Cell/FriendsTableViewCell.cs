@@ -39,7 +39,7 @@ namespace yphkd.iOS.Views.Tabs.FriendsTab.Cell
             usrnameLbl.TextColor = UIColor.White;
             shadeView.BackgroundColor = UIColor.Clear;
 
-            pointsLbl.TextColor = ColorConstants.Friends.pointsLbl;
+            
 
             gradLayer = CommonMethods.addGradient(cellView, ColorConstants.Friends.cellViewStartColor.CGColor,
                 ColorConstants.Friends.cellViewEndColor.CGColor, false);
@@ -50,30 +50,20 @@ namespace yphkd.iOS.Views.Tabs.FriendsTab.Cell
             cellView.Layer.MasksToBounds = true;
 
 
-            liveStatusView.BackgroundColor = UIColor.Clear;
-            CommonMethods.makeRoundCircle(liveStatusView);
-
+            
+            CommonMethods.makeRoundCircle(profileImg);
+            profileImg.Layer.BorderWidth = 3;
+            profileImg.Layer.BorderColor = UIColor.White.CGColor;
             profileImg.Image = UIImage.FromBundle(ImageConstants.Common.placeholder_img);
             
 
         }
         public void BindData(string username, string usrPoints, int index)
         {
-            switch (index)
-            {
-                case 0:
-                    medalImg.Image = UIImage.FromBundle(ImageConstants.Friends.medal_1);
-                    setupLiveView();
-                    break;
-                case 1:
-                    medalImg.Image = UIImage.FromBundle(ImageConstants.Friends.medal_2);
-                    break;
-                case 2:
-                    medalImg.Image = UIImage.FromBundle(ImageConstants.Friends.medal_3);
-                    break;
-            }
+            
+            
             usrnameLbl.Text = username;
-            pointsLbl.Text = usrPoints;
+          
 
         }
         public void setupLiveView()
@@ -83,12 +73,7 @@ namespace yphkd.iOS.Views.Tabs.FriendsTab.Cell
                 ColorConstants.Friends.cellViewEndColorLive.CGColor, false);
             cellView.Layer.BorderColor = ColorConstants.Friends.cellViewBorderLive.CGColor;
 
-            liveStatusView.Layer.BorderWidth = 1;
-            liveStatusView.Layer.BorderColor = ColorConstants.Friends.liveStatusBorder.CGColor;
-
-            liveStatusView.BackgroundColor = ColorConstants.Friends.liveStatus;
-
-
+           
         }
     }
 }
