@@ -19,8 +19,7 @@ namespace yphkd.iOS
 
         //uiview classes
         PlayerView[] playerViews = new PlayerView[5];
-        PlayerScoreView[] playerScoreViews = new PlayerScoreView[5];
-
+       
         //uiviews 
         UIView[] playerUIViews = new UIView[5];
         UIView[] playerScoreUIViews = new UIView[5];
@@ -291,13 +290,13 @@ namespace yphkd.iOS
         public void setupPlayerScoreView(int numberOfPlayers)
         {
 
-            for (int i = 0; i < numberOfPlayers; i++)
-            {
-                playerScoreViews[i] = PlayerScoreView.Create();
-                playerScoreViews[i].Frame = new CGRect(0, 0, playerScoreUIViews[i].Frame.Size.Width, playerScoreUIViews[i].Frame.Size.Height);
-                playerScoreViews[i].getPlayerBgView().BackgroundColor = ColorConstants.PlayerScoreView.playersColors[i];
-                playerScoreUIViews[i].AddSubview(playerScoreViews[i]);
-            }
+            //for (int i = 0; i < numberOfPlayers; i++)
+            //{
+            //    playerScoreViews[i] = PlayerScoreView.Create();
+            //    playerScoreViews[i].Frame = new CGRect(0, 0, playerScoreUIViews[i].Frame.Size.Width, playerScoreUIViews[i].Frame.Size.Height);
+            //    playerScoreViews[i].getPlayerBgView().BackgroundColor = ColorConstants.PlayerScoreView.playersColors[i];
+            //    playerScoreUIViews[i].AddSubview(playerScoreViews[i]);
+            //}
 
         }
         private void SetPlayersProfile(UserPlayRequestResult userPlayReqResult, int numberOfPlayers)
@@ -314,11 +313,11 @@ namespace yphkd.iOS
                 playerViews[i].BindData(playerProfiles[i].UsrName,
                         Enum.GetName(typeof(GameEnums.HandEnum), Int32.Parse(playerProfiles[i].UsrSymbol)),
                         playerProfiles[i].UsrImg);
-                playerScoreViews[i].BindData(
-                    Enum.GetName(typeof(GameEnums.HandEnum), Int32.Parse(playerProfiles[i].UsrSymbol)),
-                    playerProfiles[i].UsrCoins.ToString(),
-                    playerProfiles[i].UsrImg
-                    );
+                //playerScoreViews[i].BindData(
+                //    Enum.GetName(typeof(GameEnums.HandEnum), Int32.Parse(playerProfiles[i].UsrSymbol)),
+                //    playerProfiles[i].UsrCoins.ToString(),
+                //    playerProfiles[i].UsrImg
+                //    );
             }
 
             

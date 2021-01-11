@@ -1,29 +1,18 @@
 ﻿<Properties HasIOSDesignerOverlayBeenDismissed="True" StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Game/Game Table/GameTableView.xib">
+    <Files>
+      <File FileName="iOS/Views/Game/Game Table/GameTableView.cs" Line="154" Column="10" />
+      <File FileName="iOS/Views/Game/Game Table/GameTableView.xib" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="yphkd" expanded="True">
-            <Node name="yphkd" expanded="True">
-              <Node name="Facade" expanded="True" />
-              <Node name="Model" expanded="True">
-                <Node name="PlayerHand" expanded="True" />
-              </Node>
-              <Node name="Users" expanded="True" />
-            </Node>
             <Node name="yphkd.iOS" expanded="True">
-              <Node name="Common" expanded="True">
-                <Node name="CommonMethods.cs" selected="True" />
-              </Node>
-              <Node name="Constants" expanded="True" />
-              <Node name="Managers" expanded="True" />
-              <Node name="View Controllers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Game" expanded="True">
-                  <Node name="Game Table" expanded="True" />
-                  <Node name="Player" expanded="True">
-                    <Node name="Player Score View" expanded="True" />
-                    <Node name="Player View" expanded="True" />
+                  <Node name="Game Table" expanded="True">
+                    <Node name="GameTableView.xib" selected="True" />
                   </Node>
                 </Node>
                 <Node name="Popups" expanded="True">
@@ -37,8 +26,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.yphkd.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.01D4CF5F-F2AD-4036-BAE2-D670A34703FF" />
-  <MonoDevelop.Ide.ItemProperties.yphkd FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.yphkd.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C7C51327-0CFF-42EC-BF93-53F17B9251A2" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
     <String>Droid/yphkd.Droid.csproj</String>

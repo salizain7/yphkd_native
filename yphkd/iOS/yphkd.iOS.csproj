@@ -351,8 +351,6 @@
     <Compile Include="Views\Game\Mode Selection\Select Table Collection View\Cell\SelectTableCollectionViewCell.designer.cs" />
     <Compile Include="Views\Game\Mode Selection\Select Table Collection View\Data\SelectTableCVDelegate.cs" />
     <Compile Include="Views\Game\Mode Selection\Select Table Collection View\Data\SelectTableCVDataSource.cs" />
-    <Compile Include="Views\Game\Player\Player Score View\PlayerScoreView.designer.cs" />
-    <Compile Include="Views\Game\Player\Player Score View\PlayerScoreView.cs" />
     <Compile Include="Views\Game\Player\Player View\PlayerView.designer.cs" />
     <Compile Include="Views\Popups\Result Popup\ResultPopupView.cs" />
     <Compile Include="Views\Popups\Result Popup\ResultPopupView.designer.cs" />
@@ -400,7 +398,6 @@
     <InterfaceDefinition Include="Views\Game\Game Table\GameTableView.xib" />
     <InterfaceDefinition Include="Views\Game\Mode Selection\Select Table Collection View\SelectTableCollectionView.xib" />
     <InterfaceDefinition Include="Views\Game\Mode Selection\Select Table Collection View\Cell\SelectTableCollectionViewCell.xib" />
-    <InterfaceDefinition Include="Views\Game\Player\Player Score View\PlayerScoreView.xib" />
     <InterfaceDefinition Include="Views\Game\Player\Player View\PlayerView.xib" />
     <InterfaceDefinition Include="Views\Popups\Result Popup\ResultPopupView.xib" />
     <InterfaceDefinition Include="Views\Popups\Base Popup\BasePopupView.xib" />
