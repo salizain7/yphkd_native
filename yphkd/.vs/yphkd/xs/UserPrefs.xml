@@ -1,15 +1,9 @@
 ﻿<Properties HasIOSDesignerOverlayBeenDismissed="True" StartupConfiguration="{3E9D3521-A611-4FAE-BDE1-FEA64BB15E13}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Tabs/Friends Tab/Cell/FriendsTableViewCell.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/Tabs/Leaderboard Tab/Data/LeaderboardTableViewDataSource.cs">
     <Files>
-      <File FileName="iOS/Constants/ImageConstants.cs" Line="52" Column="10" />
-      <File FileName="iOS/Views/Base Dialogue/BaseDialogueView.cs" />
-      <File FileName="iOS/Views/Base Dialogue/BaseDialogueView.xib" />
-      <File FileName="iOS/Views/Base Dialogue/BaseDialogueView.designer.cs" />
-      <File FileName="iOS/Views/Bottom Tab Bar/BottomTabBarView.cs" />
-      <File FileName="iOS/Views/Tabs/Friends Tab/Cell/FriendsTableViewCell.xib" />
-      <File FileName="iOS/Views/Tabs/Friends Tab/Cell/FriendsTableViewCell.cs" Line="49" Column="46" />
-      <File FileName="iOS/Common/CommonMethods.cs" />
-      <File FileName="iOS/Constants/ColorConstants.cs" />
+      <File FileName="iOS/Views/Tabs/Leaderboard Tab/LeaderboardTabView.cs" Line="30" Column="1" />
+      <File FileName="iOS/Views/Tabs/Leaderboard Tab/Data/LeaderboardTableViewDataSource.cs" Line="16" Column="1" />
+      <File FileName="iOS/Views/Tabs/Leaderboard Tab/LeaderboardTabView.xib" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,17 +11,14 @@
           <Node name="yphkd" expanded="True">
             <Node name="yphkd.iOS" expanded="True">
               <Node name="Common" expanded="True" />
-              <Node name="Constants" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Base Dialogue" expanded="True" />
-                <Node name="Bottom Tab Bar" expanded="True" />
                 <Node name="Tabs" expanded="True">
-                  <Node name="Friends Tab" expanded="True">
-                    <Node name="Cell" expanded="True">
-                      <Node name="FriendsTableViewCell.cs" selected="True" />
+                  <Node name="Friends Tab" expanded="True" />
+                  <Node name="Leaderboard Tab" expanded="True">
+                    <Node name="Data" expanded="True">
+                      <Node name="LeaderboardTableViewDataSource.cs" selected="True" />
                     </Node>
                   </Node>
-                  <Node name="Shop Tab" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -45,6 +36,8 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/Views/Popups/Select Hand Popup/SelectHandPopupView.cs" relfile="iOS/Views/Popups/Select Hand Popup/SelectHandPopupView.cs" line="60" column="1" />
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/Views/Tabs/Leaderboard Tab/Cell/LeaderboardTableViewCell.cs" relfile="iOS/Views/Tabs/Leaderboard Tab/Cell/LeaderboardTableViewCell.cs" line="39" column="1" />
+      <Breakpoint file="/Users/syedalizain/PersonalProjects/yphkd_native/yphkd/iOS/Views/Tabs/Leaderboard Tab/Cell/LeaderboardTableViewCell.cs" relfile="iOS/Views/Tabs/Leaderboard Tab/Cell/LeaderboardTableViewCell.cs" line="34" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>

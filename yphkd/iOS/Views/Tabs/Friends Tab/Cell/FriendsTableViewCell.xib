@@ -33,7 +33,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvO-FY-i4S" misplaced="YES" text="Guest">
                                 <rect key="frame" x="70" y="22" width="63" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16" weight="heavy"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17" weight="heavy"/>
                                 <color key="textColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -44,7 +44,7 @@
                                     <color key="titleColor" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" white="1" alpha="1"/>
                                 </state>
                                 <constraints>
-                                    <constraint id="2343" firstAttribute="width" constant="80"/>
+                                    <constraint id="2343" firstAttribute="width" constant="90"/>
                                     <constraint id="3262" firstAttribute="height" constant="35"/>
                                 </constraints>
                             </button>
